@@ -1,0 +1,216 @@
+{
+  "math": [
+    {
+      "id": 1,
+      "question_kk": "x² - 5x + 6 = 0 теңдеуін шешіңіз",
+      "question_ru": "Решите уравнение: x² - 5x + 6 = 0",
+      "question_en": "Solve: x² - 5x + 6 = 0",
+      "options": {
+        "A": "x = 1, x = 6",
+        "B": "x = 2, x = 3",
+        "C": "x = -2, x = -3",
+        "D": "x = 1, x = 5",
+        "E": "x = 0, x = 6"
+      },
+      "correct": "B",
+      "explanation_kk": "Факторлау: (x-2)(x-3) = 0, сондықтан x = 2 немесе x = 3",
+      "explanation_ru": "Разложение: (x-2)(x-3) = 0, поэтому x = 2 или x = 3",
+      "explanation_en": "Factor: (x-2)(x-3) = 0, therefore x = 2 or x = 3"
+    },
+    {
+      "id": 2,
+      "question_kk": "200-дің 15%-ы неге тең?",
+      "question_ru": "Сколько составляет 15% от 200?",
+      "question_en": "What is 15% of 200?",
+      "options": {
+        "A": "25",
+        "B": "30",
+        "C": "35",
+        "D": "40",
+        "E": "45"
+      },
+      "correct": "B",
+      "explanation_kk": "200-дің 15%-ы = 0.15 × 200 = 30",
+      "explanation_ru": "15% от 200 = 0.15 × 200 = 30",
+      "explanation_en": "15% of 200 = 0.15 × 200 = 30"
+    },
+    {
+      "id": 3,
+      "question_kk": "Қарапайым етіңіз: 2³ × 2⁴",
+      "question_ru": "Упростите: 2³ × 2⁴",
+      "question_en": "Simplify: 2³ × 2⁴",
+      "options": {
+        "A": "2⁷",
+        "B": "2¹²",
+        "C": "4⁷",
+        "D": "8⁴",
+        "E": "16"
+      },
+      "correct": "A",
+      "explanation_kk": "Бірдей негізді көбейткенде: 2³ × 2⁴ = 2⁽³⁺⁴⁾ = 2⁷",
+      "explanation_ru": "При умножении одинаковых оснований: 2³ × 2⁴ = 2⁽³⁺⁴⁾ = 2⁷",
+      "explanation_en": "When multiplying same base: 2³ × 2⁴ = 2⁽³⁺⁴⁾ = 2⁷"
+    },
+    {
+      "id": 4,
+      "question_kk": "Егер a = 5 болса, 3a + 7 өрнегінің мәні неге тең?",
+      "question_ru": "Если a = 5, чему равно значение выражения 3a + 7?",
+      "question_en": "If a = 5, what is the value of 3a + 7?",
+      "options": {
+        "A": "15",
+        "B": "18",
+        "C": "22",
+        "D": "25",
+        "E": "35"
+      },
+      "correct": "C",
+      "explanation_kk": "3a + 7 = 3(5) + 7 = 15 + 7 = 22",
+      "explanation_ru": "3a + 7 = 3(5) + 7 = 15 + 7 = 22",
+      "explanation_en": "3a + 7 = 3(5) + 7 = 15 + 7 = 22"
+    },
+    {
+      "id": 5,
+      "question_kk": "Тікбұрышты үшбұрыштың катеттері 3 және 4. Гипотенузасы неге тең?",
+      "question_ru": "Катеты прямоугольного треугольника равны 3 и 4. Чему равна гипотенуза?",
+      "question_en": "A right triangle has legs of 3 and 4. What is the hypotenuse?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "12",
+        "E": "25"
+      },
+      "correct": "A",
+      "explanation_kk": "Пифагор теоремасы: c² = a² + b² = 3² + 4² = 9 + 16 = 25, сондықтан c = 5",
+      "explanation_ru": "Теорема Пифагора: c² = a² + b² = 3² + 4² = 9 + 16 = 25, поэтому c = 5",
+      "explanation_en": "Pythagorean theorem: c² = a² + b² = 3² + 4² = 9 + 16 = 25, so c = 5"
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "question_kk": "Қазақстан қашан тәуелсіздік алды?",
+      "question_ru": "Когда Казахстан получил независимость?",
+      "question_en": "When did Kazakhstan gain independence?",
+      "options": {
+        "A": "1990",
+        "B": "1991",
+        "C": "1992",
+        "D": "1993",
+        "E": "1994"
+      },
+      "correct": "B",
+      "explanation_kk": "Қазақстан 1991 жылы 16 желтоқсанда тәуелсіздік алды",
+      "explanation_ru": "Казахстан провозгласил независимость 16 декабря 1991 года",
+      "explanation_en": "Kazakhstan declared independence on December 16, 1991"
+    },
+    {
+      "id": 2,
+      "question_kk": "Тәуелсіз Қазақстанның бірінші президенті кім болды?",
+      "question_ru": "Кто был первым президентом независимого Казахстана?",
+      "question_en": "Who was the first president of independent Kazakhstan?",
+      "options": {
+        "A": "Дінмұхамед Қонаев",
+        "B": "Қасым-Жомарт Тоқаев",
+        "C": "Нұрсұлтан Назарбаев",
+        "D": "Абай Құнанбаев",
+        "E": "Мұстафа Шоқай"
+      },
+      "correct": "C",
+      "explanation_kk": "Нұрсұлтан Назарбаев бірінші президент болды (1991-2019)",
+      "explanation_ru": "Нурсултан Назарбаев был первым президентом (1991-2019)",
+      "explanation_en": "Nursultan Nazarbayev was the first president (1991-2019)"
+    },
+    {
+      "id": 3,
+      "question_kk": "Қазақстанның астанасы қандай қала?",
+      "question_ru": "Какой город является столицей Казахстана?",
+      "question_en": "What city is the capital of Kazakhstan?",
+      "options": {
+        "A": "Алматы",
+        "B": "Шымкент",
+        "C": "Астана",
+        "D": "Қарағанды",
+        "E": "Ақтөбе"
+      },
+      "correct": "C",
+      "explanation_kk": "Астана (бұрынғы Нұр-Сұлтан) 1997 жылдан бері Қазақстанның астанасы",
+      "explanation_ru": "Астана (ранее Нур-Султан) является столицей Казахстана с 1997 года",
+      "explanation_en": "Astana (formerly Nur-Sultan) has been the capital of Kazakhstan since 1997"
+    }
+  ],
+  "physics": [
+    {
+      "id": 1,
+      "question_kk": "Жарық жылдамдығы қандай?",
+      "question_ru": "Какова скорость света?",
+      "question_en": "What is the speed of light?",
+      "options": {
+        "A": "3 × 10⁶ м/с",
+        "B": "3 × 10⁷ м/с",
+        "C": "3 × 10⁸ м/с",
+        "D": "3 × 10⁹ м/с",
+        "E": "3 × 10¹⁰ м/с"
+      },
+      "correct": "C",
+      "explanation_kk": "Вакуумдағы жарық жылдамдығы шамамен 3 × 10⁸ м/с (300,000 км/с)",
+      "explanation_ru": "Скорость света в вакууме примерно 3 × 10⁸ м/с (300,000 км/с)",
+      "explanation_en": "Speed of light in vacuum is approximately 3 × 10⁸ m/s (300,000 km/s)"
+    },
+    {
+      "id": 2,
+      "question_kk": "Еркін түсу үдеуі Жерде қандай?",
+      "question_ru": "Чему равно ускорение свободного падения на Земле?",
+      "question_en": "What is the acceleration due to gravity on Earth?",
+      "options": {
+        "A": "8.8 м/с²",
+        "B": "9.8 м/с²",
+        "C": "10.8 м/с²",
+        "D": "11.8 м/с²",
+        "E": "12.8 м/с²"
+      },
+      "correct": "B",
+      "explanation_kk": "Жер бетінде еркін түсу үдеуі шамамен 9.8 м/с²",
+      "explanation_ru": "Ускорение свободного падения на поверхности Земли примерно 9.8 м/с²",
+      "explanation_en": "Acceleration due to gravity at Earth's surface is approximately 9.8 m/s²"
+    }
+  ],
+  "chemistry": [
+    {
+      "id": 1,
+      "question_kk": "Судың химиялық формуласы қандай?",
+      "question_ru": "Какова химическая формула воды?",
+      "question_en": "What is the chemical formula of water?",
+      "options": {
+        "A": "HO",
+        "B": "H₂O",
+        "C": "H₂O₂",
+        "D": "HO₂",
+        "E": "H₃O"
+      },
+      "correct": "B",
+      "explanation_kk": "Судың формуласы H₂O - екі сутегі атомы және бір оттегі атомы",
+      "explanation_ru": "Формула воды H₂O - два атома водорода и один атом кислорода",
+      "explanation_en": "Water's formula is H₂O - two hydrogen atoms and one oxygen atom"
+    }
+  ],
+  "reading": [
+    {
+      "id": 1,
+      "question_kk": "Мәтіннің басты идеясын табу үшін не істеу керек?",
+      "question_ru": "Что нужно сделать, чтобы найти главную идею текста?",
+      "question_en": "What should you do to find the main idea of a text?",
+      "options": {
+        "A": "Тек бірінші абзацты оқу",
+        "B": "Барлық мәтінді оқып, негізгі ойды анықтау",
+        "C": "Тек соңғы абзацты оқу",
+        "D": "Тақырыпты ғана оқу",
+        "E": "Суреттерді қарау"
+      },
+      "correct": "B",
+      "explanation_kk": "Басты идеяны табу үшін барлық мәтінді оқып, автордың негізгі ойын анықтау керек",
+      "explanation_ru": "Чтобы найти главную идею, нужно прочитать весь текст и определить основную мысль автора",
+      "explanation_en": "To find the main idea, you need to read the entire text and identify the author's main point"
+    }
+  ]
+}
