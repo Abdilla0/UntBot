@@ -20,12 +20,34 @@ def load_questions():
 # Load questions at import time
 QUESTIONS = load_questions()
 
-def get_question(subject, question_id=None, language='en'):
+def get_topics(subject):
+    """Get available topics for a subject"""
+    if subject not in QUESTIONS:
+        return []
+    
+    if 'topics' in QUESTIONS[subject]:
+        return list(QUESTIONS[subject]['topics'].keys())
+    
+    return []
+
+def get_question(subject, question_id=None, language='en', topic=None):
     """Get a question from the bank"""
     if subject not in QUESTIONS:
         return None
     
-    questions = QUESTIONS[subject]
+    # Handle new topic-based structure
+    if 'topics' in QUESTIONS[subject]:
+        # Get questions from specific topic or all topics
+        if topic and topic in QUESTIONS[subject]['topics']:
+            questions = QUESTIONS[subject]['topics'][topic]
+        else:
+            # Get all questions from all topics
+            questions = []
+            for topic_questions in QUESTIONS[subject]['topics'].values():
+                questions.extend(topic_questions)
+    else:
+        # Old structure (backward compatible)
+        questions = QUESTIONS[subject]
     
     if not questions:
         return None
@@ -36,7 +58,7 @@ def get_question(subject, question_id=None, language='en'):
                 return format_question_for_language(q, language)
         return None
     
-    # Get random unanswered question
+    # Get random question
     question = random.choice(questions)
     return format_question_for_language(question, language)
 
@@ -48,7 +70,6 @@ def format_question_for_language(question, language='en'):
         'kk': '_kk'
     }.get(language, '_en')
     
-    # Get question text in correct language
     question_key = f'question{lang_suffix}'
     explanation_key = f'explanation{lang_suffix}'
     
@@ -57,7 +78,8 @@ def format_question_for_language(question, language='en'):
         'text': question.get(question_key, question.get('question_en', 'Question not available')),
         'options': question['options'],
         'correct': question['correct'],
-        'explanation': question.get(explanation_key, question.get('explanation_en', 'Explanation not available'))
+        'explanation': question.get(explanation_key, question.get('explanation_en', 'Explanation not available')),
+        'topic': question.get('topic', 'general')
     }
     
     return formatted
@@ -79,8 +101,19 @@ def get_all_subjects():
     """Get list of available subjects"""
     return list(QUESTIONS.keys())
 
-def get_question_count(subject):
-    """Get number of questions for a subject"""
+def get_question_count(subject, topic=None):
+    """Get number of questions for a subject/topic"""
     if subject not in QUESTIONS:
         return 0
-    return len(QUESTIONS[subject])
+    
+    if 'topics' in QUESTIONS[subject]:
+        if topic and topic in QUESTIONS[subject]['topics']:
+            return len(QUESTIONS[subject]['topics'][topic])
+        else:
+            # Count all questions across all topics
+            total = 0
+            for topic_questions in QUESTIONS[subject]['topics'].values():
+                total += len(topic_questions)
+            return total
+    else:
+        return len(QUESTIONS[subject])

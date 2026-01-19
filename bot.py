@@ -4,9 +4,11 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 from config import TELEGRAM_BOT_TOKEN, SUBJECTS, LANGUAGES
 from database import (init_db, add_user, update_user_activity, save_answer, 
-                      get_user_stats, set_user_language, get_user_language)
+                      get_user_stats, set_user_language, get_user_language,
+                      update_streak, get_user_streak, get_leaderboard, 
+                      get_user_rank, get_subject_stats)
 from ai_helper import explain_topic, answer_question, explain_answer
-from questions import get_question, format_question, QUESTIONS
+from questions import get_question, format_question, QUESTIONS, get_topics
 from translations import t, TRANSLATIONS
 
 # Enable logging
@@ -105,10 +107,11 @@ async def subject_chosen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Store in session
     user_sessions[user_id]['subject'] = subject
     
-    # Menu keyboard with translations
+    # Menu keyboard with leaderboard and topics
     keyboard = [
-        [KeyboardButton(t('btn_practice', language)), KeyboardButton(t('btn_explain', language))],
-        [KeyboardButton(t('btn_ask', language)), KeyboardButton(t('btn_progress', language))],
+        [KeyboardButton(t('btn_practice', language)), KeyboardButton(t('btn_topics', language))],
+        [KeyboardButton(t('btn_explain', language)), KeyboardButton(t('btn_ask', language))],
+        [KeyboardButton(t('btn_progress', language)), KeyboardButton(t('btn_leaderboard', language))],
         [KeyboardButton(t('btn_change_subject', language))]
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
@@ -127,6 +130,10 @@ async def handle_menu_choice(update: Update, context: ContextTypes.DEFAULT_TYPE)
     user_id = update.effective_user.id
     language = user_sessions.get(user_id, {}).get('language', 'en')
     
+    # Check if user is selecting a topic
+    if user_sessions.get(user_id, {}).get('selecting_topic'):
+        return await topic_chosen(update, context)
+    
     # Check against all language versions of buttons
     button_actions = {
         'practice': [t('btn_practice', 'en'), t('btn_practice', 'ru'), t('btn_practice', 'kk')],
@@ -135,7 +142,9 @@ async def handle_menu_choice(update: Update, context: ContextTypes.DEFAULT_TYPE)
         'progress': [t('btn_progress', 'en'), t('btn_progress', 'ru'), t('btn_progress', 'kk')],
         'change': [t('btn_change_subject', 'en'), t('btn_change_subject', 'ru'), t('btn_change_subject', 'kk')],
         'next': [t('btn_next', 'en'), t('btn_next', 'ru'), t('btn_next', 'kk')],
-        'menu': [t('btn_menu', 'en'), t('btn_menu', 'ru'), t('btn_menu', 'kk')]
+        'menu': [t('btn_menu', 'en'), t('btn_menu', 'ru'), t('btn_menu', 'kk')],
+        'leaderboard': [t('btn_leaderboard', 'en'), t('btn_leaderboard', 'ru'), t('btn_leaderboard', 'kk')],
+        'topics': [t('btn_topics', 'en'), t('btn_topics', 'ru'), t('btn_topics', 'kk')]
     }
     
     if text in button_actions['practice']:
@@ -146,8 +155,14 @@ async def handle_menu_choice(update: Update, context: ContextTypes.DEFAULT_TYPE)
         return await ask_for_question(update, context)
     elif text in button_actions['progress']:
         return await show_progress(update, context)
-    elif text in button_actions['change'] or text in button_actions['menu']:
-        return await start(update, context)
+    elif text in button_actions['leaderboard']:
+        return await show_leaderboard(update, context)
+    elif text in button_actions['topics']:
+        return await show_topics(update, context)
+    elif text in button_actions['change']:
+        return await change_subject(update, context)
+    elif text in button_actions['menu']:
+        return await show_main_menu(update, context)
     elif text in button_actions['next']:
         return await start_practice(update, context)
     else:
@@ -159,9 +174,10 @@ async def start_practice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     subject = user_sessions.get(user_id, {}).get('subject', 'math')
     language = user_sessions.get(user_id, {}).get('language', 'en')
+    topic = user_sessions.get(user_id, {}).get('topic', None)
     
-    # Get question in user's language
-    question = get_question(subject, language=language)
+    # Get question in user's language (with optional topic filter)
+    question = get_question(subject, language=language, topic=topic)
     
     if not question:
         await update.message.reply_text(t('no_questions', language))
@@ -183,6 +199,9 @@ async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     user_answer = update.message.text.upper().strip()
     language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # Update streak when user answers
+    new_streak = update_streak(user_id)
     
     if user_answer not in ['A', 'B', 'C', 'D', 'E']:
         return await handle_free_text(update, context)
@@ -220,6 +239,12 @@ async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     stats = get_user_stats(user_id)
     if stats:
         response += f"\n\n{t('your_stats', language, **stats)}"
+    
+    # Show streak if > 1
+    if new_streak > 1:
+        streak_info = get_user_streak(user_id)
+        streak_emoji = '🔥' * min(new_streak, 5)  # Max 5 fire emojis
+        response += f"\n\n{t('streak_message', language, days=new_streak, emoji=streak_emoji, best=streak_info['best'])}"
     
     await update.message.reply_text(response, parse_mode='Markdown')
     
@@ -296,6 +321,193 @@ async def show_progress(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(response, parse_mode='Markdown')
     
     return WAITING_ANSWER
+
+async def show_leaderboard(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Show leaderboard"""
+    user_id = update.effective_user.id
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # Get leaderboard
+    leaderboard = get_leaderboard(10)
+    
+    if not leaderboard:
+        await update.message.reply_text(t('no_leaderboard', language))
+        return WAITING_ANSWER
+    
+    # Build message
+    message = t('leaderboard_title', language)
+    
+    medals = ['🥇', '🥈', '🥉']
+    
+    for rank, user in enumerate(leaderboard, 1):
+        medal = medals[rank-1] if rank <= 3 else f'{rank}.'
+        
+        streak_emoji = '🔥' if user['streak'] > 0 else ''
+        
+        message += f"{medal} **{user['name']}**\n"
+        message += f"   ✓ {user['correct']}/{user['total']} ({user['accuracy']}%)"
+        
+        if user['streak'] > 0:
+            message += f" {streak_emoji}{user['streak']}"
+        
+        message += "\n\n"
+    
+    # Add user's rank
+    user_rank = get_user_rank(user_id)
+    if user_rank:
+        message += t('your_rank', language, rank=user_rank)
+    
+    await update.message.reply_text(message, parse_mode='Markdown')
+    
+    return WAITING_ANSWER
+
+async def show_topics(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Show available topics for practice"""
+    user_id = update.effective_user.id
+    subject = user_sessions.get(user_id, {}).get('subject', 'math')
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    topics = get_topics(subject)
+    
+    if not topics:
+        # Fall back to regular practice
+        return await start_practice(update, context)
+    
+    # Get user's stats to identify weak areas
+    subject_stats = get_subject_stats(user_id)
+    
+    # Build message
+    message = t('choose_topic', language)
+    
+    # If user has stats, show weak areas
+    if subject_stats and subject in subject_stats:
+        stats = subject_stats[subject]
+        if stats['percentage'] < 70:
+            message += t('weak_areas', language)
+            message += f"\n{subject.title()}: {stats['percentage']}%"
+    
+    # Create keyboard with topics
+    keyboard = []
+    for topic in topics:
+        topic_name = topic.replace('_', ' ').title()
+        keyboard.append([KeyboardButton(f"📖 {topic_name}")])
+    
+    # Add "All Topics" option and back to menu button
+    keyboard.append([KeyboardButton(t('btn_practice', language))])  # Practice all topics
+    keyboard.append([KeyboardButton(t('btn_menu', language))])
+    
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    
+    await update.message.reply_text(message, reply_markup=reply_markup, parse_mode='Markdown')
+    
+    # Store that we're waiting for topic selection
+    user_sessions[user_id]['selecting_topic'] = True
+    
+    return WAITING_ANSWER
+
+async def topic_chosen(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """User chose a topic"""
+    user_id = update.effective_user.id
+    text = update.message.text
+    subject = user_sessions.get(user_id, {}).get('subject', 'math')
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # Check if user wants to go back to menu
+    if text in [t('btn_menu', 'en'), t('btn_menu', 'ru'), t('btn_menu', 'kk')]:
+        return await show_main_menu(update, context)
+    
+    # Check if user wants to practice all topics
+    if text in [t('btn_practice', 'en'), t('btn_practice', 'ru'), t('btn_practice', 'kk')]:
+        user_sessions[user_id]['topic'] = None
+        user_sessions[user_id]['selecting_topic'] = False
+        return await start_practice(update, context)
+    
+    # Extract topic from text (remove emoji and convert to lowercase with underscores)
+    topic = text.replace('📖', '').strip().lower().replace(' ', '_')
+    
+    # Store selected topic
+    user_sessions[user_id]['topic'] = topic
+    user_sessions[user_id]['selecting_topic'] = False
+    
+    # Start practice with this topic
+    question = get_question(subject, language=language, topic=topic)
+    
+    if not question:
+        await update.message.reply_text(t('no_questions', language))
+        return WAITING_ANSWER
+    
+    # Store current question
+    user_sessions[user_id]['current_question'] = question
+    
+    # Send question
+    await update.message.reply_text(
+        format_question(question),
+        parse_mode='Markdown'
+    )
+    
+    return WAITING_ANSWER
+
+async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Show main menu without restarting conversation"""
+    user_id = update.effective_user.id
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    subject = user_sessions.get(user_id, {}).get('subject')
+    
+    # If no subject selected, go back to subject selection
+    if not subject:
+        return await change_subject(update, context)
+    
+    # Build main menu keyboard
+    keyboard = [
+        [KeyboardButton(t('btn_practice', language)), KeyboardButton(t('btn_topics', language))],
+        [KeyboardButton(t('btn_explain', language)), KeyboardButton(t('btn_ask', language))],
+        [KeyboardButton(t('btn_progress', language)), KeyboardButton(t('btn_leaderboard', language))],
+        [KeyboardButton(t('btn_change_subject', language))]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    
+    # Clear topic selection state
+    if 'selecting_topic' in user_sessions.get(user_id, {}):
+        user_sessions[user_id]['selecting_topic'] = False
+    if 'topic' in user_sessions.get(user_id, {}):
+        user_sessions[user_id]['topic'] = None
+    
+    # Get subject name for display
+    subject_name = t(f'subject_{subject}', language)
+    
+    await update.message.reply_text(
+        t('subject_chosen', language, subject=subject_name),
+        reply_markup=reply_markup,
+        parse_mode='Markdown'
+    )
+    
+    return WAITING_ANSWER
+
+async def change_subject(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Change subject selection"""
+    user_id = update.effective_user.id
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # Clear current subject and topic
+    if user_id in user_sessions:
+        user_sessions[user_id]['subject'] = None
+        user_sessions[user_id]['topic'] = None
+        user_sessions[user_id]['selecting_topic'] = False
+    
+    # Subject selection keyboard
+    keyboard = [
+        [KeyboardButton(t('subject_math', language)), KeyboardButton(t('subject_reading', language))],
+        [KeyboardButton(t('subject_history', language)), KeyboardButton(t('subject_physics', language))],
+        [KeyboardButton(t('subject_chemistry', language))]
+    ]
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    
+    await update.message.reply_text(
+        t('choose_subject', language),
+        reply_markup=reply_markup
+    )
+    
+    return CHOOSING_SUBJECT
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Help command"""
