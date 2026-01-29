@@ -1,8 +1,8 @@
-# translations.py - Complete translation system
+# translations.py - Complete translation system with ALL topics added
 
 TRANSLATIONS = {
     'welcome': {
-        'en': """🎓 **Welcome to UNT Master Bot!**
+        'en': """🎓 **Welcome to UNT Silkway Bot!**
 
 I'm your AI study assistant for UNT preparation.
 
@@ -14,23 +14,23 @@ I'm your AI study assistant for UNT preparation.
 🎯 Help you prepare for UNT
 
 **Choose your language:**""",
-        'ru': """🎓 **Добро пожаловать в UNT Master Bot!**
+        'ru': """🎓 **Добро пожаловать в UNT Silkway Bot!**
 
-Я ваш AI помощник для подготовки к ЕНТ.
+Я ваш AI помощник для подготовки к ҰБТ.
 
 **Что я могу:**
 📚 Объяснить любую тему
 ❓ Дать практические вопросы
 📊 Отслеживать ваш прогресс
 💡 Ответить на вопросы
-🎯 Помочь подготовиться к ЕНТ
+🎯 Помочь подготовиться к ҰБТ
 
 **Выберите язык:**""",
-        'kk': """🎓 **UNT Master Bot-қа қош келдіңіз!**
+        'kk': """🎓 **UNT Silkway Bot-қа қош келдіңіз!**
 
 Мен сіздің ҰБТ-ға дайындалуға арналған AI көмекшісімін.
 
-**Мен не істей аламын:**
+**Мен неістей аламын:**
 📚 Кез келген тақырыпты түсіндіру
 ❓ Жаттығу сұрақтарын беру
 📊 Прогресіңізді қадағалау
@@ -49,7 +49,7 @@ I'm your AI study assistant for UNT preparation.
     'subject_chosen': {
         'en': "Perfect! You chose **{subject}**\n\nWhat would you like to do?",
         'ru': "Отлично! Вы выбрали **{subject}**\n\nЧто вы хотите сделать?",
-        'kk': "Керемет! Сіз **{subject}** таңдадыңыз\n\nНе істегіңіз келеді?"
+        'kk': "Керемет! Сіз **{subject}** таңдадыңыз\n\nНеістегіңіз келеді?"
     },
     
     # Menu buttons
@@ -88,6 +88,16 @@ I'm your AI study assistant for UNT preparation.
         'ru': '🏠 Главное меню',
         'kk': '🏠 Басты мәзір'
     },
+    'btn_leaderboard': {
+        'en': '🏆 Leaderboard',
+        'ru': '🏆 Таблица лидеров',
+        'kk': '🏆 Көшбасшылар тақтасы'
+    },
+    'btn_topics': {
+        'en': '📚 Choose Topic',
+        'ru': '📚 Выбрать тему',
+        'kk': '📚 Тақырыпты таңдау'
+    },
     
     # Subjects
     'subject_math': {
@@ -114,6 +124,199 @@ I'm your AI study assistant for UNT preparation.
         'en': '⚗️ Chemistry',
         'ru': '⚗️ Химия',
         'kk': '⚗️ Химия'
+    },
+    'subject_biology': {
+        'en': '🧬 Biology',
+        'ru': '🧬 Биология',
+        'kk': '🧬 Биология'
+    },
+    'subject_geography': {
+        'en': '🌍 Geography',
+        'ru': '🌍 География',
+        'kk': '🌍 География'
+    },
+    
+    # ==========================================
+    # MATHEMATICS TOPICS
+    # ==========================================
+    'algebra': {
+        'en': '🔤 Algebra',
+        'ru': '🔤 Алгебра',
+        'kk': '🔤 Алгебра'
+    },
+    'geometry': {
+        'en': '📐 Geometry',
+        'ru': '📐 Геометрия',
+        'kk': '📐 Геометрия'
+    },
+    'percentages': {
+        'en': '💯 Percentages',
+        'ru': '💯 Проценты',
+        'kk': '💯 Пайыздар'
+    },
+    'equations': {
+        'en': '⚖️ Equations',
+        'ru': '⚖️ Уравнения',
+        'kk': '⚖️ Теңдеулер'
+    },
+    'word_problems': {
+        'en': '📝 Word Problems',
+        'ru': '📝 Текстовые задачи',
+        'kk': '📝 Мәтінді есептер'
+    },
+    
+    # ==========================================
+    # PHYSICS TOPICS
+    # ==========================================
+    'mechanics': {
+        'en': '🚗 Mechanics',
+        'ru': '🚗 Механика',
+        'kk': '🚗 Механика'
+    },
+    'electricity': {
+        'en': '⚡ Electricity',
+        'ru': '⚡ Электричество',
+        'kk': '⚡ Электр'
+    },
+    'optics': {
+        'en': '💡 Optics',
+        'ru': '💡 Оптика',
+        'kk': '💡 Оптика'
+    },
+    'thermodynamics': {
+        'en': '🌡️ Thermodynamics',
+        'ru': '🌡️ Термодинамика',
+        'kk': '🌡️ Термодинамика'
+    },
+    'waves': {
+        'en': '🌊 Waves',
+        'ru': '🌊 Волны',
+        'kk': '🌊 Толқындар'
+    },
+    
+    # ==========================================
+    # CHEMISTRY TOPICS
+    # ==========================================
+    'atomic_structure': {
+        'en': '⚛️ Atomic Structure',
+        'ru': '⚛️ Атомная структура',
+        'kk': '⚛️ Атом құрылымы'
+    },
+    'chemical_bonding': {
+        'en': '🔗 Chemical Bonding',
+        'ru': '🔗 Химические связи',
+        'kk': '🔗 Химиялық байланыс'
+    },
+    'reactions': {
+        'en': '⚗️ Reactions',
+        'ru': '⚗️ Реакции',
+        'kk': '⚗️ Реакциялар'
+    },
+    'acids_bases': {
+        'en': '🧪 Acids & Bases',
+        'ru': '🧪 Кислоты и основания',
+        'kk': '🧪 Қышқылдар және негіздер'
+    },
+    'organic_chemistry': {
+        'en': '🧬 Organic Chemistry',
+        'ru': '🧬 Органическая химия',
+        'kk': '🧬 Органикалық химия'
+    },
+    
+    # ==========================================
+    # BIOLOGY TOPICS
+    # ==========================================
+    'cell_biology': {
+        'en': '🔬 Cell Biology',
+        'ru': '🔬 Биология клетки',
+        'kk': '🔬 Жасуша биологиясы'
+    },
+    'genetics': {
+        'en': '🧬 Genetics',
+        'ru': '🧬 Генетика',
+        'kk': '🧬 Генетика'
+    },
+    'ecology': {
+        'en': '🌿 Ecology',
+        'ru': '🌿 Экология',
+        'kk': '🌿 Экология'
+    },
+    'human_biology': {
+        'en': '🧑 Human Biology',
+        'ru': '🧑 Биология человека',
+        'kk': '🧑 Адам биологиясы'
+    },
+    'evolution': {
+        'en': '🦴 Evolution',
+        'ru': '🦴 Эволюция',
+        'kk': '🦴 Эволюция'
+    },
+    
+    # ==========================================
+    # HISTORY TOPICS
+    # ==========================================
+    'kazakhstan_history': {
+        'en': '🇰🇿 Kazakhstan History',
+        'ru': '🇰🇿 История Казахстана',
+        'kk': '🇰🇿 Қазақстан тарихы'
+    },
+    'world_history': {
+        'en': '🌍 World History',
+        'ru': '🌍 Всемирная история',
+        'kk': '🌍 Әлем тарихы'
+    },
+    'ancient_civilizations': {
+        'en': '🏛️ Ancient Civilizations',
+        'ru': '🏛️ Древние цивилизации',
+        'kk': '🏛️ Ежелгі өркениеттер'
+    },
+    'modern_history': {
+        'en': '📰 Modern History',
+        'ru': '📰 Новейшая история',
+        'kk': '📰 Жаңа заман тарихы'
+    },
+    'cultural_history': {
+        'en': '🎭 Cultural History',
+        'ru': '🎭 Культурная история',
+        'kk': '🎭 Мәдени тарих'
+    },
+    
+    # ==========================================
+    # GEOGRAPHY TOPICS
+    # ==========================================
+    'physical_geography': {
+        'en': '🏔️ Physical Geography',
+        'ru': '🏔️ Физическая география',
+        'kk': '🏔️ Физикалық география'
+    },
+    'human_geography': {
+        'en': '👥 Human Geography',
+        'ru': '👥 География населения',
+        'kk': '👥 Халық географиясы'
+    },
+    'kazakhstan_geography': {
+        'en': '🇰🇿 Kazakhstan Geography',
+        'ru': '🇰🇿 География Казахстана',
+        'kk': '🇰🇿 Қазақстан географиясы'
+    },
+    'world_geography': {
+        'en': '🗺️ World Geography',
+        'ru': '🗺️ География мира',
+        'kk': '🗺️ Әлем географиясы'
+    },
+    'environmental_geography': {
+        'en': '🌱 Environmental Geography',
+        'ru': '🌱 Экологическая география',
+        'kk': '🌱 Экологиялық география'
+    },
+    
+    # ==========================================
+    # TOPIC SELECTION (NEW)
+    # ==========================================
+    'all_topics': {
+        'en': '📚 All Topics (Mixed)',
+        'ru': '📚 Все темы (Смешанные)',
+        'kk': '📚 Барлық тақырыптар (Аралас)'
     },
     
     # Prompts
@@ -164,7 +367,7 @@ I'm your AI study assistant for UNT preparation.
     },
     'progress_title': {
         'en': '📊 **Your UNT Preparation Progress**',
-        'ru': '📊 **Ваш прогресс подготовки к ЕНТ**',
+        'ru': '📊 **Ваш прогресс подготовки к ҰБТ**',
         'kk': '📊 **ҰБТ-ға дайындық прогресіңіз**'
     },
     'overall_stats': {
@@ -191,18 +394,6 @@ I'm your AI study assistant for UNT preparation.
         'en': 'Keep practicing to improve your score! 💪',
         'ru': 'Продолжайте практиковаться, чтобы улучшить результат! 💪',
         'kk': 'Нәтижені жақсарту үшін жаттығуды жалғастырыңыз! 💪'
-    },
-    # Add these at the end of your TRANSLATIONS dictionary, just before the closing brace
-
-    'btn_leaderboard': {
-        'en': '🏆 Leaderboard',
-        'ru': '🏆 Таблица лидеров',
-        'kk': '🏆 Көшбасшылар тақтасы'
-    },
-    'btn_topics': {
-        'en': '📚 Choose Topic',
-        'ru': '📚 Выбрать тему',
-        'kk': '📚 Тақырыпты таңдау'
     },
     'streak_message': {
         'en': '🔥 **{days}-Day Streak!**\n\n{emoji} Keep it up! Your best: {best} days',
@@ -242,4 +433,26 @@ def t(key, lang='en', **kwargs):
     if kwargs:
         text = text.format(**kwargs)
     return text
+
+
+# ==========================================
+# HELPER FUNCTIONS (NEW - OPTIONAL TO USE)
+# ==========================================
+def get_subject_topics(subject):
+    """
+    Get list of topic keys for a given subject.
+    Returns empty list if subject has no topics defined.
     
+    Usage:
+        topics = get_subject_topics('mathematics')
+        # Returns: ['algebra', 'geometry', 'percentages', 'equations', 'word_problems']
+    """
+    topic_map = {
+        'mathematics': ['algebra', 'geometry', 'percentages', 'equations', 'word_problems'],
+        'physics': ['mechanics', 'electricity', 'optics', 'thermodynamics', 'waves'],
+        'chemistry': ['atomic_structure', 'chemical_bonding', 'reactions', 'acids_bases', 'organic_chemistry'],
+        'biology': ['cell_biology', 'genetics', 'ecology', 'human_biology', 'evolution'],
+        'history': ['kazakhstan_history', 'world_history', 'ancient_civilizations', 'modern_history', 'cultural_history'],
+        'geography': ['physical_geography', 'human_geography', 'kazakhstan_geography', 'world_geography', 'environmental_geography']
+    }
+    return topic_map.get(subject, [])

@@ -1,0 +1,376 @@
+{
+  "subject": "chemistry",
+  "metadata": {
+    "total_questions": 50,
+    "topics": {
+      "atomic_structure": "Atomic Structure",
+      "chemical_bonding": "Chemical Bonding",
+      "reactions": "Chemical Reactions",
+      "acids_bases": "Acids and Bases",
+      "organic_chemistry": "Organic Chemistry"
+    },
+    "last_updated": "2026-01-29"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "atomic_structure",
+      "question_en": "What is the atomic number of an element?",
+      "question_ru": "Что такое атомный номер элемента?",
+      "question_kk": "Элементтің атомдық нөмірі дегеніміз не?",
+      "options": {
+        "A": "Number of neutrons",
+        "B": "Number of protons",
+        "C": "Number of electrons",
+        "D": "Number of protons + neutrons",
+        "E": "Mass of the atom"
+      },
+      "correct": "B",
+      "explanation_en": "Atomic number is the number of protons in the nucleus.",
+      "explanation_ru": "Атомный номер - это количество протонов в ядре.",
+      "explanation_kk": "Атомдық нөмір - ядродағы протондар саны."
+    },
+    {
+      "id": 2,
+      "topic": "atomic_structure",
+      "question_en": "How many electrons can the first shell hold?",
+      "question_ru": "Сколько электронов может вместить первая оболочка?",
+      "question_kk": "Бірінші қабық неше электрон ала алады?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "8",
+        "E": "18"
+      },
+      "correct": "B",
+      "explanation_en": "The first shell can hold maximum 2 electrons.",
+      "explanation_ru": "Первая оболочка может вместить максимум 2 электрона.",
+      "explanation_kk": "Бірінші қабық максимум 2 электронды ала алады."
+    },
+    {
+      "id": 3,
+      "topic": "atomic_structure",
+      "question_en": "What is an isotope?",
+      "question_ru": "Что такое изотоп?",
+      "question_kk": "Изотоп дегеніміз не?",
+      "options": {
+        "A": "Atoms with same atomic number but different mass number",
+        "B": "Atoms with different atomic numbers",
+        "C": "Atoms with same mass number",
+        "D": "Atoms with no neutrons",
+        "E": "Atoms with extra electrons"
+      },
+      "correct": "A",
+      "explanation_en": "Isotopes have the same number of protons but different numbers of neutrons.",
+      "explanation_ru": "Изотопы имеют одинаковое количество протонов, но разное количество нейтронов.",
+      "explanation_kk": "Изотоптар протондар саны бірдей, бірақ нейтрондар саны әртүрлі."
+    },
+    {
+      "id": 4,
+      "topic": "atomic_structure",
+      "question_en": "Which particle has no charge?",
+      "question_ru": "Какая частица не имеет заряда?",
+      "question_kk": "Қай бөлшектің заряды жоқ?",
+      "options": {
+        "A": "Proton",
+        "B": "Electron",
+        "C": "Neutron",
+        "D": "Ion",
+        "E": "Nucleus"
+      },
+      "correct": "C",
+      "explanation_en": "Neutrons are neutral particles with no electric charge.",
+      "explanation_ru": "Нейтроны - нейтральные частицы без электрического заряда.",
+      "explanation_kk": "Нейтрондар - электр заряды жоқ бейтарап бөлшектер."
+    },
+    {
+      "id": 5,
+      "topic": "atomic_structure",
+      "question_en": "What is the maximum number of electrons in the third shell?",
+      "question_ru": "Какое максимальное количество электронов в третьей оболочке?",
+      "question_kk": "Үшінші қабықта электрондардың максималды саны қандай?",
+      "options": {
+        "A": "2",
+        "B": "8",
+        "C": "16",
+        "D": "18",
+        "E": "32"
+      },
+      "correct": "D",
+      "explanation_en": "The third shell can hold maximum 18 electrons (2n² = 2×3² = 18).",
+      "explanation_ru": "Третья оболочка может вместить максимум 18 электронов (2n² = 2×3² = 18).",
+      "explanation_kk": "Үшінші қабық максимум 18 электронды ала алады (2n² = 2×3² = 18)."
+    },
+    {
+      "id": 6,
+      "topic": "atomic_structure",
+      "question_en": "What are valence electrons?",
+      "question_ru": "Что такое валентные электроны?",
+      "question_kk": "Валенттік электрондар дегеніміз не?",
+      "options": {
+        "A": "Electrons in the nucleus",
+        "B": "Electrons in the innermost shell",
+        "C": "Electrons in the outermost shell",
+        "D": "Electrons with positive charge",
+        "E": "Electrons moving at high speed"
+      },
+      "correct": "C",
+      "explanation_en": "Valence electrons are in the outermost shell and participate in bonding.",
+      "explanation_ru": "Валентные электроны находятся на внешней оболочке и участвуют в связывании.",
+      "explanation_kk": "Валенттік электрондар сыртқы қабықта орналасқан және байланыста қатысады."
+    },
+    {
+      "id": 7,
+      "topic": "atomic_structure",
+      "question_en": "Carbon has 6 protons. How many electrons does neutral carbon have?",
+      "question_ru": "У углерода 6 протонов. Сколько электронов у нейтрального углерода?",
+      "question_kk": "Көміртекте 6 протон бар. Бейтарап көміртекте неше электрон бар?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "12",
+        "E": "14"
+      },
+      "correct": "B",
+      "explanation_en": "Neutral atoms have equal numbers of protons and electrons.",
+      "explanation_ru": "Нейтральные атомы имеют равное количество протонов и электронов.",
+      "explanation_kk": "Бейтарап атомдарда протондар мен электрондар саны тең."
+    },
+    {
+      "id": 8,
+      "topic": "atomic_structure",
+      "question_en": "What is the mass number?",
+      "question_ru": "Что такое массовое число?",
+      "question_kk": "Массалық сан дегеніміз не?",
+      "options": {
+        "A": "Number of protons only",
+        "B": "Number of electrons only",
+        "C": "Number of protons + neutrons",
+        "D": "Number of neutrons only",
+        "E": "Atomic number × 2"
+      },
+      "correct": "C",
+      "explanation_en": "Mass number = protons + neutrons in the nucleus.",
+      "explanation_ru": "Массовое число = протоны + нейтроны в ядре.",
+      "explanation_kk": "Массалық сан = ядродағы протондар + нейтрондар."
+    },
+    {
+      "id": 9,
+      "topic": "atomic_structure",
+      "question_en": "Which group of elements has a full outer shell?",
+      "question_ru": "У какой группы элементов полная внешняя оболочка?",
+      "question_kk": "Қай элементтер тобының сыртқы қабығы толық?",
+      "options": {
+        "A": "Alkali metals",
+        "B": "Halogens",
+        "C": "Noble gases",
+        "D": "Transition metals",
+        "E": "Alkaline earth metals"
+      },
+      "correct": "C",
+      "explanation_en": "Noble gases have full outer shells, making them stable and unreactive.",
+      "explanation_ru": "Благородные газы имеют полные внешние оболочки, что делает их стабильными.",
+      "explanation_kk": "Асыл газдардың сыртқы қабықтары толық, бұл оларды тұрақты етеді."
+    },
+    {
+      "id": 10,
+      "topic": "atomic_structure",
+      "question_en": "What determines an element's chemical properties?",
+      "question_ru": "Что определяет химические свойства элемента?",
+      "question_kk": "Элементтің химиялық қасиеттерін не анықтайды?",
+      "options": {
+        "A": "Number of neutrons",
+        "B": "Number of protons",
+        "C": "Number of valence electrons",
+        "D": "Atomic mass",
+        "E": "Number of shells"
+      },
+      "correct": "C",
+      "explanation_en": "Valence electrons determine how an element bonds and reacts.",
+      "explanation_ru": "Валентные электроны определяют, как элемент связывается и реагирует.",
+      "explanation_kk": "Валенттік электрондар элементтің байланысуын және реакциясын анықтайды."
+    },
+    {
+      "id": 11,
+      "topic": "chemical_bonding",
+      "question_en": "What is an ionic bond?",
+      "question_ru": "Что такое ионная связь?",
+      "question_kk": "Иондық байланыс дегеніміз не?",
+      "options": {
+        "A": "Sharing of electrons",
+        "B": "Transfer of electrons",
+        "C": "Attraction between molecules",
+        "D": "Repulsion of protons",
+        "E": "Attraction between neutrons"
+      },
+      "correct": "B",
+      "explanation_en": "Ionic bonds form when electrons are transferred from one atom to another.",
+      "explanation_ru": "Ионные связи образуются при переносе электронов от одного атома к другому.",
+      "explanation_kk": "Иондық байланыс электрондар бір атомнан екіншісіне берілгенде пайда болады."
+    },
+    {
+      "id": 12,
+      "topic": "chemical_bonding",
+      "question_en": "What type of bond is in H₂O?",
+      "question_ru": "Какой тип связи в H₂O?",
+      "question_kk": "H₂O-дағы байланыс түрі қандай?",
+      "options": {
+        "A": "Ionic",
+        "B": "Metallic",
+        "C": "Covalent",
+        "D": "Hydrogen",
+        "E": "Van der Waals"
+      },
+      "correct": "C",
+      "explanation_en": "Water has covalent bonds where atoms share electrons.",
+      "explanation_ru": "Вода имеет ковалентные связи, где атомы делятся электронами.",
+      "explanation_kk": "Суда атомдар электрондарды бөлісетін коваленттік байланыс бар."
+    },
+    {
+      "id": 13,
+      "topic": "chemical_bonding",
+      "question_en": "Which compound is likely ionic?",
+      "question_ru": "Какое соединение, скорее всего, ионное?",
+      "question_kk": "Қай қосылыс иондық болуы мүмкін?",
+      "options": {
+        "A": "CH₄",
+        "B": "NaCl",
+        "C": "H₂",
+        "D": "CO₂",
+        "E": "NH₃"
+      },
+      "correct": "B",
+      "explanation_en": "NaCl (sodium chloride) is ionic: metal + nonmetal with electron transfer.",
+      "explanation_ru": "NaCl (хлорид натрия) - ионное: металл + неметалл с переносом электронов.",
+      "explanation_kk": "NaCl (натрий хлориді) - иондық: металл + бейметалл электрон беруімен."
+    },
+    {
+      "id": 14,
+      "topic": "chemical_bonding",
+      "question_en": "How many covalent bonds does carbon typically form?",
+      "question_ru": "Сколько ковалентных связей обычно образует углерод?",
+      "question_kk": "Көміртек әдетте неше коваленттік байланыс түзеді?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correct": "D",
+      "explanation_en": "Carbon has 4 valence electrons and forms 4 covalent bonds.",
+      "explanation_ru": "Углерод имеет 4 валентных электрона и образует 4 ковалентные связи.",
+      "explanation_kk": "Көміртекте 4 валенттік электрон бар және 4 коваленттік байланыс түзеді."
+    },
+    {
+      "id": 15,
+      "topic": "chemical_bonding",
+      "question_en": "What is a double bond?",
+      "question_ru": "Что такое двойная связь?",
+      "question_kk": "Қос байланыс дегеніміз не?",
+      "options": {
+        "A": "Two atoms bonded",
+        "B": "Sharing of two pairs of electrons",
+        "C": "Two ionic bonds",
+        "D": "Two separate molecules",
+        "E": "Bond between two metals"
+      },
+      "correct": "B",
+      "explanation_en": "A double bond involves sharing two pairs of electrons between atoms.",
+      "explanation_ru": "Двойная связь включает обмен двумя парами электронов между атомами.",
+      "explanation_kk": "Қос байланыс атомдар арасында екі жұп электронды бөлісуді қамтиды."
+    },
+    {
+      "id": 16,
+      "topic": "chemical_bonding",
+      "question_en": "What holds the ions together in NaCl?",
+      "question_ru": "Что удерживает ионы вместе в NaCl?",
+      "question_kk": "NaCl-дегі иондарды не ұстап тұрады?",
+      "options": {
+        "A": "Covalent bonds",
+        "B": "Hydrogen bonds",
+        "C": "Electrostatic attraction",
+        "D": "Van der Waals forces",
+        "E": "Metallic bonds"
+      },
+      "correct": "C",
+      "explanation_en": "Opposite charges (Na⁺ and Cl⁻) attract through electrostatic forces.",
+      "explanation_ru": "Противоположные заряды (Na⁺ и Cl⁻) притягиваются электростатическими силами.",
+      "explanation_kk": "Қарама-қарсы зарядтар (Na⁺ және Cl⁻) электростатикалық күштермен тартылады."
+    },
+    {
+      "id": 17,
+      "topic": "chemical_bonding",
+      "question_en": "Which molecule has a polar covalent bond?",
+      "question_ru": "У какой молекулы полярная ковалентная связь?",
+      "question_kk": "Қай молекуланың полярлы коваленттік байланысы бар?",
+      "options": {
+        "A": "H₂",
+        "B": "Cl₂",
+        "C": "HCl",
+        "D": "O₂",
+        "E": "N₂"
+      },
+      "correct": "C",
+      "explanation_en": "HCl is polar because H and Cl have different electronegativities.",
+      "explanation_ru": "HCl полярна, потому что H и Cl имеют разную электроотрицательность.",
+      "explanation_kk": "HCl полярлы, өйткені H және Cl әртүрлі электртерістікке ие."
+    },
+    {
+      "id": 18,
+      "topic": "chemical_bonding",
+      "question_en": "What is electronegativity?",
+      "question_ru": "Что такое электроотрицательность?",
+      "question_kk": "Электртерістік дегеніміз не?",
+      "options": {
+        "A": "Ability to lose electrons",
+        "B": "Ability to attract electrons in a bond",
+        "C": "Number of electrons",
+        "D": "Charge of an ion",
+        "E": "Size of an atom"
+      },
+      "correct": "B",
+      "explanation_en": "Electronegativity measures an atom's ability to attract electrons in a chemical bond.",
+      "explanation_ru": "Электроотрицательность измеряет способность атома притягивать электроны в химической связи.",
+      "explanation_kk": "Электртерістік атомның химиялық байланыста электрондарды тарту қабілетін өлшейді."
+    },
+    {
+      "id": 19,
+      "topic": "chemical_bonding",
+      "question_en": "What is a hydrogen bond?",
+      "question_ru": "Что такое водородная связь?",
+      "question_kk": "Сутектік байланыс дегеніміз не?",
+      "options": {
+        "A": "Bond between two hydrogen atoms",
+        "B": "Weak attraction between H and electronegative atom",
+        "C": "Covalent bond in H₂",
+        "D": "Ionic bond with hydrogen",
+        "E": "Metallic bond"
+      },
+      "correct": "B",
+      "explanation_en": "Hydrogen bonds are weak attractions between H and O, N, or F atoms.",
+      "explanation_ru": "Водородные связи - слабые притяжения между H и атомами O, N или F.",
+      "explanation_kk": "Сутектік байланыстар - H пен O, N немесе F атомдары арасындағы әлсіз тарту."
+    },
+    {
+      "id": 20,
+      "topic": "chemical_bonding",
+      "question_en": "Which has the strongest bond?",
+      "question_ru": "У какой связи самая сильная?",
+      "question_kk": "Қай байланыс ең күшті?",
+      "options": {
+        "A": "Single bond",
+        "B": "Double bond",
+        "C": "Triple bond",
+        "D": "Hydrogen bond",
+        "E": "Van der Waals"
+      },
+      "correct": "C",
+      "explanation_en": "Triple bonds are strongest because they share three pairs of electrons.",
+      "explanation_ru": "Тройные связи самые сильные, потому что они делятся тремя парами электронов.",
+      "explanation_kk": "Үш байланыс ең күшті, өйткені олар үш жұп электронды бөліседі."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "total_questions": 10,
+    "topics": {
+      "kazakhstan_history": "Kazakhstan History",
+      "world_history": "World History",
+      "ancient_civilizations": "Ancient Civilizations",
+      "modern_history": "Modern History",
+      "cultural_history": "Cultural History"
+    },
+    "last_updated": "2026-01-29"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "kazakhstan_history",
+      "question_en": "When did Kazakhstan gain independence?",
+      "question_ru": "Когда Казахстан получил независимость?",
+      "question_kk": "Қазақстан қашан тәуелсіздік алды?",
+      "options": {
+        "A": "1989",
+        "B": "1990",
+        "C": "1991",
+        "D": "1992",
+        "E": "1993"
+      },
+      "correct": "C",
+      "explanation_en": "Kazakhstan declared independence on December 16, 1991.",
+      "explanation_ru": "Казахстан провозгласил независимость 16 декабря 1991 года.",
+      "explanation_kk": "Қазақстан 1991 жылдың 16 желтоқсанында тәуелсіздік жариялады."
+    },
+    {
+      "id": 2,
+      "topic": "kazakhstan_history",
+      "question_en": "Who was the first President of Kazakhstan?",
+      "question_ru": "Кто был первым президентом Казахстана?",
+      "question_kk": "Қазақстанның бірінші президенті кім болды?",
+      "options": {
+        "A": "Nazarbayev",
+        "B": "Tokayev",
+        "C": "Kunaev",
+        "D": "Serikbayev",
+        "E": "Masanov"
+      },
+      "correct": "A",
+      "explanation_en": "Nursultan Nazarbayev was the first President of independent Kazakhstan.",
+      "explanation_ru": "Нурсултан Назарбаев был первым президентом независимого Казахстана.",
+      "explanation_kk": "Нұрсұлтан Назарбаев тәуелсіз Қазақстанның бірінші президенті болды."
+    },
+    {
+      "id": 3,
+      "topic": "world_history",
+      "question_en": "When did World War II end?",
+      "question_ru": "Когда закончилась Вторая мировая война?",
+      "question_kk": "Екінші дүниежүзілік соғыс қашан аяқталды?",
+      "options": {
+        "A": "1943",
+        "B": "1944",
+        "C": "1945",
+        "D": "1946",
+        "E": "1947"
+      },
+      "correct": "C",
+      "explanation_en": "World War II ended in 1945.",
+      "explanation_ru": "Вторая мировая война закончилась в 1945 году.",
+      "explanation_kk": "Екінші дүниежүзілік соғыс 1945 жылы аяқталды."
+    },
+    {
+      "id": 4,
+      "topic": "world_history",
+      "question_en": "What was the Cold War?",
+      "question_ru": "Что такое Холодная война?",
+      "question_kk": "Суық соғыс дегеніміз не?",
+      "options": {
+        "A": "A winter war",
+        "B": "Political tension between USA and USSR",
+        "C": "A war in Antarctica",
+        "D": "An economic crisis",
+        "E": "A space race"
+      },
+      "correct": "B",
+      "explanation_en": "The Cold War was a period of political tension between the USA and USSR.",
+      "explanation_ru": "Холодная война была периодом политической напряженности между США и СССР.",
+      "explanation_kk": "Суық соғыс - АҚШ пен КСРО арасындағы саяси шиеленіс кезеңі."
+    },
+    {
+      "id": 5,
+      "topic": "ancient_civilizations",
+      "question_en": "Which civilization built the pyramids?",
+      "question_ru": "Какая цивилизация построила пирамиды?",
+      "question_kk": "Пирамидаларды қай өркениет салды?",
+      "options": {
+        "A": "Romans",
+        "B": "Greeks",
+        "C": "Egyptians",
+        "D": "Mayans",
+        "E": "Chinese"
+      },
+      "correct": "C",
+      "explanation_en": "The ancient Egyptians built the famous pyramids.",
+      "explanation_ru": "Древние египтяне построили знаменитые пирамиды.",
+      "explanation_kk": "Ежелгі египеттіктер әйгілі пирамидаларды салды."
+    },
+    {
+      "id": 6,
+      "topic": "ancient_civilizations",
+      "question_en": "Where was ancient Mesopotamia located?",
+      "question_ru": "Где находилась древняя Месопотамия?",
+      "question_kk": "Ежелгі Месопотамия қайда орналасқан?",
+      "options": {
+        "A": "Egypt",
+        "B": "Between Tigris and Euphrates rivers",
+        "C": "Greece",
+        "D": "India",
+        "E": "China"
+      },
+      "correct": "B",
+      "explanation_en": "Mesopotamia was located between the Tigris and Euphrates rivers in modern-day Iraq.",
+      "explanation_ru": "Месопотамия находилась между реками Тигр и Евфрат на территории современного Ирака.",
+      "explanation_kk": "Месопотамия қазіргі Ирақ аумағындағы Тигр мен Евфрат өзендерінің арасында орналасқан."
+    },
+    {
+      "id": 7,
+      "topic": "modern_history",
+      "question_en": "When did the Soviet Union collapse?",
+      "question_ru": "Когда распался Советский Союз?",
+      "question_kk": "Кеңес Одағы қашан ыдырады?",
+      "options": {
+        "A": "1989",
+        "B": "1990",
+        "C": "1991",
+        "D": "1992",
+        "E": "1993"
+      },
+      "correct": "C",
+      "explanation_en": "The Soviet Union officially dissolved in December 1991.",
+      "explanation_ru": "Советский Союз официально распался в декабре 1991 года.",
+      "explanation_kk": "Кеңес Одағы 1991 жылдың желтоқсанында ресми түрде ыдырады."
+    },
+    {
+      "id": 8,
+      "topic": "modern_history",
+      "question_en": "What was the Berlin Wall?",
+      "question_ru": "Что такое Берлинская стена?",
+      "question_kk": "Берлин қабырғасы дегеніміз не?",
+      "options": {
+        "A": "A fortress",
+        "B": "A barrier dividing Berlin",
+        "C": "A palace",
+        "D": "A museum",
+        "E": "A bridge"
+      },
+      "correct": "B",
+      "explanation_en": "The Berlin Wall divided East and West Berlin during the Cold War.",
+      "explanation_ru": "Берлинская стена разделяла Восточный и Западный Берлин во время холодной войны.",
+      "explanation_kk": "Берлин қабырғасы Суық соғыс кезінде Шығыс және Батыс Берлинді бөлді."
+    },
+    {
+      "id": 9,
+      "topic": "cultural_history",
+      "question_en": "What is the Silk Road?",
+      "question_ru": "Что такое Великий шелковый путь?",
+      "question_kk": "Ұлы Жібек жолы дегеніміз не?",
+      "options": {
+        "A": "A modern highway",
+        "B": "Ancient trade routes",
+        "C": "A river",
+        "D": "A railway",
+        "E": "A tunnel"
+      },
+      "correct": "B",
+      "explanation_en": "The Silk Road was a network of ancient trade routes connecting East and West.",
+      "explanation_ru": "Великий шелковый путь был сетью древних торговых маршрутов, соединяющих Восток и Запад.",
+      "explanation_kk": "Ұлы Жібек жолы Шығыс пен Батысты жалғастырған ежелгі сауда жолдарының желісі болды."
+    },
+    {
+      "id": 10,
+      "topic": "cultural_history",
+      "question_en": "What is the Golden Horde?",
+      "question_ru": "Что такое Золотая Орда?",
+      "question_kk": "Алтын Орда дегеніміз не?",
+      "options": {
+        "A": "A treasure",
+        "B": "A Mongol khanate",
+        "C": "A palace",
+        "D": "A mountain",
+        "E": "A river"
+      },
+      "correct": "B",
+      "explanation_en": "The Golden Horde was a Mongol khanate that ruled over parts of Eurasia.",
+      "explanation_ru": "Золотая Орда была монгольским ханством, которое правило частями Евразии.",
+      "explanation_kk": "Алтын Орда - Еуразияның бір бөлігін басқарған моңғол хандығы."
+    }
+  ]
+}

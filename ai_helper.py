@@ -1,6 +1,7 @@
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
+import re
 
 load_dotenv()
 
@@ -20,6 +21,25 @@ except Exception as e:
     print(f"❌ Error: {e}")
     model = None
 
+def clean_response(text: str) -> str:
+    """Remove unwanted symbols like $ from AI response"""
+    if not text:
+        return text
+    
+    # Remove single $ symbols
+    text = text.replace('$', '')
+    
+    # Remove ** markdown bold (optional - if you want plain text)
+    # text = text.replace('**', '')
+    
+    # Remove excessive newlines
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    
+    # Remove leading/trailing whitespace
+    text = text.strip()
+    
+    return text
+
 def call_ai(prompt: str) -> str:
     """Call Gemini AI"""
     if model is None:
@@ -27,7 +47,9 @@ def call_ai(prompt: str) -> str:
     
     try:
         response = model.generate_content(prompt)
-        return response.text
+        # ✅ Clean the response before returning
+        cleaned_text = clean_response(response.text)
+        return cleaned_text
     except Exception as e:
         print(f"❌ Gemini Error: {str(e)[:150]}...")
         return "⚠️ AI temporarily unavailable. Please try again."
@@ -51,6 +73,8 @@ Requirements:
 - Include practical examples
 - Keep under 300 words
 - Be encouraging and supportive
+- DO NOT use $ symbols or LaTeX formatting
+- Use plain text only
 
 Start your explanation:"""
     
@@ -65,7 +89,7 @@ def answer_question(question, subject, language="en"):
         'kk': 'Kazakh'
     }
     
-    prompt = f"""You are a UNT exam preparation assistant.
+    prompt = f"""You are a UNT (Unified National Testing) exam preparation assistant for Kazakhstan.
 
 Student's question: {question}
 Subject: {subject}
@@ -76,6 +100,8 @@ Requirements:
 - Include examples if needed
 - Keep under 300 words
 - Be encouraging
+- DO NOT use $ symbols or LaTeX formatting
+- Use plain text only
 
 Your answer:"""
     
@@ -93,16 +119,21 @@ def explain_answer(question_text, correct_answer, user_answer, language="en"):
     is_correct = (str(user_answer).upper().strip() == str(correct_answer).upper().strip())
     
     if is_correct:
-        prompt = f"""A student answered correctly!
+        prompt = f"""A student answered correctly on their UNT practice!
 
 Question: {question_text}
 Correct answer: {correct_answer}
 
 In {lang_map.get(language, 'English')}, write 2-3 encouraging sentences praising them.
 
+Requirements:
+- DO NOT use $ symbols or LaTeX formatting
+- Use plain text only
+- Keep it simple and encouraging
+
 Your response:"""
     else:
-        prompt = f"""Help a student understand their mistake.
+        prompt = f"""Help a UNT student understand their mistake.
 
 Question: {question_text}
 Correct answer: {correct_answer}
@@ -112,26 +143,28 @@ In {lang_map.get(language, 'English')}:
 - Explain why the correct answer is right
 - Be kind and encouraging
 - Keep under 150 words
+- DO NOT use $ symbols or LaTeX formatting
+- Use plain text only
 
 Your explanation:"""
     
     return call_ai(prompt)
 
 if __name__ == "__main__":
-    print("\n🧪 Testing Gemini AI...\n")
+    print("\n🧪 Testing Gemini AI for UNT Silkway Bot...\n")
     
     print("1️⃣ Testing explain_topic...")
-    result = explain_topic("photosynthesis", "biology", "en")
+    result = explain_topic("quadratic equations", "math", "en")
     print(f"✅ Result:\n{result}\n")
     print("=" * 60)
     
     print("\n2️⃣ Testing answer_question...")
-    result = answer_question("What is photosynthesis?", "biology", "en")
+    result = answer_question("What is 15% of 200?", "math", "en")
     print(f"✅ Result:\n{result}\n")
     print("=" * 60)
     
     print("\n3️⃣ Testing explain_answer...")
-    result = explain_answer("What is 2+2?", "4", "5", "en")
+    result = explain_answer("Solve: x² - 5x + 6 = 0", "x = 2, x = 3", "x = 1, x = 6", "en")
     print(f"✅ Result:\n{result}\n")
     
     print("\n✅ All tests complete!")

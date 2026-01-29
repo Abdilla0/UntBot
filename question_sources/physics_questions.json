@@ -1,0 +1,916 @@
+{
+  "subject": "physics",
+  "metadata": {
+    "total_questions": 50,
+    "topics": {
+      "mechanics": "Mechanics and Motion",
+      "electricity": "Electricity and Magnetism",
+      "optics": "Light and Optics",
+      "thermodynamics": "Heat and Thermodynamics",
+      "waves": "Waves and Sound"
+    },
+    "last_updated": "2026-01-29"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "mechanics",
+      "question_en": "A car accelerates from rest to 20 m/s in 5 seconds. What is its acceleration?",
+      "question_ru": "Автомобиль ускоряется с места до 20 м/с за 5 секунд. Каково его ускорение?",
+      "question_kk": "Автомобиль тыныштықтан 5 секундта 20 м/с-қа дейін жеделдейді. Оның үдеуі қандай?",
+      "options": {
+        "A": "2 m/s²",
+        "B": "4 m/s²",
+        "C": "5 m/s²",
+        "D": "10 m/s²",
+        "E": "100 m/s²"
+      },
+      "correct": "B",
+      "explanation_en": "Acceleration = (final velocity - initial velocity) / time = (20 - 0) / 5 = 4 m/s²",
+      "explanation_ru": "Ускорение = (конечная скорость - начальная скорость) / время = (20 - 0) / 5 = 4 м/с²",
+      "explanation_kk": "Үдеу = (соңғы жылдамдық - бастапқы жылдамдық) / уақыт = (20 - 0) / 5 = 4 м/с²"
+    },
+    {
+      "id": 2,
+      "topic": "mechanics",
+      "question_en": "What is the SI unit of force?",
+      "question_ru": "Какова единица силы в СИ?",
+      "question_kk": "Күштің SI жүйесіндегі өлшем бірлігі қандай?",
+      "options": {
+        "A": "Joule",
+        "B": "Watt",
+        "C": "Newton",
+        "D": "Pascal",
+        "E": "Kilogram"
+      },
+      "correct": "C",
+      "explanation_en": "Newton (N) is the SI unit of force. One newton equals one kilogram-meter per second squared (kg⋅m/s²).",
+      "explanation_ru": "Ньютон (Н) - единица силы в СИ. Один ньютон равен одному килограмм-метру на секунду в квадрате (кг⋅м/с²).",
+      "explanation_kk": "Ньютон (Н) - күштің SI жүйесіндегі өлшем бірлігі. Бір ньютон секундтың квадратына бір килограмм-метрге тең (кг⋅м/с²)."
+    },
+    {
+      "id": 3,
+      "topic": "mechanics",
+      "question_en": "An object has a mass of 10 kg. What is its weight on Earth? (g = 10 m/s²)",
+      "question_ru": "Объект имеет массу 10 кг. Каков его вес на Земле? (g = 10 м/с²)",
+      "question_kk": "Дененің массасы 10 кг. Оның Жерде салмағы қандай? (g = 10 м/с²)",
+      "options": {
+        "A": "10 N",
+        "B": "50 N",
+        "C": "100 N",
+        "D": "1000 N",
+        "E": "10 kg"
+      },
+      "correct": "C",
+      "explanation_en": "Weight = mass × gravity = 10 kg × 10 m/s² = 100 N. Weight is a force measured in Newtons.",
+      "explanation_ru": "Вес = масса × ускорение свободного падения = 10 кг × 10 м/с² = 100 Н. Вес - это сила, измеряемая в ньютонах.",
+      "explanation_kk": "Салмақ = масса × еркін түсу үдеуі = 10 кг × 10 м/с² = 100 Н. Салмақ - бұл ньютонмен өлшенетін күш."
+    },
+    {
+      "id": 4,
+      "topic": "mechanics",
+      "question_en": "Which of Newton's laws states 'For every action, there is an equal and opposite reaction'?",
+      "question_ru": "Какой закон Ньютона гласит: 'На каждое действие есть равное и противоположное противодействие'?",
+      "question_kk": "Ньютонның қай заңы 'Әрбір әрекетке тең және қарама-қарсы әрекет бар' дейді?",
+      "options": {
+        "A": "First Law",
+        "B": "Second Law",
+        "C": "Third Law",
+        "D": "Law of Gravity",
+        "E": "Law of Inertia"
+      },
+      "correct": "C",
+      "explanation_en": "Newton's Third Law states that for every action, there is an equal and opposite reaction.",
+      "explanation_ru": "Третий закон Ньютона гласит, что на каждое действие есть равное и противоположное противодействие.",
+      "explanation_kk": "Ньютонның үшінші заңы әрбір әрекетке тең және қарама-қарсы әрекет бар екенін айтады."
+    },
+    {
+      "id": 5,
+      "topic": "mechanics",
+      "question_en": "A ball is thrown upward with an initial velocity of 30 m/s. How high does it go? (g = 10 m/s²)",
+      "question_ru": "Мяч брошен вверх с начальной скоростью 30 м/с. На какую высоту он поднимется? (g = 10 м/с²)",
+      "question_kk": "Доп 30 м/с бастапқы жылдамдықпен жоғары лақтырылады. Ол қандай биіктікке көтеріледі? (g = 10 м/с²)",
+      "options": {
+        "A": "15 m",
+        "B": "30 m",
+        "C": "45 m",
+        "D": "60 m",
+        "E": "90 m"
+      },
+      "correct": "C",
+      "explanation_en": "Using v² = u² - 2gh, at maximum height v=0: 0 = 30² - 2(10)h, so h = 900/20 = 45 m",
+      "explanation_ru": "Используя v² = u² - 2gh, на максимальной высоте v=0: 0 = 30² - 2(10)h, поэтому h = 900/20 = 45 м",
+      "explanation_kk": "v² = u² - 2gh формуласын қолдана отырып, максималды биіктікте v=0: 0 = 30² - 2(10)h, сондықтан h = 900/20 = 45 м"
+    },
+    {
+      "id": 6,
+      "topic": "mechanics",
+      "question_en": "What is kinetic energy?",
+      "question_ru": "Что такое кинетическая энергия?",
+      "question_kk": "Кинетикалық энергия дегеніміз не?",
+      "options": {
+        "A": "Energy due to position",
+        "B": "Energy due to motion",
+        "C": "Energy due to temperature",
+        "D": "Energy due to electricity",
+        "E": "Energy due to light"
+      },
+      "correct": "B",
+      "explanation_en": "Kinetic energy is the energy an object possesses due to its motion. Formula: KE = ½mv²",
+      "explanation_ru": "Кинетическая энергия - это энергия, которой обладает объект из-за своего движения. Формула: KE = ½mv²",
+      "explanation_kk": "Кинетикалық энергия - бұл дененің қозғалысынан болатын энергиясы. Формула: KE = ½mv²"
+    },
+    {
+      "id": 7,
+      "topic": "mechanics",
+      "question_en": "A 5 kg object moves at 10 m/s. What is its kinetic energy?",
+      "question_ru": "Объект массой 5 кг движется со скоростью 10 м/с. Какова его кинетическая энергия?",
+      "question_kk": "5 кг массалы дене 10 м/с жылдамдықпен қозғалады. Оның кинетикалық энергиясы қандай?",
+      "options": {
+        "A": "25 J",
+        "B": "50 J",
+        "C": "100 J",
+        "D": "250 J",
+        "E": "500 J"
+      },
+      "correct": "D",
+      "explanation_en": "KE = ½mv² = ½ × 5 × 10² = ½ × 5 × 100 = 250 J",
+      "explanation_ru": "KE = ½mv² = ½ × 5 × 10² = ½ × 5 × 100 = 250 Дж",
+      "explanation_kk": "KE = ½mv² = ½ × 5 × 10² = ½ × 5 × 100 = 250 Дж"
+    },
+    {
+      "id": 8,
+      "topic": "mechanics",
+      "question_en": "What is the formula for momentum?",
+      "question_ru": "Какова формула импульса?",
+      "question_kk": "Импульстің формуласы қандай?",
+      "options": {
+        "A": "p = m + v",
+        "B": "p = m - v",
+        "C": "p = m × v",
+        "D": "p = m / v",
+        "E": "p = m × v²"
+      },
+      "correct": "C",
+      "explanation_en": "Momentum (p) = mass (m) × velocity (v). It's a vector quantity measured in kg⋅m/s.",
+      "explanation_ru": "Импульс (p) = масса (m) × скорость (v). Это векторная величина, измеряемая в кг⋅м/с.",
+      "explanation_kk": "Импульс (p) = масса (m) × жылдамдық (v). Бұл кг⋅м/с-пен өлшенетін векторлық шама."
+    },
+    {
+      "id": 9,
+      "topic": "mechanics",
+      "question_en": "What is the law of conservation of energy?",
+      "question_ru": "Что такое закон сохранения энергии?",
+      "question_kk": "Энергияның сақталу заңы дегеніміз не?",
+      "options": {
+        "A": "Energy can be created",
+        "B": "Energy can be destroyed",
+        "C": "Energy cannot be created or destroyed, only transformed",
+        "D": "Energy always increases",
+        "E": "Energy always decreases"
+      },
+      "correct": "C",
+      "explanation_en": "The law states that energy cannot be created or destroyed, only converted from one form to another.",
+      "explanation_ru": "Закон гласит, что энергия не может быть создана или уничтожена, только преобразована из одной формы в другую.",
+      "explanation_kk": "Заң энергияның жасалмайтынын немесе жойылмайтынын, тек бір түрден екіншісіне өтетінін айтады."
+    },
+    {
+      "id": 10,
+      "topic": "mechanics",
+      "question_en": "A simple pendulum completes 20 oscillations in 40 seconds. What is its period?",
+      "question_ru": "Простой маятник совершает 20 колебаний за 40 секунд. Каков его период?",
+      "question_kk": "Қарапайым маятник 40 секундта 20 тербеліс жасайды. Оның периоды қандай?",
+      "options": {
+        "A": "0.5 s",
+        "B": "1 s",
+        "C": "2 s",
+        "D": "20 s",
+        "E": "40 s"
+      },
+      "correct": "C",
+      "explanation_en": "Period = Total time / Number of oscillations = 40 / 20 = 2 seconds",
+      "explanation_ru": "Период = Общее время / Количество колебаний = 40 / 20 = 2 секунды",
+      "explanation_kk": "Период = Жалпы уақыт / Тербелістер саны = 40 / 20 = 2 секунд"
+    },
+    {
+      "id": 11,
+      "topic": "electricity",
+      "question_en": "What is Ohm's Law?",
+      "question_ru": "Что такое закон Ома?",
+      "question_kk": "Ом заңы дегеніміз не?",
+      "options": {
+        "A": "V = I + R",
+        "B": "V = I - R",
+        "C": "V = I × R",
+        "D": "V = I / R",
+        "E": "V = R / I"
+      },
+      "correct": "C",
+      "explanation_en": "Ohm's Law states that Voltage (V) = Current (I) × Resistance (R).",
+      "explanation_ru": "Закон Ома гласит, что Напряжение (V) = Ток (I) × Сопротивление (R).",
+      "explanation_kk": "Ом заңы Кернеу (V) = Ток (I) × Кедергі (R) екенін айтады."
+    },
+    {
+      "id": 12,
+      "topic": "electricity",
+      "question_en": "A circuit has a voltage of 12V and resistance of 4Ω. What is the current?",
+      "question_ru": "В цепи напряжение 12В и сопротивление 4Ом. Каков ток?",
+      "question_kk": "Тізбектегі кернеу 12В және кедергі 4Ом. Ток қандай?",
+      "options": {
+        "A": "1 A",
+        "B": "2 A",
+        "C": "3 A",
+        "D": "4 A",
+        "E": "48 A"
+      },
+      "correct": "C",
+      "explanation_en": "Using Ohm's Law: I = V / R = 12 / 4 = 3 A",
+      "explanation_ru": "Используя закон Ома: I = V / R = 12 / 4 = 3 А",
+      "explanation_kk": "Ом заңын қолдана отырып: I = V / R = 12 / 4 = 3 А"
+    },
+    {
+      "id": 13,
+      "topic": "electricity",
+      "question_en": "What is the SI unit of electric charge?",
+      "question_ru": "Какова единица электрического заряда в СИ?",
+      "question_kk": "Электр зарядының SI жүйесіндегі өлшем бірлігі қандай?",
+      "options": {
+        "A": "Ampere",
+        "B": "Volt",
+        "C": "Coulomb",
+        "D": "Ohm",
+        "E": "Watt"
+      },
+      "correct": "C",
+      "explanation_en": "Coulomb (C) is the SI unit of electric charge. One coulomb equals the charge of approximately 6.24 × 10¹⁸ electrons.",
+      "explanation_ru": "Кулон (Кл) - единица электрического заряда в СИ. Один кулон равен заряду примерно 6,24 × 10¹⁸ электронов.",
+      "explanation_kk": "Кулон (Кл) - электр зарядының SI жүйесіндегі өлшем бірлігі. Бір кулон шамамен 6,24 × 10¹⁸ электронның зарядына тең."
+    },
+    {
+      "id": 14,
+      "topic": "electricity",
+      "question_en": "In a series circuit with three resistors (2Ω, 3Ω, 5Ω), what is the total resistance?",
+      "question_ru": "В последовательной цепи с тремя резисторами (2Ом, 3Ом, 5Ом), каково общее сопротивление?",
+      "question_kk": "Үш кедергісі бар тізбектелген тізбекте (2Ом, 3Ом, 5Ом), жалпы кедергі қандай?",
+      "options": {
+        "A": "1 Ω",
+        "B": "3 Ω",
+        "C": "10 Ω",
+        "D": "30 Ω",
+        "E": "0.1 Ω"
+      },
+      "correct": "C",
+      "explanation_en": "In series, total resistance = R₁ + R₂ + R₃ = 2 + 3 + 5 = 10 Ω",
+      "explanation_ru": "При последовательном соединении общее сопротивление = R₁ + R₂ + R₃ = 2 + 3 + 5 = 10 Ом",
+      "explanation_kk": "Тізбектелген кедергілерде жалпы кедергі = R₁ + R₂ + R₃ = 2 + 3 + 5 = 10 Ом"
+    },
+    {
+      "id": 15,
+      "topic": "electricity",
+      "question_en": "What type of current is supplied by batteries?",
+      "question_ru": "Какой тип тока обеспечивают батареи?",
+      "question_kk": "Батареялар қандай ток түрін береді?",
+      "options": {
+        "A": "Alternating Current (AC)",
+        "B": "Direct Current (DC)",
+        "C": "Static Current",
+        "D": "Variable Current",
+        "E": "Magnetic Current"
+      },
+      "correct": "B",
+      "explanation_en": "Batteries supply Direct Current (DC), where electrons flow in one direction consistently.",
+      "explanation_ru": "Батареи обеспечивают постоянный ток (DC), где электроны движутся в одном направлении.",
+      "explanation_kk": "Батареялар тұрақты ток (DC) береді, мұнда электрондар бір бағытта қозғалады."
+    },
+    {
+      "id": 16,
+      "topic": "electricity",
+      "question_en": "A 60W light bulb operates at 120V. What is the current through it?",
+      "question_ru": "Лампа мощностью 60Вт работает при 120В. Каков ток через нее?",
+      "question_kk": "60Вт қуаттылығындағы шам 120В кернеуде жұмыс істейді. Одан өтетін ток қандай?",
+      "options": {
+        "A": "0.5 A",
+        "B": "2 A",
+        "C": "7200 A",
+        "D": "60 A",
+        "E": "120 A"
+      },
+      "correct": "A",
+      "explanation_en": "Power = Voltage × Current, so Current = Power / Voltage = 60 / 120 = 0.5 A",
+      "explanation_ru": "Мощность = Напряжение × Ток, поэтому Ток = Мощность / Напряжение = 60 / 120 = 0,5 А",
+      "explanation_kk": "Қуат = Кернеу × Ток, сондықтан Ток = Қуат / Кернеу = 60 / 120 = 0,5 А"
+    },
+    {
+      "id": 17,
+      "topic": "electricity",
+      "question_en": "What happens to total resistance when resistors are connected in parallel?",
+      "question_ru": "Что происходит с общим сопротивлением при параллельном соединении резисторов?",
+      "question_kk": "Кедергілер параллель жалғанғанда жалпы кедергіге не болады?",
+      "options": {
+        "A": "It increases",
+        "B": "It decreases",
+        "C": "It stays the same",
+        "D": "It becomes infinite",
+        "E": "It becomes zero"
+      },
+      "correct": "B",
+      "explanation_en": "In parallel, total resistance decreases. Formula: 1/R_total = 1/R₁ + 1/R₂ + ...",
+      "explanation_ru": "При параллельном соединении общее сопротивление уменьшается. Формула: 1/R_общ = 1/R₁ + 1/R₂ + ...",
+      "explanation_kk": "Параллель жалғанғанда жалпы кедергі кемиді. Формула: 1/R_жалпы = 1/R₁ + 1/R₂ + ..."
+    },
+    {
+      "id": 18,
+      "topic": "electricity",
+      "question_en": "What is the function of a transformer?",
+      "question_ru": "Какова функция трансформатора?",
+      "question_kk": "Трансформатордың қызметі қандай?",
+      "options": {
+        "A": "Store energy",
+        "B": "Generate electricity",
+        "C": "Change voltage levels",
+        "D": "Measure current",
+        "E": "Produce heat"
+      },
+      "correct": "C",
+      "explanation_en": "A transformer changes AC voltage from one level to another using electromagnetic induction.",
+      "explanation_ru": "Трансформатор изменяет напряжение переменного тока с одного уровня на другой с помощью электромагнитной индукции.",
+      "explanation_kk": "Трансформатор электромагниттік индукция арқылы айнымалы ток кернеуін бір деңгейден екіншісіне өзгертеді."
+    },
+    {
+      "id": 19,
+      "topic": "electricity",
+      "question_en": "What is electric power measured in?",
+      "question_ru": "В чем измеряется электрическая мощность?",
+      "question_kk": "Электр қуаты немен өлшенеді?",
+      "options": {
+        "A": "Volts",
+        "B": "Amperes",
+        "C": "Watts",
+        "D": "Ohms",
+        "E": "Coulombs"
+      },
+      "correct": "C",
+      "explanation_en": "Electric power is measured in Watts (W). Power = Voltage × Current.",
+      "explanation_ru": "Электрическая мощность измеряется в Ваттах (Вт). Мощность = Напряжение × Ток.",
+      "explanation_kk": "Электр қуаты Ваттпен (Вт) өлшенеді. Қуат = Кернеу × Ток."
+    },
+    {
+      "id": 20,
+      "topic": "electricity",
+      "question_en": "What is the purpose of a fuse in an electrical circuit?",
+      "question_ru": "Какова цель предохранителя в электрической цепи?",
+      "question_kk": "Электр тізбегіндегі сақтандырғыштың мақсаты қандай?",
+      "options": {
+        "A": "Increase voltage",
+        "B": "Store charge",
+        "C": "Protect from overcurrent",
+        "D": "Measure resistance",
+        "E": "Generate heat"
+      },
+      "correct": "C",
+      "explanation_en": "A fuse protects circuits by melting and breaking the circuit when current exceeds safe levels.",
+      "explanation_ru": "Предохранитель защищает цепи, плавясь и разрывая цепь, когда ток превышает безопасные уровни.",
+      "explanation_kk": "Сақтандырғыш ток қауіпсіз деңгейден асқанда балқып, тізбекті үзу арқылы тізбектерді қорғайды."
+    },
+    {
+      "id": 21,
+      "topic": "optics",
+      "question_en": "What is the speed of light in vacuum?",
+      "question_ru": "Какова скорость света в вакууме?",
+      "question_kk": "Вакуумдағы жарық жылдамдығы қандай?",
+      "options": {
+        "A": "3 × 10⁶ m/s",
+        "B": "3 × 10⁷ m/s",
+        "C": "3 × 10⁸ m/s",
+        "D": "3 × 10⁹ m/s",
+        "E": "3 × 10¹⁰ m/s"
+      },
+      "correct": "C",
+      "explanation_en": "The speed of light in vacuum is approximately 3 × 10⁸ m/s or 300,000 km/s.",
+      "explanation_ru": "Скорость света в вакууме составляет примерно 3 × 10⁸ м/с или 300 000 км/с.",
+      "explanation_kk": "Вакуумдағы жарық жылдамдығы шамамен 3 × 10⁸ м/с немесе 300 000 км/с."
+    },
+    {
+      "id": 22,
+      "topic": "optics",
+      "question_en": "What type of lens converges light rays?",
+      "question_ru": "Какой тип линзы собирает световые лучи?",
+      "question_kk": "Қандай линза түрі жарық сәулелерін жинайды?",
+      "options": {
+        "A": "Concave lens",
+        "B": "Convex lens",
+        "C": "Plane lens",
+        "D": "Cylindrical lens",
+        "E": "Prismatic lens"
+      },
+      "correct": "B",
+      "explanation_en": "A convex (converging) lens brings light rays together at a focal point.",
+      "explanation_ru": "Выпуклая (собирающая) линза сводит световые лучи вместе в фокусной точке.",
+      "explanation_kk": "Дөңес (жинағыш) линза жарық сәулелерін фокус нүктесінде жинайды."
+    },
+    {
+      "id": 23,
+      "topic": "optics",
+      "question_en": "What is refraction of light?",
+      "question_ru": "Что такое преломление света?",
+      "question_kk": "Жарықтың сынуы дегеніміз не?",
+      "options": {
+        "A": "Bouncing back of light",
+        "B": "Bending of light when passing through different media",
+        "C": "Splitting of white light",
+        "D": "Absorption of light",
+        "E": "Scattering of light"
+      },
+      "correct": "B",
+      "explanation_en": "Refraction is the bending of light as it passes from one medium to another with different optical density.",
+      "explanation_ru": "Преломление - это изгиб света, когда он переходит из одной среды в другую с различной оптической плотностью.",
+      "explanation_kk": "Сыну - жарықтың әртүрлі оптикалық тығыздығы бар бір ортадан екіншісіне өткенде иілуі."
+    },
+    {
+      "id": 24,
+      "topic": "optics",
+      "question_en": "What happens to light when it hits a smooth mirror?",
+      "question_ru": "Что происходит со светом, когда он попадает на гладкое зеркало?",
+      "question_kk": "Жарық тегіс айнаға түскенде не болады?",
+      "options": {
+        "A": "It is absorbed",
+        "B": "It is refracted",
+        "C": "It is reflected",
+        "D": "It disappears",
+        "E": "It is scattered"
+      },
+      "correct": "C",
+      "explanation_en": "Light is reflected when it hits a smooth mirror surface, following the law of reflection (angle of incidence = angle of reflection).",
+      "explanation_ru": "Свет отражается, когда попадает на гладкую зеркальную поверхность, следуя закону отражения (угол падения = угол отражения).",
+      "explanation_kk": "Жарық тегіс айна бетіне түскенде шағылысады, шағылысу заңын орындайды (түсу бұрышы = шағылысу бұрышы)."
+    },
+    {
+      "id": 25,
+      "topic": "optics",
+      "question_en": "What are the primary colors of light?",
+      "question_ru": "Каковы основные цвета света?",
+      "question_kk": "Жарықтың негізгі түстері қандай?",
+      "options": {
+        "A": "Red, Yellow, Blue",
+        "B": "Red, Green, Blue",
+        "C": "Cyan, Magenta, Yellow",
+        "D": "Red, Orange, Yellow",
+        "E": "Blue, Green, Yellow"
+      },
+      "correct": "B",
+      "explanation_en": "The primary colors of light are Red, Green, and Blue (RGB). They can be combined to create all other colors.",
+      "explanation_ru": "Основные цвета света - красный, зеленый и синий (RGB). Их можно комбинировать для создания всех других цветов.",
+      "explanation_kk": "Жарықтың негізгі түстері - қызыл, жасыл және көк (RGB). Оларды барлық басқа түстерді жасау үшін біріктіруге болады."
+    },
+    {
+      "id": 26,
+      "topic": "optics",
+      "question_en": "What is the focal length of a lens?",
+      "question_ru": "Что такое фокусное расстояние линзы?",
+      "question_kk": "Линзаның фокустық қашықтығы дегеніміз не?",
+      "options": {
+        "A": "Distance from lens to object",
+        "B": "Distance from lens to focal point",
+        "C": "Diameter of the lens",
+        "D": "Thickness of the lens",
+        "E": "Distance between two lenses"
+      },
+      "correct": "B",
+      "explanation_en": "Focal length is the distance from the center of a lens to its focal point where parallel rays converge.",
+      "explanation_ru": "Фокусное расстояние - это расстояние от центра линзы до её фокусной точки, где сходятся параллельные лучи.",
+      "explanation_kk": "Фокустық қашықтық - линзаның ортасынан параллель сәулелер жиналатын фокус нүктесіне дейінгі қашықтық."
+    },
+    {
+      "id": 27,
+      "topic": "optics",
+      "question_en": "Which phenomenon causes a rainbow?",
+      "question_ru": "Какое явление вызывает радугу?",
+      "question_kk": "Қандай құбылыс кемпірқосақты тудырады?",
+      "options": {
+        "A": "Reflection only",
+        "B": "Refraction only",
+        "C": "Dispersion and refraction",
+        "D": "Diffraction only",
+        "E": "Interference"
+      },
+      "correct": "C",
+      "explanation_en": "Rainbows are caused by dispersion (splitting of white light) and refraction of sunlight in water droplets.",
+      "explanation_ru": "Радуга вызвана дисперсией (расщеплением белого света) и преломлением солнечного света в каплях воды.",
+      "explanation_kk": "Кемпірқосақ су тамшыларында күн сәулесінің дисперсиясынан (ақ жарықтың бөлінуі) және сынуынан пайда болады."
+    },
+    {
+      "id": 28,
+      "topic": "optics",
+      "question_en": "What is the index of refraction for a vacuum?",
+      "question_ru": "Каков показатель преломления для вакуума?",
+      "question_kk": "Вакуум үшін сыну көрсеткіші қандай?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "1.33",
+        "D": "1.5",
+        "E": "Infinite"
+      },
+      "correct": "B",
+      "explanation_en": "The index of refraction for vacuum is exactly 1. All other media have indices greater than 1.",
+      "explanation_ru": "Показатель преломления для вакуума точно равен 1. Все другие среды имеют показатели больше 1.",
+      "explanation_kk": "Вакуум үшін сыну көрсеткіші дәл 1-ге тең. Барлық басқа орталар 1-ден үлкен көрсеткіштерге ие."
+    },
+    {
+      "id": 29,
+      "topic": "optics",
+      "question_en": "A concave mirror is also known as?",
+      "question_ru": "Вогнутое зеркало также известно как?",
+      "question_kk": "Ойыс айна тағы не деп аталады?",
+      "options": {
+        "A": "Diverging mirror",
+        "B": "Converging mirror",
+        "C": "Plane mirror",
+        "D": "Flat mirror",
+        "E": "Virtual mirror"
+      },
+      "correct": "B",
+      "explanation_en": "A concave mirror is a converging mirror because it brings parallel light rays together at a focal point.",
+      "explanation_ru": "Вогнутое зеркало является собирающим зеркалом, потому что оно сводит параллельные световые лучи вместе в фокусной точке.",
+      "explanation_kk": "Ойыс айна жинағыш айна болып табылады, өйткені ол параллель жарық сәулелерін фокус нүктесінде жинайды."
+    },
+    {
+      "id": 30,
+      "topic": "optics",
+      "question_en": "What is total internal reflection?",
+      "question_ru": "Что такое полное внутреннее отражение?",
+      "question_kk": "Толық ішкі шағылысу дегеніміз не?",
+      "options": {
+        "A": "Light reflects from both sides",
+        "B": "All light is reflected back into denser medium",
+        "C": "Light splits into colors",
+        "D": "Light bends at 90 degrees",
+        "E": "Light passes through without bending"
+      },
+      "correct": "B",
+      "explanation_en": "Total internal reflection occurs when light traveling in a denser medium hits the boundary at an angle greater than the critical angle, causing all light to reflect back.",
+      "explanation_ru": "Полное внутреннее отражение происходит, когда свет, распространяющийся в более плотной среде, попадает на границу под углом больше критического угла, заставляя весь свет отразиться обратно.",
+      "explanation_kk": "Толық ішкі шағылысу жарық тығыз ортада таралып, сыни бұрыштан үлкен бұрышпен шекараға түскенде, барлық жарықтың кері шағылысуын тудырады."
+    },
+    {
+      "id": 31,
+      "topic": "thermodynamics",
+      "question_en": "What is the SI unit of temperature?",
+      "question_ru": "Какова единица температуры в СИ?",
+      "question_kk": "Температураның SI жүйесіндегі өлшем бірлігі қандай?",
+      "options": {
+        "A": "Celsius",
+        "B": "Fahrenheit",
+        "C": "Kelvin",
+        "D": "Rankine",
+        "E": "Degree"
+      },
+      "correct": "C",
+      "explanation_en": "Kelvin (K) is the SI unit of temperature. 0 K is absolute zero, where molecular motion stops.",
+      "explanation_ru": "Кельвин (К) - единица температуры в СИ. 0 К - это абсолютный нуль, где молекулярное движение прекращается.",
+      "explanation_kk": "Кельвин (К) - температураның SI жүйесіндегі өлшем бірлігі. 0 К - молекулалық қозғалыс тоқтайтын абсолюттік нөл."
+    },
+    {
+      "id": 32,
+      "topic": "thermodynamics",
+      "question_en": "Convert 100°C to Kelvin.",
+      "question_ru": "Переведите 100°C в Кельвины.",
+      "question_kk": "100°C-ті Кельвинге айналдырыңыз.",
+      "options": {
+        "A": "100 K",
+        "B": "273 K",
+        "C": "373 K",
+        "D": "473 K",
+        "E": "173 K"
+      },
+      "correct": "C",
+      "explanation_en": "K = °C + 273. Therefore, 100°C + 273 = 373 K",
+      "explanation_ru": "K = °C + 273. Следовательно, 100°C + 273 = 373 К",
+      "explanation_kk": "K = °C + 273. Сондықтан, 100°C + 273 = 373 К"
+    },
+    {
+      "id": 33,
+      "topic": "thermodynamics",
+      "question_en": "What is specific heat capacity?",
+      "question_ru": "Что такое удельная теплоемкость?",
+      "question_kk": "Меншікті жылу сыйымдылығы дегеніміз не?",
+      "options": {
+        "A": "Total heat in an object",
+        "B": "Heat needed to raise 1 kg by 1°C",
+        "C": "Heat lost per second",
+        "D": "Temperature of an object",
+        "E": "Mass of an object"
+      },
+      "correct": "B",
+      "explanation_en": "Specific heat capacity is the amount of heat energy required to raise the temperature of 1 kg of a substance by 1°C (or 1 K).",
+      "explanation_ru": "Удельная теплоемкость - это количество тепловой энергии, необходимое для повышения температуры 1 кг вещества на 1°C (или 1 К).",
+      "explanation_kk": "Меншікті жылу сыйымдылығы - заттың 1 кг массасының температурасын 1°C (немесе 1 К) көтеру үшін қажетті жылу энергиясының мөлшері."
+    },
+    {
+      "id": 34,
+      "topic": "thermodynamics",
+      "question_en": "What is the first law of thermodynamics?",
+      "question_ru": "Что такое первый закон термодинамики?",
+      "question_kk": "Термодинамиканың бірінші заңы дегеніміз не?",
+      "options": {
+        "A": "Energy can be created",
+        "B": "Energy can be destroyed",
+        "C": "Energy is conserved",
+        "D": "Entropy always increases",
+        "E": "Heat flows from cold to hot"
+      },
+      "correct": "C",
+      "explanation_en": "The first law states that energy is conserved - the change in internal energy equals heat added minus work done.",
+      "explanation_ru": "Первый закон гласит, что энергия сохраняется - изменение внутренней энергии равно добавленному теплу минус совершенная работа.",
+      "explanation_kk": "Бірінші заң энергия сақталатынын айтады - ішкі энергияның өзгерісі қосылған жылуға тең, орындалған жұмысты алып тастағанда."
+    },
+    {
+      "id": 35,
+      "topic": "thermodynamics",
+      "question_en": "How much heat is needed to raise 2 kg of water by 10°C? (specific heat of water = 4200 J/kg°C)",
+      "question_ru": "Сколько тепла нужно, чтобы нагреть 2 кг воды на 10°C? (удельная теплоемкость воды = 4200 Дж/кг°C)",
+      "question_kk": "2 кг суды 10°C-қа жылыту үшін қанша жылу керек? (судың меншікті жылу сыйымдылығы = 4200 Дж/кг°C)",
+      "options": {
+        "A": "420 J",
+        "B": "4,200 J",
+        "C": "42,000 J",
+        "D": "84,000 J",
+        "E": "840,000 J"
+      },
+      "correct": "D",
+      "explanation_en": "Q = mcΔT = 2 × 4200 × 10 = 84,000 J",
+      "explanation_ru": "Q = mcΔT = 2 × 4200 × 10 = 84 000 Дж",
+      "explanation_kk": "Q = mcΔT = 2 × 4200 × 10 = 84 000 Дж"
+    },
+    {
+      "id": 36,
+      "topic": "thermodynamics",
+      "question_en": "What is thermal expansion?",
+      "question_ru": "Что такое тепловое расширение?",
+      "question_kk": "Жылулық ұлғаю дегеніміз не?",
+      "options": {
+        "A": "Objects get colder",
+        "B": "Objects expand when heated",
+        "C": "Objects contract when heated",
+        "D": "Temperature increases",
+        "E": "Heat is transferred"
+      },
+      "correct": "B",
+      "explanation_en": "Thermal expansion is the tendency of matter to increase in volume when heated, as particles move faster and spread apart.",
+      "explanation_ru": "Тепловое расширение - это тенденция материи увеличиваться в объеме при нагревании, поскольку частицы движутся быстрее и расходятся.",
+      "explanation_kk": "Жылулық ұлғаю - заттың қызған кезде көлемінің ұлғаю тенденциясы, өйткені бөлшектер жылдамырақ қозғалып, таралады."
+    },
+    {
+      "id": 37,
+      "topic": "thermodynamics",
+      "question_en": "What is the method of heat transfer through direct contact?",
+      "question_ru": "Каков метод передачи тепла через прямой контакт?",
+      "question_kk": "Тікелей байланыс арқылы жылу беру әдісі қандай?",
+      "options": {
+        "A": "Radiation",
+        "B": "Convection",
+        "C": "Conduction",
+        "D": "Evaporation",
+        "E": "Condensation"
+      },
+      "correct": "C",
+      "explanation_en": "Conduction is heat transfer through direct contact between particles, common in solids.",
+      "explanation_ru": "Теплопроводность - это передача тепла через прямой контакт между частицами, распространенная в твердых телах.",
+      "explanation_kk": "Жылу өткізгіштік - бөлшектер арасындағы тікелей байланыс арқылы жылу берілуі, қатты денелерде кең таралған."
+    },
+    {
+      "id": 38,
+      "topic": "thermodynamics",
+      "question_en": "Which method of heat transfer does not require a medium?",
+      "question_ru": "Какой метод передачи тепла не требует среды?",
+      "question_kk": "Жылу беру әдісінің қайсысы ортаны қажет етпейді?",
+      "options": {
+        "A": "Conduction",
+        "B": "Convection",
+        "C": "Radiation",
+        "D": "Diffusion",
+        "E": "Osmosis"
+      },
+      "correct": "C",
+      "explanation_en": "Radiation is heat transfer through electromagnetic waves and does not require a medium. This is how the Sun's heat reaches Earth.",
+      "explanation_ru": "Излучение - это передача тепла через электромагнитные волны и не требует среды. Так тепло Солнца достигает Земли.",
+      "explanation_kk": "Сәулелену - электромагниттік толқындар арқылы жылу берілуі және ортаны қажет етпейді. Күннің жылуы Жерге осылай жетеді."
+    },
+    {
+      "id": 39,
+      "topic": "thermodynamics",
+      "question_en": "What is absolute zero?",
+      "question_ru": "Что такое абсолютный нуль?",
+      "question_kk": "Абсолюттік нөл дегеніміз не?",
+      "options": {
+        "A": "0°C",
+        "B": "0°F",
+        "C": "0 K or -273°C",
+        "D": "100 K",
+        "E": "-100°C"
+      },
+      "correct": "C",
+      "explanation_en": "Absolute zero (0 K or -273.15°C) is the lowest possible temperature where molecular motion theoretically stops.",
+      "explanation_ru": "Абсолютный нуль (0 К или -273,15°C) - самая низкая возможная температура, где молекулярное движение теоретически прекращается.",
+      "explanation_kk": "Абсолюттік нөл (0 К немесе -273,15°C) - молекулалық қозғалыс теориялық тұрғыдан тоқтайтын ең төменгі мүмкін температура."
+    },
+    {
+      "id": 40,
+      "topic": "thermodynamics",
+      "question_en": "What happens to the pressure of a gas if temperature increases while volume stays constant?",
+      "question_ru": "Что происходит с давлением газа, если температура увеличивается, а объем остается постоянным?",
+      "question_kk": "Көлем тұрақты болса, температура артқанда газ қысымына не болады?",
+      "options": {
+        "A": "Pressure decreases",
+        "B": "Pressure increases",
+        "C": "Pressure stays the same",
+        "D": "Pressure becomes zero",
+        "E": "Pressure becomes infinite"
+      },
+      "correct": "B",
+      "explanation_en": "According to Gay-Lussac's Law, pressure is directly proportional to temperature when volume is constant. So pressure increases.",
+      "explanation_ru": "Согласно закону Гей-Люссака, давление прямо пропорционально температуре, когда объем постоянен. Поэтому давление увеличивается.",
+      "explanation_kk": "Гей-Люссак заңына сәйкес, көлем тұрақты болғанда қысым температураға тура пропорционал. Сондықтан қысым артады."
+    },
+    {
+      "id": 41,
+      "topic": "waves",
+      "question_en": "What is the relationship between frequency (f) and period (T)?",
+      "question_ru": "Какова связь между частотой (f) и периодом (T)?",
+      "question_kk": "Жиілік (f) мен период (T) арасындағы қатынас қандай?",
+      "options": {
+        "A": "f = T",
+        "B": "f = 1/T",
+        "C": "f = T²",
+        "D": "f = 2T",
+        "E": "f = T + 1"
+      },
+      "correct": "B",
+      "explanation_en": "Frequency is the reciprocal of period: f = 1/T. If period is 0.5 seconds, frequency is 2 Hz.",
+      "explanation_ru": "Частота - это величина, обратная периоду: f = 1/T. Если период 0,5 секунды, частота 2 Гц.",
+      "explanation_kk": "Жиілік периодқа кері шама: f = 1/T. Егер период 0,5 секунд болса, жиілік 2 Гц болады."
+    },
+    {
+      "id": 42,
+      "topic": "waves",
+      "question_en": "What is the SI unit of frequency?",
+      "question_ru": "Какова единица частоты в СИ?",
+      "question_kk": "Жиіліктің SI жүйесіндегі өлшем бірлігі қандай?",
+      "options": {
+        "A": "Second (s)",
+        "B": "Meter (m)",
+        "C": "Hertz (Hz)",
+        "D": "Newton (N)",
+        "E": "Watt (W)"
+      },
+      "correct": "C",
+      "explanation_en": "Hertz (Hz) is the SI unit of frequency. One hertz equals one cycle per second.",
+      "explanation_ru": "Герц (Гц) - единица частоты в СИ. Один герц равен одному циклу в секунду.",
+      "explanation_kk": "Герц (Гц) - жиіліктің SI жүйесіндегі өлшем бірлігі. Бір герц секундына бір циклге тең."
+    },
+    {
+      "id": 43,
+      "topic": "waves",
+      "question_en": "What is the wave equation?",
+      "question_ru": "Какое уравнение волны?",
+      "question_kk": "Толқын теңдеуі қандай?",
+      "options": {
+        "A": "v = f + λ",
+        "B": "v = f - λ",
+        "C": "v = f × λ",
+        "D": "v = f / λ",
+        "E": "v = λ / f"
+      },
+      "correct": "C",
+      "explanation_en": "The wave equation is v = f × λ, where v is wave speed, f is frequency, and λ (lambda) is wavelength.",
+      "explanation_ru": "Уравнение волны: v = f × λ, где v - скорость волны, f - частота, λ (лямбда) - длина волны.",
+      "explanation_kk": "Толқын теңдеуі: v = f × λ, мұндағы v - толқын жылдамдығы, f - жиілік, λ (лямбда) - толқын ұзындығы."
+    },
+    {
+      "id": 44,
+      "topic": "waves",
+      "question_en": "A wave has frequency 50 Hz and wavelength 2 m. What is its speed?",
+      "question_ru": "Волна имеет частоту 50 Гц и длину волны 2 м. Какова её скорость?",
+      "question_kk": "Толқынның жиілігі 50 Гц және толқын ұзындығы 2 м. Оның жылдамдығы қандай?",
+      "options": {
+        "A": "25 m/s",
+        "B": "52 m/s",
+        "C": "100 m/s",
+        "D": "200 m/s",
+        "E": "2500 m/s"
+      },
+      "correct": "C",
+      "explanation_en": "Using v = f × λ: v = 50 × 2 = 100 m/s",
+      "explanation_ru": "Используя v = f × λ: v = 50 × 2 = 100 м/с",
+      "explanation_kk": "v = f × λ қолдана отырып: v = 50 × 2 = 100 м/с"
+    },
+    {
+      "id": 45,
+      "topic": "waves",
+      "question_en": "What type of wave is sound?",
+      "question_ru": "Какого типа волна - звук?",
+      "question_kk": "Дыбыс қандай толқын түрі?",
+      "options": {
+        "A": "Transverse wave",
+        "B": "Longitudinal wave",
+        "C": "Electromagnetic wave",
+        "D": "Surface wave",
+        "E": "Standing wave"
+      },
+      "correct": "B",
+      "explanation_en": "Sound is a longitudinal wave where particles vibrate parallel to the direction of wave travel.",
+      "explanation_ru": "Звук - это продольная волна, где частицы вибрируют параллельно направлению распространения волны.",
+      "explanation_kk": "Дыбыс - бойлық толқын, мұнда бөлшектер толқын таралу бағытына параллель тербеледі."
+    },
+    {
+      "id": 46,
+      "topic": "waves",
+      "question_en": "What is the speed of sound in air at room temperature?",
+      "question_ru": "Какова скорость звука в воздухе при комнатной температуре?",
+      "question_kk": "Бөлме температурасындағы ауадағы дыбыс жылдамдығы қандай?",
+      "options": {
+        "A": "100 m/s",
+        "B": "200 m/s",
+        "C": "340 m/s",
+        "D": "500 m/s",
+        "E": "1000 m/s"
+      },
+      "correct": "C",
+      "explanation_en": "The speed of sound in air at room temperature (20°C) is approximately 340 m/s.",
+      "explanation_ru": "Скорость звука в воздухе при комнатной температуре (20°C) составляет примерно 340 м/с.",
+      "explanation_kk": "Бөлме температурасындағы (20°C) ауадағы дыбыс жылдамдығы шамамен 340 м/с."
+    },
+    {
+      "id": 47,
+      "topic": "waves",
+      "question_en": "What is amplitude of a wave?",
+      "question_ru": "Что такое амплитуда волны?",
+      "question_kk": "Толқынның амплитудасы дегеніміз не?",
+      "options": {
+        "A": "Distance between two crests",
+        "B": "Maximum displacement from rest position",
+        "C": "Number of waves per second",
+        "D": "Speed of the wave",
+        "E": "Time for one complete wave"
+      },
+      "correct": "B",
+      "explanation_en": "Amplitude is the maximum displacement of a wave from its rest (equilibrium) position.",
+      "explanation_ru": "Амплитуда - это максимальное смещение волны от её покоя (равновесия).",
+      "explanation_kk": "Амплитуда - толқынның тыныштық (тепе-теңдік) күйінен максималды ығысуы."
+    },
+    {
+      "id": 48,
+      "topic": "waves",
+      "question_en": "What is the Doppler effect?",
+      "question_ru": "Что такое эффект Доплера?",
+      "question_kk": "Доплер эффектісі дегеніміз не?",
+      "options": {
+        "A": "Waves speed up",
+        "B": "Waves slow down",
+        "C": "Frequency changes due to relative motion",
+        "D": "Waves cancel each other",
+        "E": "Amplitude increases"
+      },
+      "correct": "C",
+      "explanation_en": "The Doppler effect is the change in frequency of a wave due to relative motion between source and observer.",
+      "explanation_ru": "Эффект Доплера - это изменение частоты волны из-за относительного движения между источником и наблюдателем.",
+      "explanation_kk": "Доплер эффектісі - көз бен бақылаушы арасындағы салыстырмалы қозғалыс салдарынан толқын жиілігінің өзгеруі."
+    },
+    {
+      "id": 49,
+      "topic": "waves",
+      "question_en": "What is interference of waves?",
+      "question_ru": "Что такое интерференция волн?",
+      "question_kk": "Толқындардың интерференциясы дегеніміз не?",
+      "options": {
+        "A": "Waves bouncing back",
+        "B": "Waves bending around obstacles",
+        "C": "Waves combining to form new patterns",
+        "D": "Waves traveling faster",
+        "E": "Waves stopping completely"
+      },
+      "correct": "C",
+      "explanation_en": "Interference is when two or more waves overlap and combine to form a new wave pattern (constructive or destructive).",
+      "explanation_ru": "Интерференция - когда две или более волны перекрываются и объединяются, образуя новый волновой паттерн (конструктивный или деструктивный).",
+      "explanation_kk": "Интерференция - екі немесе одан да көп толқын қабаттасып, жаңа толқын үлгісін (конструктивті немесе деструктивті) құрағанда."
+    },
+    {
+      "id": 50,
+      "topic": "waves",
+      "question_en": "What is resonance?",
+      "question_ru": "Что такое резонанс?",
+      "question_kk": "Резонанс дегеніміз не?",
+      "options": {
+        "A": "Waves moving in circles",
+        "B": "System vibrating at its natural frequency",
+        "C": "Waves canceling each other",
+        "D": "Waves reflecting back",
+        "E": "Waves spreading out"
+      },
+      "correct": "B",
+      "explanation_en": "Resonance occurs when a system vibrates at its natural frequency, causing large amplitude oscillations.",
+      "explanation_ru": "Резонанс возникает, когда система вибрирует на своей естественной частоте, вызывая колебания большой амплитуды.",
+      "explanation_kk": "Резонанс жүйе өзінің табиғи жиілігінде тербелгенде пайда болады, үлкен амплитудалы тербелістер тудырады."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "subject": "geography",
+  "metadata": {
+    "total_questions": 50,
+    "topics": {
+      "physical_geography": "Physical Geography",
+      "human_geography": "Human Geography",
+      "kazakhstan_geography": "Kazakhstan Geography",
+      "world_geography": "World Geography",
+      "environmental_geography": "Environmental Geography"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "kazakhstan_geography",
+      "question_en": "What is the capital of Kazakhstan?",
+      "question_ru": "Какая столица Казахстана?",
+      "question_kk": "Қазақстанның астанасы қандай?",
+      "options": {"A": "Almaty", "B": "Astana", "C": "Shymkent", "D": "Atyrau", "E": "Karaganda"},
+      "correct": "B",
+      "explanation_en": "Astana is the capital since 1997.",
+      "explanation_ru": "Астана является столицей с 1997 года.",
+      "explanation_kk": "Астана 1997 жылдан бері астана."
+    },
+    {
+      "id": 2,
+      "topic": "kazakhstan_geography",
+      "question_en": "What is the largest lake in Kazakhstan?",
+      "question_ru": "Какое самое большое озеро в Казахстане?",
+      "question_kk": "Қазақстандағы ең үлкен көл қандай?",
+      "options": {"A": "Balkhash", "B": "Alakol", "C": "Caspian Sea", "D": "Aral Sea", "E": "Tengiz"},
+      "correct": "C",
+      "explanation_en": "The Caspian Sea is the world's largest lake.",
+      "explanation_ru": "Каспийское море - самое большое озеро в мире.",
+      "explanation_kk": "Каспий теңізі - әлемдегі ең үлкен көл."
+    },
+    {
+      "id": 3,
+      "topic": "physical_geography",
+      "question_en": "What are the highest mountains?",
+      "question_ru": "Какие самые высокие горы?",
+      "question_kk": "Ең биік таулар қандай?",
+      "options": {"A": "Alps", "B": "Rockies", "C": "Himalayas", "D": "Andes", "E": "Urals"},
+      "correct": "C",
+      "explanation_en": "The Himalayas contain the world's highest peaks including Mt. Everest.",
+      "explanation_ru": "Гималаи содержат самые высокие вершины мира, включая Эверест.",
+      "explanation_kk": "Гималайда Эверестті қоса алғанда әлемдегі ең биік шыңдар бар."
+    },
+    {
+      "id": 4,
+      "topic": "physical_geography",
+      "question_en": "What is the longest river?",
+      "question_ru": "Какая самая длинная река?",
+      "question_kk": "Ең ұзын өзен қандай?",
+      "options": {"A": "Amazon", "B": "Nile", "C": "Yangtze", "D": "Mississippi", "E": "Volga"},
+      "correct": "B",
+      "explanation_en": "The Nile River is approximately 6,650 km long.",
+      "explanation_ru": "Река Нил имеет длину примерно 6 650 км.",
+      "explanation_kk": "Ніл өзенінің ұзындығы шамамен 6650 км."
+    },
+    {
+      "id": 5,
+      "topic": "world_geography",
+      "question_en": "How many continents are there?",
+      "question_ru": "Сколько континентов?",
+      "question_kk": "Неше құрлық бар?",
+      "options": {"A": "5", "B": "6", "C": "7", "D": "8", "E": "9"},
+      "correct": "C",
+      "explanation_en": "There are 7 continents: Asia, Africa, North America, South America, Europe, Australia, Antarctica.",
+      "explanation_ru": "Есть 7 континентов: Азия, Африка, Северная Америка, Южная Америка, Европа, Австралия, Антарктида.",
+      "explanation_kk": "7 құрлық бар: Азия, Африка, Солтүстік Америка, Оңтүстік Америка, Еуропа, Австралия, Антарктида."
+    },
+    {
+      "id": 6,
+      "topic": "world_geography",
+      "question_en": "What is the largest continent?",
+      "question_ru": "Какой самый большой континент?",
+      "question_kk": "Ең үлкен құрлық қандай?",
+      "options": {"A": "Africa", "B": "Europe", "C": "Asia", "D": "North America", "E": "Antarctica"},
+      "correct": "C",
+      "explanation_en": "Asia is the largest continent by area and population.",
+      "explanation_ru": "Азия - самый большой континент по площади и населению.",
+      "explanation_kk": "Азия - алаң және халық саны бойынша ең үлкен құрлық."
+    },
+    {
+      "id": 7,
+      "topic": "human_geography",
+      "question_en": "What is the most populated country?",
+      "question_ru": "Какая самая населенная страна?",
+      "question_kk": "Ең көп халқы бар ел қандай?",
+      "options": {"A": "USA", "B": "Russia", "C": "India", "D": "China", "E": "Indonesia"},
+      "correct": "C",
+      "explanation_en": "India is now the most populated country (2024+).",
+      "explanation_ru": "Индия теперь самая населенная страна (2024+).",
+      "explanation_kk": "Үндістан қазір ең көп халқы бар ел (2024+)."
+    },
+    {
+      "id": 8,
+      "topic": "human_geography",
+      "question_en": "What is urbanization?",
+      "question_ru": "Что такое урбанизация?",
+      "question_kk": "Урбандану дегеніміз не?",
+      "options": {"A": "Building farms", "B": "Growth of cities", "C": "Population decline", "D": "Deforestation", "E": "Pollution"},
+      "correct": "B",
+      "explanation_en": "Urbanization is the growth of cities as people move from rural to urban areas.",
+      "explanation_ru": "Урбанизация - рост городов, когда люди переезжают из сельских в городские районы.",
+      "explanation_kk": "Урбандану - адамдар ауылдық жерлерден қалаларға көшкенде қалалардың өсуі."
+    },
+    {
+      "id": 9,
+      "topic": "environmental_geography",
+      "question_en": "What causes climate change?",
+      "question_ru": "Что вызывает изменение климата?",
+      "question_kk": "Климаттың өзгеруіне не себеп болады?",
+      "options": {"A": "Moon phases", "B": "Greenhouse gases", "C": "Ocean tides", "D": "Earthquakes", "E": "Asteroids"},
+      "correct": "B",
+      "explanation_en": "Greenhouse gases like CO2 trap heat and cause climate change.",
+      "explanation_ru": "Парниковые газы, такие как CO2, удерживают тепло и вызывают изменение климата.",
+      "explanation_kk": "CO2 сияқты парниктік газдар жылуды ұстап, климаттың өзгеруіне әкеледі."
+    },
+    {
+      "id": 10,
+      "topic": "environmental_geography",
+      "question_en": "What is deforestation?",
+      "question_ru": "Что такое обезлесение?",
+      "question_kk": "Орман кесу дегеніміз не?",
+      "options": {"A": "Planting trees", "B": "Cutting down forests", "C": "Forest fires", "D": "Tree diseases", "E": "Growing forests"},
+      "correct": "B",
+      "explanation_en": "Deforestation is the clearing of forests for agriculture or development.",
+      "explanation_ru": "Обезлесение - вырубка лесов для сельского хозяйства или застройки.",
+      "explanation_kk": "Орман кесу - ауыл шаруашылығына немесе дамуға арналған ормандарды кесу."
+    }
+  ]
+}

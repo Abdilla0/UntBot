@@ -1,119 +1,193 @@
+# questions.py - Load and manage questions
 import json
 import random
-import os
+from pathlib import Path
 
-# Load questions from JSON file
-def load_questions():
-    """Load questions from JSON file"""
-    json_path = os.path.join(os.path.dirname(__file__), 'questions_bank.json')
-    
+# Map subject names to actual filenames
+SUBJECT_FILES = {
+    'mathematics': 'math_questions.json',          # Maps 'mathematics' -> 'math_questions.json'
+    'physics': 'physics_questions.json',
+    'chemistry': 'chemistry_questions.json',
+    'biology': 'biology_questions.json',
+    'history': 'history_questions.json',
+    'geography': 'geography.json'                   # Your file is named 'geography.json'
+}
+
+# Cache for loaded questions
+QUESTIONS = {}
+
+def load_questions_from_file(subject):
+    """Load questions from JSON file for a subject"""
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print("⚠️ questions_bank.json not found!")
-        return {}
+        # Get the correct filename
+        filename = SUBJECT_FILES.get(subject)
+        if not filename:
+            print(f"❌ Unknown subject: {subject}")
+            return None
+        
+        # Try to load from question_sources folder first
+        filepath = Path('question_sources') / filename
+        
+        if not filepath.exists():
+            # Try current directory
+            filepath = Path(filename)
+        
+        if not filepath.exists():
+            print(f"❌ File not found: {filename}")
+            return None
+        
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        print(f"✅ Loaded {filename}")
+        return data
+        
     except Exception as e:
-        print(f"⚠️ Error loading questions: {e}")
-        return {}
+        print(f"❌ Error loading {subject}: {e}")
+        return None
 
-# Load questions at import time
-QUESTIONS = load_questions()
 
 def get_topics(subject):
-    """Get available topics for a subject"""
+    """Get list of topics for a subject"""
     if subject not in QUESTIONS:
+        QUESTIONS[subject] = load_questions_from_file(subject)
+    
+    if not QUESTIONS[subject]:
         return []
     
-    if 'topics' in QUESTIONS[subject]:
-        return list(QUESTIONS[subject]['topics'].keys())
-    
-    return []
+    # Get topics from metadata
+    topics = QUESTIONS[subject].get('metadata', {}).get('topics', {})
+    return list(topics.keys())
 
-def get_question(subject, question_id=None, language='en', topic=None):
-    """Get a question from the bank"""
+
+def get_question(subject, language='en', topic=None):
+    """
+    Get a random question for a subject
+    
+    Args:
+        subject: Subject name (mathematics, physics, etc.)
+        language: Language code (en, ru, kk)
+        topic: Optional topic filter
+    
+    Returns:
+        Question dict with text, options, correct answer, explanation
+    """
+    # Load questions if not cached
     if subject not in QUESTIONS:
+        QUESTIONS[subject] = load_questions_from_file(subject)
+    
+    if not QUESTIONS[subject]:
         return None
     
-    # Handle new topic-based structure
-    if 'topics' in QUESTIONS[subject]:
-        # Get questions from specific topic or all topics
-        if topic and topic in QUESTIONS[subject]['topics']:
-            questions = QUESTIONS[subject]['topics'][topic]
-        else:
-            # Get all questions from all topics
-            questions = []
-            for topic_questions in QUESTIONS[subject]['topics'].values():
-                questions.extend(topic_questions)
-    else:
-        # Old structure (backward compatible)
-        questions = QUESTIONS[subject]
+    # Get questions array
+    questions = QUESTIONS[subject].get('questions', [])
     
     if not questions:
         return None
     
-    if question_id is not None:
-        for q in questions:
-            if q['id'] == question_id:
-                return format_question_for_language(q, language)
-        return None
+    # Filter by topic if specified
+    if topic:
+        questions = [q for q in questions if q.get('topic') == topic]
+        if not questions:
+            return None
     
-    # Get random question
+    # Pick random question
     question = random.choice(questions)
-    return format_question_for_language(question, language)
-
-def format_question_for_language(question, language='en'):
-    """Format question text based on language"""
-    lang_suffix = {
-        'en': '_en',
-        'ru': '_ru',
-        'kk': '_kk'
-    }.get(language, '_en')
     
-    question_key = f'question{lang_suffix}'
-    explanation_key = f'explanation{lang_suffix}'
-    
-    formatted = {
+    # Format for the language
+    return {
         'id': question['id'],
-        'text': question.get(question_key, question.get('question_en', 'Question not available')),
-        'options': question['options'],
-        'correct': question['correct'],
-        'explanation': question.get(explanation_key, question.get('explanation_en', 'Explanation not available')),
-        'topic': question.get('topic', 'general')
+        'topic': question['topic'],
+        'text': question.get(f'question_{language}', question.get('question_en', '')),
+        'options': question.get('options', {}),
+        'correct': question.get('correct', 'A'),
+        'explanation': question.get(f'explanation_{language}', question.get('explanation_en', ''))
     }
-    
-    return formatted
+
 
 def format_question(question):
     """Format question for display"""
-    if not question:
-        return "No questions available"
+    text = f"❓ **Question**\n\n{question['text']}\n\n"
     
-    text = f"❓ **Question:**\n{question['text']}\n\n"
+    # Add options
+    for option, value in sorted(question['options'].items()):
+        text += f"{option}) {value}\n"
     
-    for key, value in question['options'].items():
-        text += f"{key}) {value}\n"
-    
-    text += "\n💡 Type your answer (A, B, C, D, or E):"
     return text
 
-def get_all_subjects():
-    """Get list of available subjects"""
-    return list(QUESTIONS.keys())
 
-def get_question_count(subject, topic=None):
-    """Get number of questions for a subject/topic"""
+# For backward compatibility with old structure
+def get_question_old_structure(subject, language='en', topic=None):
+    """
+    OLD STRUCTURE SUPPORT: Get question from nested topics structure
+    Only needed if you have old format files
+    """
     if subject not in QUESTIONS:
-        return 0
+        QUESTIONS[subject] = load_questions_from_file(subject)
     
-    if 'topics' in QUESTIONS[subject]:
-        if topic and topic in QUESTIONS[subject]['topics']:
-            return len(QUESTIONS[subject]['topics'][topic])
+    if not QUESTIONS[subject]:
+        return None
+    
+    # Check if old structure (nested topics)
+    if subject in QUESTIONS[subject]:
+        subject_data = QUESTIONS[subject][subject]
+        topics_data = subject_data.get('topics', {})
+        
+        # Get topic questions
+        if topic and topic in topics_data:
+            questions = topics_data[topic]
         else:
-            # Count all questions across all topics
-            total = 0
-            for topic_questions in QUESTIONS[subject]['topics'].values():
-                total += len(topic_questions)
-            return total
-    else:
-        return len(QUESTIONS[subject])
+            # Get all questions from all topics
+            questions = []
+            for topic_questions in topics_data.values():
+                questions.extend(topic_questions)
+        
+        if not questions:
+            return None
+        
+        question = random.choice(questions)
+        
+        return {
+            'id': question['id'],
+            'topic': question['topic'],
+            'text': question.get(f'question_{language}', question.get('question_en', '')),
+            'options': question.get('options', {}),
+            'correct': question.get('correct', 'A'),
+            'explanation': question.get(f'explanation_{language}', question.get('explanation_en', ''))
+        }
+    
+    # Fall back to new structure
+    return get_question(subject, language, topic)
+
+
+if __name__ == "__main__":
+    # Test loading
+    print("Testing question loading...\n")
+    
+    subjects = ['mathematics', 'physics', 'chemistry', 'biology', 'history', 'geography']
+    
+    for subject in subjects:
+        print(f"\n{'='*50}")
+        print(f"Testing: {subject}")
+        print('='*50)
+        
+        # Load questions
+        data = load_questions_from_file(subject)
+        if data:
+            questions = data.get('questions', [])
+            topics = data.get('metadata', {}).get('topics', {})
+            print(f"✅ Questions: {len(questions)}")
+            print(f"✅ Topics: {list(topics.keys())}")
+            
+            # Test getting a question
+            q = get_question(subject, 'en')
+            if q:
+                print(f"✅ Sample question ID: {q['id']}")
+                print(f"✅ Topic: {q['topic']}")
+            else:
+                print("❌ Could not get sample question")
+        else:
+            print(f"❌ Failed to load")
+    
+    print("\n" + "="*50)
+    print("✅ Testing complete!")

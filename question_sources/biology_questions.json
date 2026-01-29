@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "total_questions": 10,
+    "topics": {
+      "cell_biology": "Cell Biology",
+      "genetics": "Genetics",
+      "ecology": "Ecology",
+      "human_biology": "Human Biology",
+      "evolution": "Evolution"
+    },
+    "last_updated": "2026-01-29"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "cell_biology",
+      "question_en": "What is the powerhouse of the cell?",
+      "question_ru": "Что является электростанцией клетки?",
+      "question_kk": "Жасушаның энергия көзі не?",
+      "options": {
+        "A": "Nucleus",
+        "B": "Ribosome",
+        "C": "Mitochondria",
+        "D": "Chloroplast",
+        "E": "Golgi"
+      },
+      "correct": "C",
+      "explanation_en": "Mitochondria produce ATP, the cell's energy currency.",
+      "explanation_ru": "Митохондрии производят АТФ, энергетическую валюту клетки.",
+      "explanation_kk": "Митохондрия жасушаның энергиялық валютасы АТФ өндіреді."
+    },
+    {
+      "id": 2,
+      "topic": "cell_biology",
+      "question_en": "What is the function of the cell membrane?",
+      "question_ru": "Какова функция клеточной мембраны?",
+      "question_kk": "Жасуша мембранасының қызметі қандай?",
+      "options": {
+        "A": "Energy production",
+        "B": "Controls entry/exit",
+        "C": "Protein synthesis",
+        "D": "DNA storage",
+        "E": "Photosynthesis"
+      },
+      "correct": "B",
+      "explanation_en": "The cell membrane controls what enters and exits the cell.",
+      "explanation_ru": "Клеточная мембрана контролирует, что входит и выходит из клетки.",
+      "explanation_kk": "Жасуша мембранасы жасушаға не кіріп, не шығатынын бақылайды."
+    },
+    {
+      "id": 3,
+      "topic": "genetics",
+      "question_en": "What is DNA?",
+      "question_ru": "Что такое ДНК?",
+      "question_kk": "ДНҚ дегеніміз не?",
+      "options": {
+        "A": "Protein",
+        "B": "Lipid",
+        "C": "Genetic material",
+        "D": "Carbohydrate",
+        "E": "Enzyme"
+      },
+      "correct": "C",
+      "explanation_en": "DNA (deoxyribonucleic acid) carries genetic information.",
+      "explanation_ru": "ДНК (дезоксирибонуклеиновая кислота) несет генетическую информацию.",
+      "explanation_kk": "ДНҚ (дезоксирибонуклеин қышқылы) генетикалық ақпаратты тасымалдайды."
+    },
+    {
+      "id": 4,
+      "topic": "genetics",
+      "question_en": "How many chromosomes do humans have?",
+      "question_ru": "Сколько хромосом у человека?",
+      "question_kk": "Адамда неше хромосома бар?",
+      "options": {
+        "A": "23",
+        "B": "44",
+        "C": "46",
+        "D": "48",
+        "E": "52"
+      },
+      "correct": "C",
+      "explanation_en": "Humans have 46 chromosomes (23 pairs).",
+      "explanation_ru": "У человека 46 хромосом (23 пары).",
+      "explanation_kk": "Адамда 46 хромосома бар (23 жұп)."
+    },
+    {
+      "id": 5,
+      "topic": "ecology",
+      "question_en": "What is photosynthesis?",
+      "question_ru": "Что такое фотосинтез?",
+      "question_kk": "Фотосинтез дегеніміз не?",
+      "options": {
+        "A": "Breaking down food",
+        "B": "Making food using light",
+        "C": "Cell division",
+        "D": "Breathing",
+        "E": "Water absorption"
+      },
+      "correct": "B",
+      "explanation_en": "Photosynthesis is the process plants use to make food using sunlight.",
+      "explanation_ru": "Фотосинтез - это процесс, которым растения производят пищу, используя солнечный свет.",
+      "explanation_kk": "Фотосинтез - өсімдіктердің күн сәулесін пайдаланып тамақ өндіру процесі."
+    },
+    {
+      "id": 6,
+      "topic": "ecology",
+      "question_en": "What is a food chain?",
+      "question_ru": "Что такое пищевая цепь?",
+      "question_kk": "Тамақ тізбегі дегеніміз не?",
+      "options": {
+        "A": "Types of food",
+        "B": "Energy flow through organisms",
+        "C": "Animal groups",
+        "D": "Plant types",
+        "E": "Cooking methods"
+      },
+      "correct": "B",
+      "explanation_en": "A food chain shows how energy flows from one organism to another.",
+      "explanation_ru": "Пищевая цепь показывает, как энергия переходит от одного организма к другому.",
+      "explanation_kk": "Тамақ тізбегі энергияның бір организмнен екіншісіне қалай өтетінін көрсетеді."
+    },
+    {
+      "id": 7,
+      "topic": "human_biology",
+      "question_en": "What is the function of red blood cells?",
+      "question_ru": "Какова функция эритроцитов?",
+      "question_kk": "Қызыл қан жасушаларының қызметі қандай?",
+      "options": {
+        "A": "Fight infection",
+        "B": "Carry oxygen",
+        "C": "Clot blood",
+        "D": "Digest food",
+        "E": "Store energy"
+      },
+      "correct": "B",
+      "explanation_en": "Red blood cells carry oxygen from lungs to body tissues.",
+      "explanation_ru": "Эритроциты переносят кислород из легких к тканям тела.",
+      "explanation_kk": "Қызыл қан жасушалары оттегіні өкпеден дене тіндеріне тасымалдайды."
+    },
+    {
+      "id": 8,
+      "topic": "human_biology",
+      "question_en": "What organ pumps blood?",
+      "question_ru": "Какой орган перекачивает кровь?",
+      "question_kk": "Қандай орган қанды айдайды?",
+      "options": {
+        "A": "Lungs",
+        "B": "Liver",
+        "C": "Heart",
+        "D": "Kidneys",
+        "E": "Brain"
+      },
+      "correct": "C",
+      "explanation_en": "The heart pumps blood throughout the body.",
+      "explanation_ru": "Сердце перекачивает кровь по всему телу.",
+      "explanation_kk": "Жүрек бүкіл дене бойынша қанды айдайды."
+    },
+    {
+      "id": 9,
+      "topic": "evolution",
+      "question_en": "Who proposed the theory of natural selection?",
+      "question_ru": "Кто предложил теорию естественного отбора?",
+      "question_kk": "Табиғи сұрыптау теориясын кім ұсынды?",
+      "options": {
+        "A": "Einstein",
+        "B": "Newton",
+        "C": "Darwin",
+        "D": "Mendel",
+        "E": "Pasteur"
+      },
+      "correct": "C",
+      "explanation_en": "Charles Darwin proposed the theory of evolution by natural selection.",
+      "explanation_ru": "Чарльз Дарвин предложил теорию эволюции путем естественного отбора.",
+      "explanation_kk": "Чарльз Дарвин табиғи сұрыптау арқылы эволюция теориясын ұсынды."
+    },
+    {
+      "id": 10,
+      "topic": "evolution",
+      "question_en": "What is adaptation?",
+      "question_ru": "Что такое адаптация?",
+      "question_kk": "Бейімделу дегеніміз не?",
+      "options": {
+        "A": "Getting bigger",
+        "B": "Traits that help survival",
+        "C": "Moving to new places",
+        "D": "Learning new skills",
+        "E": "Changing color"
+      },
+      "correct": "B",
+      "explanation_en": "Adaptation is a trait that helps an organism survive in its environment.",
+      "explanation_ru": "Адаптация - это черта, которая помогает организму выжить в своей среде.",
+      "explanation_kk": "Бейімделу - организмге өз ортасында өмір сүруге көмектесетін қасиет."
+    }
+  ]
+}
