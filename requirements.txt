@@ -1,0 +1,19 @@
+protobuf==6.33.5
+python-dotenv==1.2.1
+python-telegram-bot==22.6
+# UNT Silkway Bot - Requirements
+# Python 3.9+
+
+# Telegram Bot
+python-telegram-bot==20.7
+
+# Database
+# (Using SQLite - built-in with Python)
+
+# Google Gemini AI (Optional - comment out if not using)
+google-generativeai==0.3.2
+
+# Alternative AI Options (uncomment if using):
+# openai==1.3.0
+# anthropic==0.7.0
+
