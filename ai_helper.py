@@ -8,7 +8,7 @@ load_dotenv()
 print("🔮 Using Gemini AI")
 
 # ✅ Your working Gemini API key
-GEMINI_API_KEY = ""
+GEMINI_API_KEY = "AIzaSyCTGCHAmt_LN7b0k3ivo5RT4nkMlbxLGn0"
 
 print(f"🔑 API Key: {GEMINI_API_KEY[:20]}...")
 
@@ -22,20 +22,29 @@ except Exception as e:
     model = None
 
 def clean_response(text: str) -> str:
-    """Remove unwanted symbols like $ from AI response"""
+    """Remove unwanted symbols and formatting from AI response"""
     if not text:
         return text
     
-    # Remove single $ symbols
+    # ✅ Remove ** markdown bold
+    text = text.replace('**', '')
+    
+    # ✅ Remove single * asterisks
+    text = text.replace('*', '')
+    
+    # ✅ Remove $ symbols
     text = text.replace('$', '')
     
-    # Remove ** markdown bold (optional - if you want plain text)
-    # text = text.replace('**', '')
+    # ✅ Remove ``` code blocks
+    text = re.sub(r'```[\w]*\n?', '', text)
     
-    # Remove excessive newlines
+    # ✅ Remove _ underscores used for italics
+    text = text.replace('_', '')
+    
+    # ✅ Remove excessive newlines (more than 2)
     text = re.sub(r'\n{3,}', '\n\n', text)
     
-    # Remove leading/trailing whitespace
+    # ✅ Remove leading/trailing whitespace
     text = text.strip()
     
     return text
@@ -67,16 +76,19 @@ def explain_topic(topic, subject, language="en"):
 
 Explain the topic: "{topic}" in {subject}
 
-Requirements:
-- Use {lang_map.get(language, 'English')} language
+IMPORTANT REQUIREMENTS:
+- Use {lang_map.get(language, 'English')} language ONLY
+- Use plain text ONLY - NO special formatting
+- DO NOT use asterisks (**)
+- DO NOT use underscores (_)
+- DO NOT use dollar signs ($)
+- DO NOT use markdown or code blocks
 - Make it simple and clear for high school students
 - Include practical examples
 - Keep under 300 words
 - Be encouraging and supportive
-- DO NOT use $ symbols or LaTeX formatting
-- Use plain text only
 
-Start your explanation:"""
+Write your explanation in plain, simple text:"""
     
     return call_ai(prompt)
 
@@ -94,16 +106,19 @@ def answer_question(question, subject, language="en"):
 Student's question: {question}
 Subject: {subject}
 
-Requirements:
-- Answer in {lang_map.get(language, 'English')}
+IMPORTANT REQUIREMENTS:
+- Answer in {lang_map.get(language, 'English')} ONLY
+- Use plain text ONLY - NO special formatting
+- DO NOT use asterisks (**)
+- DO NOT use underscores (_)
+- DO NOT use dollar signs ($)
+- DO NOT use markdown or code blocks
 - Be clear, accurate, and helpful
 - Include examples if needed
 - Keep under 300 words
 - Be encouraging
-- DO NOT use $ symbols or LaTeX formatting
-- Use plain text only
 
-Your answer:"""
+Write your answer in plain, simple text:"""
     
     return call_ai(prompt)
 
@@ -124,14 +139,14 @@ def explain_answer(question_text, correct_answer, user_answer, language="en"):
 Question: {question_text}
 Correct answer: {correct_answer}
 
-In {lang_map.get(language, 'English')}, write 2-3 encouraging sentences praising them.
-
-Requirements:
-- DO NOT use $ symbols or LaTeX formatting
-- Use plain text only
+IMPORTANT REQUIREMENTS:
+- Write in {lang_map.get(language, 'English')} ONLY
+- Use plain text ONLY - NO formatting
+- DO NOT use asterisks, underscores, or dollar signs
+- Write 2-3 encouraging sentences praising them
 - Keep it simple and encouraging
 
-Your response:"""
+Your response in plain text:"""
     else:
         prompt = f"""Help a UNT student understand their mistake.
 
@@ -139,14 +154,15 @@ Question: {question_text}
 Correct answer: {correct_answer}
 Student's answer: {user_answer}
 
-In {lang_map.get(language, 'English')}:
+IMPORTANT REQUIREMENTS:
+- Write in {lang_map.get(language, 'English')} ONLY
+- Use plain text ONLY - NO formatting
+- DO NOT use asterisks, underscores, or dollar signs
 - Explain why the correct answer is right
 - Be kind and encouraging
 - Keep under 150 words
-- DO NOT use $ symbols or LaTeX formatting
-- Use plain text only
 
-Your explanation:"""
+Your explanation in plain text:"""
     
     return call_ai(prompt)
 
@@ -163,7 +179,12 @@ if __name__ == "__main__":
     print(f"✅ Result:\n{result}\n")
     print("=" * 60)
     
-    print("\n3️⃣ Testing explain_answer...")
+    print("\n3️⃣ Testing explain_answer (correct)...")
+    result = explain_answer("What is 2 + 2?", "4", "4", "en")
+    print(f"✅ Result:\n{result}\n")
+    print("=" * 60)
+    
+    print("\n4️⃣ Testing explain_answer (incorrect)...")
     result = explain_answer("Solve: x² - 5x + 6 = 0", "x = 2, x = 3", "x = 1, x = 6", "en")
     print(f"✅ Result:\n{result}\n")
     

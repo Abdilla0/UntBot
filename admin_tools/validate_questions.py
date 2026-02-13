@@ -224,7 +224,7 @@ if __name__ == "__main__":
     
     # Updated subjects - NO 'reading', ADDED 'biology' and 'geography'
     subjects = {
-        'mathematics': os.path.join(project_root, 'question_sources', 'mathematics_questions.json'),
+        'mathematics': os.path.join(project_root, 'question_sources', 'math_questions.json'),
         'physics': os.path.join(project_root, 'question_sources', 'physics_questions.json'),
         'chemistry': os.path.join(project_root, 'question_sources', 'chemistry_questions.json'),
         'biology': os.path.join(project_root, 'question_sources', 'biology_questions.json'),

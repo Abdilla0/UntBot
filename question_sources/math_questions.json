@@ -1,916 +1,916 @@
 {
-  "math": {
+  "subject": "mathematics",
+  "metadata": {
+    "total_questions": 50,
     "topics": {
-      "algebra": [
-        {
-          "id": 1,
-          "topic": "algebra",
-          "question_en": "Solve: x² - 5x + 6 = 0",
-          "question_ru": "Решите: x² - 5x + 6 = 0",
-          "question_kk": "Шешіңіз: x² - 5x + 6 = 0",
-          "options": {
-            "A": "x = 1, x = 6",
-            "B": "x = 2, x = 3",
-            "C": "x = -2, x = -3",
-            "D": "x = 1, x = 5",
-            "E": "x = 0, x = 6"
-          },
-          "correct": "B",
-          "explanation_en": "Factor the equation: (x-2)(x-3) = 0, so x = 2 or x = 3",
-          "explanation_ru": "Разложите уравнение: (x-2)(x-3) = 0, поэтому x = 2 или x = 3",
-          "explanation_kk": "Теңдеуді жіктеңіз: (x-2)(x-3) = 0, сондықтан x = 2 немесе x = 3"
-        },
-        {
-          "id": 2,
-          "topic": "algebra",
-          "question_en": "If a = 5, what is 3a + 7?",
-          "question_ru": "Если a = 5, чему равно 3a + 7?",
-          "question_kk": "Егер a = 5 болса, 3a + 7 неге тең?",
-          "options": {
-            "A": "20",
-            "B": "21",
-            "C": "22",
-            "D": "23",
-            "E": "24"
-          },
-          "correct": "C",
-          "explanation_en": "Substitute: 3(5) + 7 = 15 + 7 = 22",
-          "explanation_ru": "Подставьте: 3(5) + 7 = 15 + 7 = 22",
-          "explanation_kk": "Ауыстырыңыз: 3(5) + 7 = 15 + 7 = 22"
-        },
-        {
-          "id": 3,
-          "topic": "algebra",
-          "question_en": "Solve for x: 2x - 8 = 10",
-          "question_ru": "Решите x: 2x - 8 = 10",
-          "question_kk": "x-ті табыңыз: 2x - 8 = 10",
-          "options": {
-            "A": "x = 7",
-            "B": "x = 8",
-            "C": "x = 9",
-            "D": "x = 10",
-            "E": "x = 11"
-          },
-          "correct": "C",
-          "explanation_en": "Add 8 to both sides: 2x = 18, then divide by 2: x = 9",
-          "explanation_ru": "Прибавьте 8 к обеим сторонам: 2x = 18, затем разделите на 2: x = 9",
-          "explanation_kk": "Екі жаққа да 8 қосыңыз: 2x = 18, содан кейін 2-ге бөліңіз: x = 9"
-        },
-        {
-          "id": 4,
-          "topic": "algebra",
-          "question_en": "Simplify: 5x + 3x - 2x",
-          "question_ru": "Упростите: 5x + 3x - 2x",
-          "question_kk": "Жеңілдетіңіз: 5x + 3x - 2x",
-          "options": {
-            "A": "4x",
-            "B": "5x",
-            "C": "6x",
-            "D": "7x",
-            "E": "8x"
-          },
-          "correct": "C",
-          "explanation_en": "Combine like terms: 5x + 3x - 2x = 6x",
-          "explanation_ru": "Объедините подобные члены: 5x + 3x - 2x = 6x",
-          "explanation_kk": "Ұқсас мүшелерді біріктіріңіз: 5x + 3x - 2x = 6x"
-        },
-        {
-          "id": 5,
-          "topic": "algebra",
-          "question_en": "What is the value of x if x/4 = 5?",
-          "question_ru": "Чему равен x, если x/4 = 5?",
-          "question_kk": "x/4 = 5 болса, x-тің мәні қанша?",
-          "options": {
-            "A": "15",
-            "B": "18",
-            "C": "20",
-            "D": "22",
-            "E": "25"
-          },
-          "correct": "C",
-          "explanation_en": "Multiply both sides by 4: x = 5 × 4 = 20",
-          "explanation_ru": "Умножьте обе стороны на 4: x = 5 × 4 = 20",
-          "explanation_kk": "Екі жағын да 4-ке көбейтіңіз: x = 5 × 4 = 20"
-        },
-        {
-          "id": 6,
-          "topic": "algebra",
-          "question_en": "Solve: x² = 49",
-          "question_ru": "Решите: x² = 49",
-          "question_kk": "Шешіңіз: x² = 49",
-          "options": {
-            "A": "x = 7 only",
-            "B": "x = -7 only",
-            "C": "x = ±7",
-            "D": "x = 24.5",
-            "E": "x = 14"
-          },
-          "correct": "C",
-          "explanation_en": "Take square root of both sides: x = ±√49 = ±7",
-          "explanation_ru": "Извлеките квадратный корень из обеих сторон: x = ±√49 = ±7",
-          "explanation_kk": "Екі жағынан да квадрат түбір алыңыз: x = ±√49 = ±7"
-        },
-        {
-          "id": 7,
-          "topic": "algebra",
-          "question_en": "If 3x + 5 = 20, what is x?",
-          "question_ru": "Если 3x + 5 = 20, чему равен x?",
-          "question_kk": "Егер 3x + 5 = 20 болса, x қанша?",
-          "options": {
-            "A": "x = 3",
-            "B": "x = 4",
-            "C": "x = 5",
-            "D": "x = 6",
-            "E": "x = 7"
-          },
-          "correct": "C",
-          "explanation_en": "Subtract 5: 3x = 15, then divide by 3: x = 5",
-          "explanation_ru": "Вычтите 5: 3x = 15, затем разделите на 3: x = 5",
-          "explanation_kk": "5-ті алып тастаңыз: 3x = 15, содан кейін 3-ке бөліңіз: x = 5"
-        },
-        {
-          "id": 8,
-          "topic": "algebra",
-          "question_en": "Expand: (x + 3)(x + 2)",
-          "question_ru": "Раскройте скобки: (x + 3)(x + 2)",
-          "question_kk": "Ашыңыз: (x + 3)(x + 2)",
-          "options": {
-            "A": "x² + 5x + 6",
-            "B": "x² + 5x + 5",
-            "C": "x² + 6x + 6",
-            "D": "x² + 4x + 6",
-            "E": "x² + 6"
-          },
-          "correct": "A",
-          "explanation_en": "Use FOIL: x² + 2x + 3x + 6 = x² + 5x + 6",
-          "explanation_ru": "Используйте правило FOIL: x² + 2x + 3x + 6 = x² + 5x + 6",
-          "explanation_kk": "FOIL ережесін қолданыңыз: x² + 2x + 3x + 6 = x² + 5x + 6"
-        },
-        {
-          "id": 9,
-          "topic": "algebra",
-          "question_en": "What is 2(x + 4)?",
-          "question_ru": "Чему равно 2(x + 4)?",
-          "question_kk": "2(x + 4) неге тең?",
-          "options": {
-            "A": "2x + 4",
-            "B": "2x + 6",
-            "C": "2x + 8",
-            "D": "x + 8",
-            "E": "2x + 2"
-          },
-          "correct": "C",
-          "explanation_en": "Distribute: 2 × x + 2 × 4 = 2x + 8",
-          "explanation_ru": "Раскройте скобки: 2 × x + 2 × 4 = 2x + 8",
-          "explanation_kk": "Үлестіріңіз: 2 × x + 2 × 4 = 2x + 8"
-        },
-        {
-          "id": 10,
-          "topic": "algebra",
-          "question_en": "Solve: x² + 4x + 4 = 0",
-          "question_ru": "Решите: x² + 4x + 4 = 0",
-          "question_kk": "Шешіңіз: x² + 4x + 4 = 0",
-          "options": {
-            "A": "x = -2",
-            "B": "x = 2",
-            "C": "x = -4",
-            "D": "x = 4",
-            "E": "x = 0"
-          },
-          "correct": "A",
-          "explanation_en": "This is a perfect square: (x + 2)² = 0, so x = -2",
-          "explanation_ru": "Это полный квадрат: (x + 2)² = 0, поэтому x = -2",
-          "explanation_kk": "Бұл толық квадрат: (x + 2)² = 0, сондықтан x = -2"
-        }
-      ],
-      "geometry": [
-        {
-          "id": 11,
-          "topic": "geometry",
-          "question_en": "In a right triangle with legs 3 and 4, what is the hypotenuse?",
-          "question_ru": "В прямоугольном треугольнике с катетами 3 и 4, чему равна гипотенуза?",
-          "question_kk": "Катеттері 3 және 4 болатын тік бұрышты үшбұрышта гипотенуза қанша?",
-          "options": {
-            "A": "5",
-            "B": "6",
-            "C": "7",
-            "D": "8",
-            "E": "9"
-          },
-          "correct": "A",
-          "explanation_en": "Use Pythagorean theorem: √(3² + 4²) = √(9 + 16) = √25 = 5",
-          "explanation_ru": "Используйте теорему Пифагора: √(3² + 4²) = √(9 + 16) = √25 = 5",
-          "explanation_kk": "Пифагор теоремасын қолданыңыз: √(3² + 4²) = √(9 + 16) = √25 = 5"
-        },
-        {
-          "id": 12,
-          "topic": "geometry",
-          "question_en": "What is the area of a rectangle with length 8 and width 5?",
-          "question_ru": "Какова площадь прямоугольника длиной 8 и шириной 5?",
-          "question_kk": "Ұзындығы 8 және ені 5 тіктөртбұрыштың ауданы қанша?",
-          "options": {
-            "A": "13",
-            "B": "26",
-            "C": "40",
-            "D": "45",
-            "E": "50"
-          },
-          "correct": "C",
-          "explanation_en": "Area = length × width = 8 × 5 = 40",
-          "explanation_ru": "Площадь = длина × ширина = 8 × 5 = 40",
-          "explanation_kk": "Аудан = ұзындық × ені = 8 × 5 = 40"
-        },
-        {
-          "id": 13,
-          "topic": "geometry",
-          "question_en": "What is the perimeter of a square with side length 7?",
-          "question_ru": "Каков периметр квадрата со стороной 7?",
-          "question_kk": "Қабырғасы 7 шаршының периметрі қанша?",
-          "options": {
-            "A": "14",
-            "B": "21",
-            "C": "28",
-            "D": "35",
-            "E": "49"
-          },
-          "correct": "C",
-          "explanation_en": "Perimeter of square = 4 × side = 4 × 7 = 28",
-          "explanation_ru": "Периметр квадрата = 4 × сторона = 4 × 7 = 28",
-          "explanation_kk": "Шаршының периметрі = 4 × қабырға = 4 × 7 = 28"
-        },
-        {
-          "id": 14,
-          "topic": "geometry",
-          "question_en": "What is the sum of angles in a triangle?",
-          "question_ru": "Какова сумма углов треугольника?",
-          "question_kk": "Үшбұрыштың бұрыштарының қосындысы қанша?",
-          "options": {
-            "A": "90°",
-            "B": "120°",
-            "C": "180°",
-            "D": "270°",
-            "E": "360°"
-          },
-          "correct": "C",
-          "explanation_en": "The sum of all angles in any triangle is always 180°",
-          "explanation_ru": "Сумма всех углов в любом треугольнике всегда равна 180°",
-          "explanation_kk": "Кез келген үшбұрыштың барлық бұрыштарының қосындысы әрқашан 180°"
-        },
-        {
-          "id": 15,
-          "topic": "geometry",
-          "question_en": "What is the area of a circle with radius 3? (Use π ≈ 3.14)",
-          "question_ru": "Какова площадь круга радиусом 3? (Используйте π ≈ 3,14)",
-          "question_kk": "Радиусы 3 шеңбердің ауданы қанша? (π ≈ 3,14 деп алыңыз)",
-          "options": {
-            "A": "9.42",
-            "B": "18.84",
-            "C": "28.26",
-            "D": "37.68",
-            "E": "47.10"
-          },
-          "correct": "C",
-          "explanation_en": "Area = πr² = 3.14 × 3² = 3.14 × 9 = 28.26",
-          "explanation_ru": "Площадь = πr² = 3,14 × 3² = 3,14 × 9 = 28,26",
-          "explanation_kk": "Аудан = πr² = 3,14 × 3² = 3,14 × 9 = 28,26"
-        },
-        {
-          "id": 16,
-          "topic": "geometry",
-          "question_en": "How many sides does a hexagon have?",
-          "question_ru": "Сколько сторон у шестиугольника?",
-          "question_kk": "Алтыбұрыштың қанша қабырғасы бар?",
-          "options": {
-            "A": "4",
-            "B": "5",
-            "C": "6",
-            "D": "7",
-            "E": "8"
-          },
-          "correct": "C",
-          "explanation_en": "A hexagon has 6 sides (hex = 6 in Greek)",
-          "explanation_ru": "Шестиугольник имеет 6 сторон (hex = 6 по-гречески)",
-          "explanation_kk": "Алтыбұрыштың 6 қабырғасы бар (грек тілінде hex = 6)"
-        },
-        {
-          "id": 17,
-          "topic": "geometry",
-          "question_en": "What is the volume of a cube with side 4?",
-          "question_ru": "Каков объем куба со стороной 4?",
-          "question_kk": "Қабырғасы 4 текшенің көлемі қанша?",
-          "options": {
-            "A": "16",
-            "B": "32",
-            "C": "48",
-            "D": "64",
-            "E": "80"
-          },
-          "correct": "D",
-          "explanation_en": "Volume of cube = side³ = 4³ = 64",
-          "explanation_ru": "Объем куба = сторона³ = 4³ = 64",
-          "explanation_kk": "Текшенің көлемі = қабырға³ = 4³ = 64"
-        },
-        {
-          "id": 18,
-          "topic": "geometry",
-          "question_en": "What is the circumference of a circle with radius 5? (Use π ≈ 3.14)",
-          "question_ru": "Какова длина окружности радиусом 5? (Используйте π ≈ 3,14)",
-          "question_kk": "Радиусы 5 шеңбердің ұзындығы қанша? (π ≈ 3,14 деп алыңыз)",
-          "options": {
-            "A": "15.7",
-            "B": "21.4",
-            "C": "31.4",
-            "D": "41.4",
-            "E": "51.4"
-          },
-          "correct": "C",
-          "explanation_en": "Circumference = 2πr = 2 × 3.14 × 5 = 31.4",
-          "explanation_ru": "Длина окружности = 2πr = 2 × 3,14 × 5 = 31,4",
-          "explanation_kk": "Шеңбер ұзындығы = 2πr = 2 × 3,14 × 5 = 31,4"
-        },
-        {
-          "id": 19,
-          "topic": "geometry",
-          "question_en": "What is the area of a triangle with base 10 and height 6?",
-          "question_ru": "Какова площадь треугольника с основанием 10 и высотой 6?",
-          "question_kk": "Табаны 10 және биіктігі 6 үшбұрыштың ауданы қанша?",
-          "options": {
-            "A": "16",
-            "B": "30",
-            "C": "60",
-            "D": "120",
-            "E": "180"
-          },
-          "correct": "B",
-          "explanation_en": "Area of triangle = (base × height) / 2 = (10 × 6) / 2 = 30",
-          "explanation_ru": "Площадь треугольника = (основание × высота) / 2 = (10 × 6) / 2 = 30",
-          "explanation_kk": "Үшбұрыштың ауданы = (табан × биіктік) / 2 = (10 × 6) / 2 = 30"
-        },
-        {
-          "id": 20,
-          "topic": "geometry",
-          "question_en": "Two angles are complementary. If one is 35°, what is the other?",
-          "question_ru": "Два угла дополнительные. Если один 35°, каков другой?",
-          "question_kk": "Екі бұрыш толықтаушы. Егер біреуі 35° болса, екіншісі қанша?",
-          "options": {
-            "A": "35°",
-            "B": "45°",
-            "C": "55°",
-            "D": "65°",
-            "E": "145°"
-          },
-          "correct": "C",
-          "explanation_en": "Complementary angles sum to 90°: 90° - 35° = 55°",
-          "explanation_ru": "Дополнительные углы в сумме дают 90°: 90° - 35° = 55°",
-          "explanation_kk": "Толықтаушы бұрыштардың қосындысы 90°: 90° - 35° = 55°"
-        }
-      ],
-      "percentages": [
-        {
-          "id": 21,
-          "topic": "percentages",
-          "question_en": "What is 15% of 200?",
-          "question_ru": "Сколько составляет 15% от 200?",
-          "question_kk": "200-дің 15%-ы қанша?",
-          "options": {
-            "A": "25",
-            "B": "30",
-            "C": "35",
-            "D": "40",
-            "E": "45"
-          },
-          "correct": "B",
-          "explanation_en": "Calculate: 15% of 200 = 0.15 × 200 = 30",
-          "explanation_ru": "Вычислите: 15% от 200 = 0,15 × 200 = 30",
-          "explanation_kk": "Есептеңіз: 200-дің 15%-ы = 0,15 × 200 = 30"
-        },
-        {
-          "id": 22,
-          "topic": "percentages",
-          "question_en": "What is 50% of 80?",
-          "question_ru": "Сколько составляет 50% от 80?",
-          "question_kk": "80-нің 50%-ы қанша?",
-          "options": {
-            "A": "30",
-            "B": "35",
-            "C": "40",
-            "D": "45",
-            "E": "50"
-          },
-          "correct": "C",
-          "explanation_en": "50% means half: 80 ÷ 2 = 40",
-          "explanation_ru": "50% означает половину: 80 ÷ 2 = 40",
-          "explanation_kk": "50% жарты дегенді білдіреді: 80 ÷ 2 = 40"
-        },
-        {
-          "id": 23,
-          "topic": "percentages",
-          "question_en": "What is 25% of 120?",
-          "question_ru": "Сколько составляет 25% от 120?",
-          "question_kk": "120-дің 25%-ы қанша?",
-          "options": {
-            "A": "20",
-            "B": "25",
-            "C": "30",
-            "D": "35",
-            "E": "40"
-          },
-          "correct": "C",
-          "explanation_en": "25% = 1/4, so 120 ÷ 4 = 30",
-          "explanation_ru": "25% = 1/4, поэтому 120 ÷ 4 = 30",
-          "explanation_kk": "25% = 1/4, сондықтан 120 ÷ 4 = 30"
-        },
-        {
-          "id": 24,
-          "topic": "percentages",
-          "question_en": "If 20% of a number is 40, what is the number?",
-          "question_ru": "Если 20% от числа равны 40, каково это число?",
-          "question_kk": "Егер санның 20%-ы 40-қа тең болса, сан қанша?",
-          "options": {
-            "A": "100",
-            "B": "150",
-            "C": "200",
-            "D": "250",
-            "E": "300"
-          },
-          "correct": "C",
-          "explanation_en": "If 20% = 40, then 100% = 40 ÷ 0.20 = 200",
-          "explanation_ru": "Если 20% = 40, то 100% = 40 ÷ 0,20 = 200",
-          "explanation_kk": "Егер 20% = 40 болса, онда 100% = 40 ÷ 0,20 = 200"
-        },
-        {
-          "id": 25,
-          "topic": "percentages",
-          "question_en": "What is 10% of 500?",
-          "question_ru": "Сколько составляет 10% от 500?",
-          "question_kk": "500-дің 10%-ы қанша?",
-          "options": {
-            "A": "25",
-            "B": "50",
-            "C": "75",
-            "D": "100",
-            "E": "125"
-          },
-          "correct": "B",
-          "explanation_en": "10% of 500 = 0.10 × 500 = 50",
-          "explanation_ru": "10% от 500 = 0,10 × 500 = 50",
-          "explanation_kk": "500-дің 10%-ы = 0,10 × 500 = 50"
-        },
-        {
-          "id": 26,
-          "topic": "percentages",
-          "question_en": "A shirt costs 100 tenge. With 20% discount, what is the sale price?",
-          "question_ru": "Рубашка стоит 100 тенге. Со скидкой 20%, какова цена продажи?",
-          "question_kk": "Жейде 100 теңге тұрады. 20% жеңілдікпен, сату бағасы қанша?",
-          "options": {
-            "A": "60 tenge",
-            "B": "70 tenge",
-            "C": "80 tenge",
-            "D": "90 tenge",
-            "E": "95 tenge"
-          },
-          "correct": "C",
-          "explanation_en": "Discount = 20% of 100 = 20. Sale price = 100 - 20 = 80 tenge",
-          "explanation_ru": "Скидка = 20% от 100 = 20. Цена продажи = 100 - 20 = 80 тенге",
-          "explanation_kk": "Жеңілдік = 100-дің 20%-ы = 20. Сату бағасы = 100 - 20 = 80 теңге"
-        },
-        {
-          "id": 27,
-          "topic": "percentages",
-          "question_en": "What percent of 50 is 10?",
-          "question_ru": "Сколько процентов от 50 составляет 10?",
-          "question_kk": "10 50-нің қанша пайызы?",
-          "options": {
-            "A": "10%",
-            "B": "15%",
-            "C": "20%",
-            "D": "25%",
-            "E": "30%"
-          },
-          "correct": "C",
-          "explanation_en": "(10 ÷ 50) × 100% = 0.2 × 100% = 20%",
-          "explanation_ru": "(10 ÷ 50) × 100% = 0,2 × 100% = 20%",
-          "explanation_kk": "(10 ÷ 50) × 100% = 0,2 × 100% = 20%"
-        },
-        {
-          "id": 28,
-          "topic": "percentages",
-          "question_en": "What is 75% of 60?",
-          "question_ru": "Сколько составляет 75% от 60?",
-          "question_kk": "60-тың 75%-ы қанша?",
-          "options": {
-            "A": "35",
-            "B": "40",
-            "C": "45",
-            "D": "50",
-            "E": "55"
-          },
-          "correct": "C",
-          "explanation_en": "75% of 60 = 0.75 × 60 = 45",
-          "explanation_ru": "75% от 60 = 0,75 × 60 = 45",
-          "explanation_kk": "60-тың 75%-ы = 0,75 × 60 = 45"
-        },
-        {
-          "id": 29,
-          "topic": "percentages",
-          "question_en": "A price increased from 50 to 60. What is the percent increase?",
-          "question_ru": "Цена выросла с 50 до 60. Каков процент увеличения?",
-          "question_kk": "Баға 50-ден 60-қа дейін өсті. Өсім пайызы қанша?",
-          "options": {
-            "A": "10%",
-            "B": "15%",
-            "C": "20%",
-            "D": "25%",
-            "E": "30%"
-          },
-          "correct": "C",
-          "explanation_en": "Increase = 10, Percent = (10÷50) × 100% = 20%",
-          "explanation_ru": "Увеличение = 10, Процент = (10÷50) × 100% = 20%",
-          "explanation_kk": "Өсім = 10, Пайыз = (10÷50) × 100% = 20%"
-        },
-        {
-          "id": 30,
-          "topic": "percentages",
-          "question_en": "What is 5% of 1000?",
-          "question_ru": "Сколько составляет 5% от 1000?",
-          "question_kk": "1000-дің 5%-ы қанша?",
-          "options": {
-            "A": "25",
-            "B": "50",
-            "C": "75",
-            "D": "100",
-            "E": "150"
-          },
-          "correct": "B",
-          "explanation_en": "5% of 1000 = 0.05 × 1000 = 50",
-          "explanation_ru": "5% от 1000 = 0,05 × 1000 = 50",
-          "explanation_kk": "1000-дің 5%-ы = 0,05 × 1000 = 50"
-        }
-      ],
-      "exponents": [
-        {
-          "id": 31,
-          "topic": "exponents",
-          "question_en": "Simplify: 2³ × 2⁴",
-          "question_ru": "Упростите: 2³ × 2⁴",
-          "question_kk": "Жеңілдетіңіз: 2³ × 2⁴",
-          "options": {
-            "A": "2⁷",
-            "B": "2¹²",
-            "C": "4⁷",
-            "D": "8⁴",
-            "E": "16³"
-          },
-          "correct": "A",
-          "explanation_en": "When multiplying same base, add exponents: 2³ × 2⁴ = 2³⁺⁴ = 2⁷",
-          "explanation_ru": "При умножении с одинаковым основанием складываем показатели: 2³ × 2⁴ = 2³⁺⁴ = 2⁷",
-          "explanation_kk": "Бірдей негізді көбейткенде дәрежелерді қосамыз: 2³ × 2⁴ = 2³⁺⁴ = 2⁷"
-        },
-        {
-          "id": 32,
-          "topic": "exponents",
-          "question_en": "What is 5²?",
-          "question_ru": "Чему равно 5²?",
-          "question_kk": "5² қанша?",
-          "options": {
-            "A": "10",
-            "B": "15",
-            "C": "20",
-            "D": "25",
-            "E": "30"
-          },
-          "correct": "D",
-          "explanation_en": "5² = 5 × 5 = 25",
-          "explanation_ru": "5² = 5 × 5 = 25",
-          "explanation_kk": "5² = 5 × 5 = 25"
-        },
-        {
-          "id": 33,
-          "topic": "exponents",
-          "question_en": "Simplify: 3⁵ ÷ 3²",
-          "question_ru": "Упростите: 3⁵ ÷ 3²",
-          "question_kk": "Жеңілдетіңіз: 3⁵ ÷ 3²",
-          "options": {
-            "A": "3²",
-            "B": "3³",
-            "C": "3⁴",
-            "D": "3⁷",
-            "E": "3¹⁰"
-          },
-          "correct": "B",
-          "explanation_en": "When dividing same base, subtract exponents: 3⁵ ÷ 3² = 3⁵⁻² = 3³",
-          "explanation_ru": "При делении с одинаковым основанием вычитаем показатели: 3⁵ ÷ 3² = 3⁵⁻² = 3³",
-          "explanation_kk": "Бірдей негізді бөлгенде дәрежелерді алып тастаймыз: 3⁵ ÷ 3² = 3⁵⁻² = 3³"
-        },
-        {
-          "id": 34,
-          "topic": "exponents",
-          "question_en": "What is (2³)²?",
-          "question_ru": "Чему равно (2³)²?",
-          "question_kk": "(2³)² қанша?",
-          "options": {
-            "A": "2⁵",
-            "B": "2⁶",
-            "C": "2⁸",
-            "D": "2⁹",
-            "E": "4⁶"
-          },
-          "correct": "B",
-          "explanation_en": "When raising power to power, multiply exponents: (2³)² = 2³ˣ² = 2⁶",
-          "explanation_ru": "При возведении степени в степень умножаем показатели: (2³)² = 2³ˣ² = 2⁶",
-          "explanation_kk": "Дәрежені дәрежеге шығарғанда дәрежелерді көбейтеміз: (2³)² = 2³ˣ² = 2⁶"
-        },
-        {
-          "id": 35,
-          "topic": "exponents",
-          "question_en": "What is 10³?",
-          "question_ru": "Чему равно 10³?",
-          "question_kk": "10³ қанша?",
-          "options": {
-            "A": "30",
-            "B": "100",
-            "C": "300",
-            "D": "1000",
-            "E": "3000"
-          },
-          "correct": "D",
-          "explanation_en": "10³ = 10 × 10 × 10 = 1000",
-          "explanation_ru": "10³ = 10 × 10 × 10 = 1000",
-          "explanation_kk": "10³ = 10 × 10 × 10 = 1000"
-        },
-        {
-          "id": 36,
-          "topic": "exponents",
-          "question_en": "What is any number to the power of 0?",
-          "question_ru": "Чему равно любое число в степени 0?",
-          "question_kk": "Кез келген санның 0 дәрежесі қанша?",
-          "options": {
-            "A": "0",
-            "B": "1",
-            "C": "The number itself",
-            "D": "10",
-            "E": "Undefined"
-          },
-          "correct": "B",
-          "explanation_en": "Any non-zero number raised to the power of 0 equals 1",
-          "explanation_ru": "Любое ненулевое число в степени 0 равно 1",
-          "explanation_kk": "Нөлден өзге кез келген санның 0 дәрежесі 1-ге тең"
-        },
-        {
-          "id": 37,
-          "topic": "exponents",
-          "question_en": "Simplify: 4² × 4³",
-          "question_ru": "Упростите: 4² × 4³",
-          "question_kk": "Жеңілдетіңіз: 4² × 4³",
-          "options": {
-            "A": "4⁵",
-            "B": "4⁶",
-            "C": "16⁵",
-            "D": "16⁶",
-            "E": "8⁵"
-          },
-          "correct": "A",
-          "explanation_en": "Add exponents when multiplying same base: 4² × 4³ = 4²⁺³ = 4⁵",
-          "explanation_ru": "Складываем показатели при умножении с одинаковым основанием: 4² × 4³ = 4²⁺³ = 4⁵",
-          "explanation_kk": "Бірдей негізді көбейткенде дәрежелерді қосамыз: 4² × 4³ = 4²⁺³ = 4⁵"
-        },
-        {
-          "id": 38,
-          "topic": "exponents",
-          "question_en": "What is √16?",
-          "question_ru": "Чему равно √16?",
-          "question_kk": "√16 қанша?",
-          "options": {
-            "A": "2",
-            "B": "3",
-            "C": "4",
-            "D": "8",
-            "E": "16"
-          },
-          "correct": "C",
-          "explanation_en": "√16 = 4 because 4² = 16",
-          "explanation_ru": "√16 = 4, потому что 4² = 16",
-          "explanation_kk": "√16 = 4, өйткені 4² = 16"
-        },
-        {
-          "id": 39,
-          "topic": "exponents",
-          "question_en": "What is 2⁻²?",
-          "question_ru": "Чему равно 2⁻²?",
-          "question_kk": "2⁻² қанша?",
-          "options": {
-            "A": "-4",
-            "B": "-2",
-            "C": "0.25",
-            "D": "0.5",
-            "E": "4"
-          },
-          "correct": "C",
-          "explanation_en": "Negative exponent means reciprocal: 2⁻² = 1/2² = 1/4 = 0.25",
-          "explanation_ru": "Отрицательная степень означает обратную величину: 2⁻² = 1/2² = 1/4 = 0,25",
-          "explanation_kk": "Теріс дәреже кері шаманы білдіреді: 2⁻² = 1/2² = 1/4 = 0,25"
-        },
-        {
-          "id": 40,
-          "topic": "exponents",
-          "question_en": "What is 7¹?",
-          "question_ru": "Чему равно 7¹?",
-          "question_kk": "7¹ қанша?",
-          "options": {
-            "A": "1",
-            "B": "7",
-            "C": "14",
-            "D": "49",
-            "E": "70"
-          },
-          "correct": "B",
-          "explanation_en": "Any number to the power of 1 equals the number itself: 7¹ = 7",
-          "explanation_ru": "Любое число в степени 1 равно самому числу: 7¹ = 7",
-          "explanation_kk": "Кез келген санның 1 дәрежесі өзіне тең: 7¹ = 7"
-        }
-      ],
-      "fractions": [
-        {
-          "id": 41,
-          "topic": "fractions",
-          "question_en": "What is 1/2 + 1/4?",
-          "question_ru": "Чему равно 1/2 + 1/4?",
-          "question_kk": "1/2 + 1/4 қанша?",
-          "options": {
-            "A": "1/6",
-            "B": "2/6",
-            "C": "2/4",
-            "D": "3/4",
-            "E": "1"
-          },
-          "correct": "D",
-          "explanation_en": "Convert to common denominator: 2/4 + 1/4 = 3/4",
-          "explanation_ru": "Приведите к общему знаменателю: 2/4 + 1/4 = 3/4",
-          "explanation_kk": "Ортақ бөлімге келтіріңіз: 2/4 + 1/4 = 3/4"
-        },
-        {
-          "id": 42,
-          "topic": "fractions",
-          "question_en": "Simplify: 4/8",
-          "question_ru": "Упростите: 4/8",
-          "question_kk": "Жеңілдетіңіз: 4/8",
-          "options": {
-            "A": "1/4",
-            "B": "1/3",
-            "C": "1/2",
-            "D": "2/3",
-            "E": "3/4"
-          },
-          "correct": "C",
-          "explanation_en": "Divide both numerator and denominator by 4: 4/8 = 1/2",
-          "explanation_ru": "Разделите числитель и знаменатель на 4: 4/8 = 1/2",
-          "explanation_kk": "Алымды және бөлімді 4-ке бөліңіз: 4/8 = 1/2"
-        },
-        {
-          "id": 43,
-          "topic": "fractions",
-          "question_en": "What is 3/4 × 2/3?",
-          "question_ru": "Чему равно 3/4 × 2/3?",
-          "question_kk": "3/4 × 2/3 қанша?",
-          "options": {
-            "A": "1/2",
-            "B": "5/7",
-            "C": "6/12",
-            "D": "5/12",
-            "E": "1"
-          },
-          "correct": "A",
-          "explanation_en": "Multiply numerators and denominators: (3×2)/(4×3) = 6/12 = 1/2",
-          "explanation_ru": "Умножьте числители и знаменатели: (3×2)/(4×3) = 6/12 = 1/2",
-          "explanation_kk": "Алымдарды және бөлімдерді көбейтіңіз: (3×2)/(4×3) = 6/12 = 1/2"
-        },
-        {
-          "id": 44,
-          "topic": "fractions",
-          "question_en": "What is 5/6 - 1/6?",
-          "question_ru": "Чему равно 5/6 - 1/6?",
-          "question_kk": "5/6 - 1/6 қанша?",
-          "options": {
-            "A": "1/6",
-            "B": "2/6",
-            "C": "3/6",
-            "D": "4/6",
-            "E": "5/6"
-          },
-          "correct": "D",
-          "explanation_en": "Same denominator, subtract numerators: 5/6 - 1/6 = 4/6 = 2/3",
-          "explanation_ru": "Одинаковый знаменатель, вычитаем числители: 5/6 - 1/6 = 4/6 = 2/3",
-          "explanation_kk": "Бірдей бөлім, алымдарды алып тастаймыз: 5/6 - 1/6 = 4/6 = 2/3"
-        },
-        {
-          "id": 45,
-          "topic": "fractions",
-          "question_en": "Convert 0.75 to a fraction",
-          "question_ru": "Преобразуйте 0,75 в дробь",
-          "question_kk": "0,75-ті бөлшекке айналдырыңыз",
-          "options": {
-            "A": "1/2",
-            "B": "2/3",
-            "C": "3/4",
-            "D": "4/5",
-            "E": "7/10"
-          },
-          "correct": "C",
-          "explanation_en": "0.75 = 75/100 = 3/4 (simplified)",
-          "explanation_ru": "0,75 = 75/100 = 3/4 (упрощённо)",
-          "explanation_kk": "0,75 = 75/100 = 3/4 (жеңілдетілген)"
-        },
-        {
-          "id": 46,
-          "topic": "fractions",
-          "question_en": "What is 1/3 + 1/3?",
-          "question_ru": "Чему равно 1/3 + 1/3?",
-          "question_kk": "1/3 + 1/3 қанша?",
-          "options": {
-            "A": "1/6",
-            "B": "2/6",
-            "C": "1/3",
-            "D": "2/3",
-            "E": "1"
-          },
-          "correct": "D",
-          "explanation_en": "Add numerators with same denominator: 1/3 + 1/3 = 2/3",
-          "explanation_ru": "Сложите числители с одинаковым знаменателем: 1/3 + 1/3 = 2/3",
-          "explanation_kk": "Бірдей бөлімдегі алымдарды қосыңыз: 1/3 + 1/3 = 2/3"
-        },
-        {
-          "id": 47,
-          "topic": "fractions",
-          "question_en": "What is 1/2 ÷ 1/4?",
-          "question_ru": "Чему равно 1/2 ÷ 1/4?",
-          "question_kk": "1/2 ÷ 1/4 қанша?",
-          "options": {
-            "A": "1/8",
-            "B": "1/2",
-            "C": "1",
-            "D": "2",
-            "E": "4"
-          },
-          "correct": "D",
-          "explanation_en": "Dividing by fraction means multiply by its reciprocal: 1/2 × 4/1 = 4/2 = 2",
-          "explanation_ru": "Деление на дробь означает умножение на обратную: 1/2 × 4/1 = 4/2 = 2",
-          "explanation_kk": "Бөлшекке бөлу кері шамаға көбейтуді білдіреді: 1/2 × 4/1 = 4/2 = 2"
-        },
-        {
-          "id": 48,
-          "topic": "fractions",
-          "question_en": "Which fraction is largest: 1/2, 2/5, or 3/8?",
-          "question_ru": "Какая дробь самая большая: 1/2, 2/5 или 3/8?",
-          "question_kk": "Қай бөлшек ең үлкен: 1/2, 2/5 немесе 3/8?",
-          "options": {
-            "A": "1/2",
-            "B": "2/5",
-            "C": "3/8",
-            "D": "They are equal",
-            "E": "Cannot determine"
-          },
-          "correct": "A",
-          "explanation_en": "Convert to decimals: 1/2=0.5, 2/5=0.4, 3/8=0.375. So 1/2 is largest",
-          "explanation_ru": "Преобразуйте в десятичные: 1/2=0,5, 2/5=0,4, 3/8=0,375. Значит 1/2 самая большая",
-          "explanation_kk": "Ондық бөлшекке айналдырыңыз: 1/2=0,5, 2/5=0,4, 3/8=0,375. Демек 1/2 ең үлкен"
-        },
-        {
-          "id": 49,
-          "topic": "fractions",
-          "question_en": "Simplify: 10/15",
-          "question_ru": "Упростите: 10/15",
-          "question_kk": "Жеңілдетіңіз: 10/15",
-          "options": {
-            "A": "1/2",
-            "B": "2/3",
-            "C": "3/4",
-            "D": "4/5",
-            "E": "5/6"
-          },
-          "correct": "B",
-          "explanation_en": "Divide both by 5: 10/15 = 2/3",
-          "explanation_ru": "Разделите оба на 5: 10/15 = 2/3",
-          "explanation_kk": "Екеуін де 5-ке бөліңіз: 10/15 = 2/3"
-        },
-        {
-          "id": 50,
-          "topic": "fractions",
-          "question_en": "What is 2/3 of 15?",
-          "question_ru": "Чему равны 2/3 от 15?",
-          "question_kk": "15-тің 2/3-і қанша?",
-          "options": {
-            "A": "5",
-            "B": "8",
-            "C": "10",
-            "D": "12",
-            "E": "13"
-          },
-          "correct": "C",
-          "explanation_en": "2/3 of 15 = (2/3) × 15 = 30/3 = 10",
-          "explanation_ru": "2/3 от 15 = (2/3) × 15 = 30/3 = 10",
-          "explanation_kk": "15-тің 2/3-і = (2/3) × 15 = 30/3 = 10"
-        }
-      ]
+      "algebra": "Algebra",
+      "geometry": "Geometry",
+      "percentages": "Percentages",
+      "equations": "Equations",
+      "word_problems": "Word Problems"
+    },
+    "last_updated": "2026-02-05"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "algebra",
+      "question_en": "Solve: x² - 5x + 6 = 0",
+      "question_ru": "Решите: x² - 5x + 6 = 0",
+      "question_kk": "Шешіңіз: x² - 5x + 6 = 0",
+      "options": {
+        "A": "x = 1, x = 6",
+        "B": "x = 2, x = 3",
+        "C": "x = -2, x = -3",
+        "D": "x = 1, x = 5",
+        "E": "x = 0, x = 6"
+      },
+      "correct": "B",
+      "explanation_en": "Factor the equation: (x-2)(x-3) = 0, so x = 2 or x = 3",
+      "explanation_ru": "Разложите уравнение: (x-2)(x-3) = 0, поэтому x = 2 или x = 3",
+      "explanation_kk": "Теңдеуді жіктеңіз: (x-2)(x-3) = 0, сондықтан x = 2 немесе x = 3"
+    },
+    {
+      "id": 2,
+      "topic": "algebra",
+      "question_en": "If a = 5, what is 3a + 7?",
+      "question_ru": "Если a = 5, чему равно 3a + 7?",
+      "question_kk": "Егер a = 5 болса, 3a + 7 неге тең?",
+      "options": {
+        "A": "20",
+        "B": "21",
+        "C": "22",
+        "D": "23",
+        "E": "24"
+      },
+      "correct": "C",
+      "explanation_en": "Substitute: 3(5) + 7 = 15 + 7 = 22",
+      "explanation_ru": "Подставьте: 3(5) + 7 = 15 + 7 = 22",
+      "explanation_kk": "Ауыстырыңыз: 3(5) + 7 = 15 + 7 = 22"
+    },
+    {
+      "id": 3,
+      "topic": "algebra",
+      "question_en": "Solve for x: 2x - 8 = 10",
+      "question_ru": "Решите x: 2x - 8 = 10",
+      "question_kk": "x-ті табыңыз: 2x - 8 = 10",
+      "options": {
+        "A": "x = 7",
+        "B": "x = 8",
+        "C": "x = 9",
+        "D": "x = 10",
+        "E": "x = 11"
+      },
+      "correct": "C",
+      "explanation_en": "Add 8 to both sides: 2x = 18, then divide by 2: x = 9",
+      "explanation_ru": "Прибавьте 8 к обеим сторонам: 2x = 18, затем разделите на 2: x = 9",
+      "explanation_kk": "Екі жаққа да 8 қосыңыз: 2x = 18, содан кейін 2-ге бөліңіз: x = 9"
+    },
+    {
+      "id": 4,
+      "topic": "algebra",
+      "question_en": "Simplify: 5x + 3x - 2x",
+      "question_ru": "Упростите: 5x + 3x - 2x",
+      "question_kk": "Жеңілдетіңіз: 5x + 3x - 2x",
+      "options": {
+        "A": "4x",
+        "B": "5x",
+        "C": "6x",
+        "D": "7x",
+        "E": "8x"
+      },
+      "correct": "C",
+      "explanation_en": "Combine like terms: 5x + 3x - 2x = 6x",
+      "explanation_ru": "Объедините подобные члены: 5x + 3x - 2x = 6x",
+      "explanation_kk": "Ұқсас мүшелерді біріктіріңіз: 5x + 3x - 2x = 6x"
+    },
+    {
+      "id": 5,
+      "topic": "algebra",
+      "question_en": "What is the value of x if x/4 = 5?",
+      "question_ru": "Чему равен x, если x/4 = 5?",
+      "question_kk": "x/4 = 5 болса, x-тің мәні қанша?",
+      "options": {
+        "A": "15",
+        "B": "18",
+        "C": "20",
+        "D": "22",
+        "E": "25"
+      },
+      "correct": "C",
+      "explanation_en": "Multiply both sides by 4: x = 5 × 4 = 20",
+      "explanation_ru": "Умножьте обе стороны на 4: x = 5 × 4 = 20",
+      "explanation_kk": "Екі жағын да 4-ке көбейтіңіз: x = 5 × 4 = 20"
+    },
+    {
+      "id": 6,
+      "topic": "algebra",
+      "question_en": "Solve: x² = 49",
+      "question_ru": "Решите: x² = 49",
+      "question_kk": "Шешіңіз: x² = 49",
+      "options": {
+        "A": "x = 7 only",
+        "B": "x = -7 only",
+        "C": "x = ±7",
+        "D": "x = 24.5",
+        "E": "x = 14"
+      },
+      "correct": "C",
+      "explanation_en": "Take square root of both sides: x = ±√49 = ±7",
+      "explanation_ru": "Извлеките квадратный корень из обеих сторон: x = ±√49 = ±7",
+      "explanation_kk": "Екі жағынан да квадрат түбір алыңыз: x = ±√49 = ±7"
+    },
+    {
+      "id": 7,
+      "topic": "algebra",
+      "question_en": "If 3x + 5 = 20, what is x?",
+      "question_ru": "Если 3x + 5 = 20, чему равен x?",
+      "question_kk": "Егер 3x + 5 = 20 болса, x қанша?",
+      "options": {
+        "A": "x = 3",
+        "B": "x = 4",
+        "C": "x = 5",
+        "D": "x = 6",
+        "E": "x = 7"
+      },
+      "correct": "C",
+      "explanation_en": "Subtract 5: 3x = 15, then divide by 3: x = 5",
+      "explanation_ru": "Вычтите 5: 3x = 15, затем разделите на 3: x = 5",
+      "explanation_kk": "5-ті алып тастаңыз: 3x = 15, содан кейін 3-ке бөліңіз: x = 5"
+    },
+    {
+      "id": 8,
+      "topic": "algebra",
+      "question_en": "Expand: (x + 3)(x + 2)",
+      "question_ru": "Раскройте скобки: (x + 3)(x + 2)",
+      "question_kk": "Ашыңыз: (x + 3)(x + 2)",
+      "options": {
+        "A": "x² + 5x + 6",
+        "B": "x² + 5x + 5",
+        "C": "x² + 6x + 6",
+        "D": "x² + 4x + 6",
+        "E": "x² + 6"
+      },
+      "correct": "A",
+      "explanation_en": "Use FOIL: x² + 2x + 3x + 6 = x² + 5x + 6",
+      "explanation_ru": "Используйте правило FOIL: x² + 2x + 3x + 6 = x² + 5x + 6",
+      "explanation_kk": "FOIL ережесін қолданыңыз: x² + 2x + 3x + 6 = x² + 5x + 6"
+    },
+    {
+      "id": 9,
+      "topic": "algebra",
+      "question_en": "What is 2(x + 4)?",
+      "question_ru": "Чему равно 2(x + 4)?",
+      "question_kk": "2(x + 4) неге тең?",
+      "options": {
+        "A": "2x + 4",
+        "B": "2x + 6",
+        "C": "2x + 8",
+        "D": "x + 8",
+        "E": "2x + 2"
+      },
+      "correct": "C",
+      "explanation_en": "Distribute: 2 × x + 2 × 4 = 2x + 8",
+      "explanation_ru": "Раскройте скобки: 2 × x + 2 × 4 = 2x + 8",
+      "explanation_kk": "Үлестіріңіз: 2 × x + 2 × 4 = 2x + 8"
+    },
+    {
+      "id": 10,
+      "topic": "algebra",
+      "question_en": "Solve: x² + 4x + 4 = 0",
+      "question_ru": "Решите: x² + 4x + 4 = 0",
+      "question_kk": "Шешіңіз: x² + 4x + 4 = 0",
+      "options": {
+        "A": "x = -2",
+        "B": "x = 2",
+        "C": "x = -4",
+        "D": "x = 4",
+        "E": "x = 0"
+      },
+      "correct": "A",
+      "explanation_en": "This is a perfect square: (x + 2)² = 0, so x = -2",
+      "explanation_ru": "Это полный квадрат: (x + 2)² = 0, поэтому x = -2",
+      "explanation_kk": "Бұл толық квадрат: (x + 2)² = 0, сондықтан x = -2"
+    },
+    {
+      "id": 11,
+      "topic": "geometry",
+      "question_en": "In a right triangle with legs 3 and 4, what is the hypotenuse?",
+      "question_ru": "В прямоугольном треугольнике с катетами 3 и 4, чему равна гипотенуза?",
+      "question_kk": "Катеттері 3 және 4 болатын тік бұрышты үшбұрышта гипотенуза қанша?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8",
+        "E": "9"
+      },
+      "correct": "A",
+      "explanation_en": "Use Pythagorean theorem: √(3² + 4²) = √(9 + 16) = √25 = 5",
+      "explanation_ru": "Используйте теорему Пифагора: √(3² + 4²) = √(9 + 16) = √25 = 5",
+      "explanation_kk": "Пифагор теоремасын қолданыңыз: √(3² + 4²) = √(9 + 16) = √25 = 5"
+    },
+    {
+      "id": 12,
+      "topic": "geometry",
+      "question_en": "What is the area of a rectangle with length 8 and width 5?",
+      "question_ru": "Какова площадь прямоугольника длиной 8 и шириной 5?",
+      "question_kk": "Ұзындығы 8 және ені 5 тіктөртбұрыштың ауданы қанша?",
+      "options": {
+        "A": "13",
+        "B": "26",
+        "C": "40",
+        "D": "45",
+        "E": "50"
+      },
+      "correct": "C",
+      "explanation_en": "Area = length × width = 8 × 5 = 40",
+      "explanation_ru": "Площадь = длина × ширина = 8 × 5 = 40",
+      "explanation_kk": "Аудан = ұзындық × ені = 8 × 5 = 40"
+    },
+    {
+      "id": 13,
+      "topic": "geometry",
+      "question_en": "What is the perimeter of a square with side length 7?",
+      "question_ru": "Каков периметр квадрата со стороной 7?",
+      "question_kk": "Қабырғасы 7 шаршының периметрі қанша?",
+      "options": {
+        "A": "14",
+        "B": "21",
+        "C": "28",
+        "D": "35",
+        "E": "49"
+      },
+      "correct": "C",
+      "explanation_en": "Perimeter of square = 4 × side = 4 × 7 = 28",
+      "explanation_ru": "Периметр квадрата = 4 × сторона = 4 × 7 = 28",
+      "explanation_kk": "Шаршының периметрі = 4 × қабырға = 4 × 7 = 28"
+    },
+    {
+      "id": 14,
+      "topic": "geometry",
+      "question_en": "What is the sum of angles in a triangle?",
+      "question_ru": "Какова сумма углов треугольника?",
+      "question_kk": "Үшбұрыштың бұрыштарының қосындысы қанша?",
+      "options": {
+        "A": "90°",
+        "B": "120°",
+        "C": "180°",
+        "D": "270°",
+        "E": "360°"
+      },
+      "correct": "C",
+      "explanation_en": "The sum of all angles in any triangle is always 180°",
+      "explanation_ru": "Сумма всех углов в любом треугольнике всегда равна 180°",
+      "explanation_kk": "Кез келген үшбұрыштың барлық бұрыштарының қосындысы әрқашан 180°"
+    },
+    {
+      "id": 15,
+      "topic": "geometry",
+      "question_en": "What is the area of a circle with radius 3? (Use π ≈ 3.14)",
+      "question_ru": "Какова площадь круга радиусом 3? (Используйте π ≈ 3,14)",
+      "question_kk": "Радиусы 3 шеңбердің ауданы қанша? (π ≈ 3,14 деп алыңыз)",
+      "options": {
+        "A": "9.42",
+        "B": "18.84",
+        "C": "28.26",
+        "D": "37.68",
+        "E": "47.10"
+      },
+      "correct": "C",
+      "explanation_en": "Area = πr² = 3.14 × 3² = 3.14 × 9 = 28.26",
+      "explanation_ru": "Площадь = πr² = 3,14 × 3² = 3,14 × 9 = 28,26",
+      "explanation_kk": "Аудан = πr² = 3,14 × 3² = 3,14 × 9 = 28,26"
+    },
+    {
+      "id": 16,
+      "topic": "geometry",
+      "question_en": "How many sides does a hexagon have?",
+      "question_ru": "Сколько сторон у шестиугольника?",
+      "question_kk": "Алтыбұрыштың қанша қабырғасы бар?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7",
+        "E": "8"
+      },
+      "correct": "C",
+      "explanation_en": "A hexagon has 6 sides (hex = 6 in Greek)",
+      "explanation_ru": "Шестиугольник имеет 6 сторон (hex = 6 по-гречески)",
+      "explanation_kk": "Алтыбұрыштың 6 қабырғасы бар (грек тілінде hex = 6)"
+    },
+    {
+      "id": 17,
+      "topic": "geometry",
+      "question_en": "What is the volume of a cube with side 4?",
+      "question_ru": "Каков объем куба со стороной 4?",
+      "question_kk": "Қабырғасы 4 текшенің көлемі қанша?",
+      "options": {
+        "A": "16",
+        "B": "32",
+        "C": "48",
+        "D": "64",
+        "E": "80"
+      },
+      "correct": "D",
+      "explanation_en": "Volume of cube = side³ = 4³ = 64",
+      "explanation_ru": "Объем куба = сторона³ = 4³ = 64",
+      "explanation_kk": "Текшенің көлемі = қабырға³ = 4³ = 64"
+    },
+    {
+      "id": 18,
+      "topic": "geometry",
+      "question_en": "What is the circumference of a circle with radius 5? (Use π ≈ 3.14)",
+      "question_ru": "Какова длина окружности радиусом 5? (Используйте π ≈ 3,14)",
+      "question_kk": "Радиусы 5 шеңбердің ұзындығы қанша? (π ≈ 3,14 деп алыңыз)",
+      "options": {
+        "A": "15.7",
+        "B": "21.4",
+        "C": "31.4",
+        "D": "41.4",
+        "E": "51.4"
+      },
+      "correct": "C",
+      "explanation_en": "Circumference = 2πr = 2 × 3.14 × 5 = 31.4",
+      "explanation_ru": "Длина окружности = 2πr = 2 × 3,14 × 5 = 31,4",
+      "explanation_kk": "Шеңбер ұзындығы = 2πr = 2 × 3,14 × 5 = 31,4"
+    },
+    {
+      "id": 19,
+      "topic": "geometry",
+      "question_en": "What is the area of a triangle with base 10 and height 6?",
+      "question_ru": "Какова площадь треугольника с основанием 10 и высотой 6?",
+      "question_kk": "Табаны 10 және биіктігі 6 үшбұрыштың ауданы қанша?",
+      "options": {
+        "A": "16",
+        "B": "30",
+        "C": "60",
+        "D": "120",
+        "E": "180"
+      },
+      "correct": "B",
+      "explanation_en": "Area of triangle = (base × height) / 2 = (10 × 6) / 2 = 30",
+      "explanation_ru": "Площадь треугольника = (основание × высота) / 2 = (10 × 6) / 2 = 30",
+      "explanation_kk": "Үшбұрыштың ауданы = (табан × биіктік) / 2 = (10 × 6) / 2 = 30"
+    },
+    {
+      "id": 20,
+      "topic": "geometry",
+      "question_en": "Two angles are complementary. If one is 35°, what is the other?",
+      "question_ru": "Два угла дополнительные. Если один 35°, каков другой?",
+      "question_kk": "Екі бұрыш толықтаушы. Егер біреуі 35° болса, екіншісі қанша?",
+      "options": {
+        "A": "35°",
+        "B": "45°",
+        "C": "55°",
+        "D": "65°",
+        "E": "145°"
+      },
+      "correct": "C",
+      "explanation_en": "Complementary angles sum to 90°: 90° - 35° = 55°",
+      "explanation_ru": "Дополнительные углы в сумме дают 90°: 90° - 35° = 55°",
+      "explanation_kk": "Толықтаушы бұрыштардың қосындысы 90°: 90° - 35° = 55°"
+    },
+    {
+      "id": 21,
+      "topic": "percentages",
+      "question_en": "What is 15% of 200?",
+      "question_ru": "Сколько составляет 15% от 200?",
+      "question_kk": "200-дің 15%-ы қанша?",
+      "options": {
+        "A": "25",
+        "B": "30",
+        "C": "35",
+        "D": "40",
+        "E": "45"
+      },
+      "correct": "B",
+      "explanation_en": "Calculate: 15% of 200 = 0.15 × 200 = 30",
+      "explanation_ru": "Вычислите: 15% от 200 = 0,15 × 200 = 30",
+      "explanation_kk": "Есептеңіз: 200-дің 15%-ы = 0,15 × 200 = 30"
+    },
+    {
+      "id": 22,
+      "topic": "percentages",
+      "question_en": "What is 50% of 80?",
+      "question_ru": "Сколько составляет 50% от 80?",
+      "question_kk": "80-нің 50%-ы қанша?",
+      "options": {
+        "A": "30",
+        "B": "35",
+        "C": "40",
+        "D": "45",
+        "E": "50"
+      },
+      "correct": "C",
+      "explanation_en": "50% means half: 80 ÷ 2 = 40",
+      "explanation_ru": "50% означает половину: 80 ÷ 2 = 40",
+      "explanation_kk": "50% жарты дегенді білдіреді: 80 ÷ 2 = 40"
+    },
+    {
+      "id": 23,
+      "topic": "percentages",
+      "question_en": "What is 25% of 120?",
+      "question_ru": "Сколько составляет 25% от 120?",
+      "question_kk": "120-дің 25%-ы қанша?",
+      "options": {
+        "A": "20",
+        "B": "25",
+        "C": "30",
+        "D": "35",
+        "E": "40"
+      },
+      "correct": "C",
+      "explanation_en": "25% = 1/4, so 120 ÷ 4 = 30",
+      "explanation_ru": "25% = 1/4, поэтому 120 ÷ 4 = 30",
+      "explanation_kk": "25% = 1/4, сондықтан 120 ÷ 4 = 30"
+    },
+    {
+      "id": 24,
+      "topic": "percentages",
+      "question_en": "If 20% of a number is 40, what is the number?",
+      "question_ru": "Если 20% от числа равны 40, каково это число?",
+      "question_kk": "Егер санның 20%-ы 40-қа тең болса, сан қанша?",
+      "options": {
+        "A": "100",
+        "B": "150",
+        "C": "200",
+        "D": "250",
+        "E": "300"
+      },
+      "correct": "C",
+      "explanation_en": "If 20% = 40, then 100% = 40 ÷ 0.20 = 200",
+      "explanation_ru": "Если 20% = 40, то 100% = 40 ÷ 0,20 = 200",
+      "explanation_kk": "Егер 20% = 40 болса, онда 100% = 40 ÷ 0,20 = 200"
+    },
+    {
+      "id": 25,
+      "topic": "percentages",
+      "question_en": "What is 10% of 500?",
+      "question_ru": "Сколько составляет 10% от 500?",
+      "question_kk": "500-дің 10%-ы қанша?",
+      "options": {
+        "A": "25",
+        "B": "50",
+        "C": "75",
+        "D": "100",
+        "E": "125"
+      },
+      "correct": "B",
+      "explanation_en": "10% of 500 = 0.10 × 500 = 50",
+      "explanation_ru": "10% от 500 = 0,10 × 500 = 50",
+      "explanation_kk": "500-дің 10%-ы = 0,10 × 500 = 50"
+    },
+    {
+      "id": 26,
+      "topic": "percentages",
+      "question_en": "A shirt costs 100 tenge. With 20% discount, what is the sale price?",
+      "question_ru": "Рубашка стоит 100 тенге. Со скидкой 20%, какова цена продажи?",
+      "question_kk": "Жейде 100 теңге тұрады. 20% жеңілдікпен, сату бағасы қанша?",
+      "options": {
+        "A": "60 tenge",
+        "B": "70 tenge",
+        "C": "80 tenge",
+        "D": "90 tenge",
+        "E": "95 tenge"
+      },
+      "correct": "C",
+      "explanation_en": "Discount = 20% of 100 = 20. Sale price = 100 - 20 = 80 tenge",
+      "explanation_ru": "Скидка = 20% от 100 = 20. Цена продажи = 100 - 20 = 80 тенге",
+      "explanation_kk": "Жеңілдік = 100-дің 20%-ы = 20. Сату бағасы = 100 - 20 = 80 теңге"
+    },
+    {
+      "id": 27,
+      "topic": "percentages",
+      "question_en": "What percent of 50 is 10?",
+      "question_ru": "Сколько процентов от 50 составляет 10?",
+      "question_kk": "10 50-нің қанша пайызы?",
+      "options": {
+        "A": "10%",
+        "B": "15%",
+        "C": "20%",
+        "D": "25%",
+        "E": "30%"
+      },
+      "correct": "C",
+      "explanation_en": "(10 ÷ 50) × 100% = 0.2 × 100% = 20%",
+      "explanation_ru": "(10 ÷ 50) × 100% = 0,2 × 100% = 20%",
+      "explanation_kk": "(10 ÷ 50) × 100% = 0,2 × 100% = 20%"
+    },
+    {
+      "id": 28,
+      "topic": "percentages",
+      "question_en": "What is 75% of 60?",
+      "question_ru": "Сколько составляет 75% от 60?",
+      "question_kk": "60-тың 75%-ы қанша?",
+      "options": {
+        "A": "35",
+        "B": "40",
+        "C": "45",
+        "D": "50",
+        "E": "55"
+      },
+      "correct": "C",
+      "explanation_en": "75% of 60 = 0.75 × 60 = 45",
+      "explanation_ru": "75% от 60 = 0,75 × 60 = 45",
+      "explanation_kk": "60-тың 75%-ы = 0,75 × 60 = 45"
+    },
+    {
+      "id": 29,
+      "topic": "percentages",
+      "question_en": "A price increased from 50 to 60. What is the percent increase?",
+      "question_ru": "Цена выросла с 50 до 60. Каков процент увеличения?",
+      "question_kk": "Баға 50-ден 60-қа дейін өсті. Өсім пайызы қанша?",
+      "options": {
+        "A": "10%",
+        "B": "15%",
+        "C": "20%",
+        "D": "25%",
+        "E": "30%"
+      },
+      "correct": "C",
+      "explanation_en": "Increase = 10, Percent = (10÷50) × 100% = 20%",
+      "explanation_ru": "Увеличение = 10, Процент = (10÷50) × 100% = 20%",
+      "explanation_kk": "Өсім = 10, Пайыз = (10÷50) × 100% = 20%"
+    },
+    {
+      "id": 30,
+      "topic": "percentages",
+      "question_en": "What is 5% of 1000?",
+      "question_ru": "Сколько составляет 5% от 1000?",
+      "question_kk": "1000-дің 5%-ы қанша?",
+      "options": {
+        "A": "25",
+        "B": "50",
+        "C": "75",
+        "D": "100",
+        "E": "150"
+      },
+      "correct": "B",
+      "explanation_en": "5% of 1000 = 0.05 × 1000 = 50",
+      "explanation_ru": "5% от 1000 = 0,05 × 1000 = 50",
+      "explanation_kk": "1000-дің 5%-ы = 0,05 × 1000 = 50"
+    },
+    {
+      "id": 31,
+      "topic": "exponents",
+      "question_en": "Simplify: 2³ × 2⁴",
+      "question_ru": "Упростите: 2³ × 2⁴",
+      "question_kk": "Жеңілдетіңіз: 2³ × 2⁴",
+      "options": {
+        "A": "2⁷",
+        "B": "2¹²",
+        "C": "4⁷",
+        "D": "8⁴",
+        "E": "16³"
+      },
+      "correct": "A",
+      "explanation_en": "When multiplying same base, add exponents: 2³ × 2⁴ = 2³⁺⁴ = 2⁷",
+      "explanation_ru": "При умножении с одинаковым основанием складываем показатели: 2³ × 2⁴ = 2³⁺⁴ = 2⁷",
+      "explanation_kk": "Бірдей негізді көбейткенде дәрежелерді қосамыз: 2³ × 2⁴ = 2³⁺⁴ = 2⁷"
+    },
+    {
+      "id": 32,
+      "topic": "exponents",
+      "question_en": "What is 5²?",
+      "question_ru": "Чему равно 5²?",
+      "question_kk": "5² қанша?",
+      "options": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "25",
+        "E": "30"
+      },
+      "correct": "D",
+      "explanation_en": "5² = 5 × 5 = 25",
+      "explanation_ru": "5² = 5 × 5 = 25",
+      "explanation_kk": "5² = 5 × 5 = 25"
+    },
+    {
+      "id": 33,
+      "topic": "exponents",
+      "question_en": "Simplify: 3⁵ ÷ 3²",
+      "question_ru": "Упростите: 3⁵ ÷ 3²",
+      "question_kk": "Жеңілдетіңіз: 3⁵ ÷ 3²",
+      "options": {
+        "A": "3²",
+        "B": "3³",
+        "C": "3⁴",
+        "D": "3⁷",
+        "E": "3¹⁰"
+      },
+      "correct": "B",
+      "explanation_en": "When dividing same base, subtract exponents: 3⁵ ÷ 3² = 3⁵⁻² = 3³",
+      "explanation_ru": "При делении с одинаковым основанием вычитаем показатели: 3⁵ ÷ 3² = 3⁵⁻² = 3³",
+      "explanation_kk": "Бірдей негізді бөлгенде дәрежелерді алып тастаймыз: 3⁵ ÷ 3² = 3⁵⁻² = 3³"
+    },
+    {
+      "id": 34,
+      "topic": "exponents",
+      "question_en": "What is (2³)²?",
+      "question_ru": "Чему равно (2³)²?",
+      "question_kk": "(2³)² қанша?",
+      "options": {
+        "A": "2⁵",
+        "B": "2⁶",
+        "C": "2⁸",
+        "D": "2⁹",
+        "E": "4⁶"
+      },
+      "correct": "B",
+      "explanation_en": "When raising power to power, multiply exponents: (2³)² = 2³ˣ² = 2⁶",
+      "explanation_ru": "При возведении степени в степень умножаем показатели: (2³)² = 2³ˣ² = 2⁶",
+      "explanation_kk": "Дәрежені дәрежеге шығарғанда дәрежелерді көбейтеміз: (2³)² = 2³ˣ² = 2⁶"
+    },
+    {
+      "id": 35,
+      "topic": "exponents",
+      "question_en": "What is 10³?",
+      "question_ru": "Чему равно 10³?",
+      "question_kk": "10³ қанша?",
+      "options": {
+        "A": "30",
+        "B": "100",
+        "C": "300",
+        "D": "1000",
+        "E": "3000"
+      },
+      "correct": "D",
+      "explanation_en": "10³ = 10 × 10 × 10 = 1000",
+      "explanation_ru": "10³ = 10 × 10 × 10 = 1000",
+      "explanation_kk": "10³ = 10 × 10 × 10 = 1000"
+    },
+    {
+      "id": 36,
+      "topic": "exponents",
+      "question_en": "What is any number to the power of 0?",
+      "question_ru": "Чему равно любое число в степени 0?",
+      "question_kk": "Кез келген санның 0 дәрежесі қанша?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "The number itself",
+        "D": "10",
+        "E": "Undefined"
+      },
+      "correct": "B",
+      "explanation_en": "Any non-zero number raised to the power of 0 equals 1",
+      "explanation_ru": "Любое ненулевое число в степени 0 равно 1",
+      "explanation_kk": "Нөлден өзге кез келген санның 0 дәрежесі 1-ге тең"
+    },
+    {
+      "id": 37,
+      "topic": "exponents",
+      "question_en": "Simplify: 4² × 4³",
+      "question_ru": "Упростите: 4² × 4³",
+      "question_kk": "Жеңілдетіңіз: 4² × 4³",
+      "options": {
+        "A": "4⁵",
+        "B": "4⁶",
+        "C": "16⁵",
+        "D": "16⁶",
+        "E": "8⁵"
+      },
+      "correct": "A",
+      "explanation_en": "Add exponents when multiplying same base: 4² × 4³ = 4²⁺³ = 4⁵",
+      "explanation_ru": "Складываем показатели при умножении с одинаковым основанием: 4² × 4³ = 4²⁺³ = 4⁵",
+      "explanation_kk": "Бірдей негізді көбейткенде дәрежелерді қосамыз: 4² × 4³ = 4²⁺³ = 4⁵"
+    },
+    {
+      "id": 38,
+      "topic": "exponents",
+      "question_en": "What is √16?",
+      "question_ru": "Чему равно √16?",
+      "question_kk": "√16 қанша?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "8",
+        "E": "16"
+      },
+      "correct": "C",
+      "explanation_en": "√16 = 4 because 4² = 16",
+      "explanation_ru": "√16 = 4, потому что 4² = 16",
+      "explanation_kk": "√16 = 4, өйткені 4² = 16"
+    },
+    {
+      "id": 39,
+      "topic": "exponents",
+      "question_en": "What is 2⁻²?",
+      "question_ru": "Чему равно 2⁻²?",
+      "question_kk": "2⁻² қанша?",
+      "options": {
+        "A": "-4",
+        "B": "-2",
+        "C": "0.25",
+        "D": "0.5",
+        "E": "4"
+      },
+      "correct": "C",
+      "explanation_en": "Negative exponent means reciprocal: 2⁻² = 1/2² = 1/4 = 0.25",
+      "explanation_ru": "Отрицательная степень означает обратную величину: 2⁻² = 1/2² = 1/4 = 0,25",
+      "explanation_kk": "Теріс дәреже кері шаманы білдіреді: 2⁻² = 1/2² = 1/4 = 0,25"
+    },
+    {
+      "id": 40,
+      "topic": "exponents",
+      "question_en": "What is 7¹?",
+      "question_ru": "Чему равно 7¹?",
+      "question_kk": "7¹ қанша?",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "14",
+        "D": "49",
+        "E": "70"
+      },
+      "correct": "B",
+      "explanation_en": "Any number to the power of 1 equals the number itself: 7¹ = 7",
+      "explanation_ru": "Любое число в степени 1 равно самому числу: 7¹ = 7",
+      "explanation_kk": "Кез келген санның 1 дәрежесі өзіне тең: 7¹ = 7"
+    },
+    {
+      "id": 41,
+      "topic": "fractions",
+      "question_en": "What is 1/2 + 1/4?",
+      "question_ru": "Чему равно 1/2 + 1/4?",
+      "question_kk": "1/2 + 1/4 қанша?",
+      "options": {
+        "A": "1/6",
+        "B": "2/6",
+        "C": "2/4",
+        "D": "3/4",
+        "E": "1"
+      },
+      "correct": "D",
+      "explanation_en": "Convert to common denominator: 2/4 + 1/4 = 3/4",
+      "explanation_ru": "Приведите к общему знаменателю: 2/4 + 1/4 = 3/4",
+      "explanation_kk": "Ортақ бөлімге келтіріңіз: 2/4 + 1/4 = 3/4"
+    },
+    {
+      "id": 42,
+      "topic": "fractions",
+      "question_en": "Simplify: 4/8",
+      "question_ru": "Упростите: 4/8",
+      "question_kk": "Жеңілдетіңіз: 4/8",
+      "options": {
+        "A": "1/4",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "2/3",
+        "E": "3/4"
+      },
+      "correct": "C",
+      "explanation_en": "Divide both numerator and denominator by 4: 4/8 = 1/2",
+      "explanation_ru": "Разделите числитель и знаменатель на 4: 4/8 = 1/2",
+      "explanation_kk": "Алымды және бөлімді 4-ке бөліңіз: 4/8 = 1/2"
+    },
+    {
+      "id": 43,
+      "topic": "fractions",
+      "question_en": "What is 3/4 × 2/3?",
+      "question_ru": "Чему равно 3/4 × 2/3?",
+      "question_kk": "3/4 × 2/3 қанша?",
+      "options": {
+        "A": "1/2",
+        "B": "5/7",
+        "C": "6/12",
+        "D": "5/12",
+        "E": "1"
+      },
+      "correct": "A",
+      "explanation_en": "Multiply numerators and denominators: (3×2)/(4×3) = 6/12 = 1/2",
+      "explanation_ru": "Умножьте числители и знаменатели: (3×2)/(4×3) = 6/12 = 1/2",
+      "explanation_kk": "Алымдарды және бөлімдерді көбейтіңіз: (3×2)/(4×3) = 6/12 = 1/2"
+    },
+    {
+      "id": 44,
+      "topic": "fractions",
+      "question_en": "What is 5/6 - 1/6?",
+      "question_ru": "Чему равно 5/6 - 1/6?",
+      "question_kk": "5/6 - 1/6 қанша?",
+      "options": {
+        "A": "1/6",
+        "B": "2/6",
+        "C": "3/6",
+        "D": "4/6",
+        "E": "5/6"
+      },
+      "correct": "D",
+      "explanation_en": "Same denominator, subtract numerators: 5/6 - 1/6 = 4/6 = 2/3",
+      "explanation_ru": "Одинаковый знаменатель, вычитаем числители: 5/6 - 1/6 = 4/6 = 2/3",
+      "explanation_kk": "Бірдей бөлім, алымдарды алып тастаймыз: 5/6 - 1/6 = 4/6 = 2/3"
+    },
+    {
+      "id": 45,
+      "topic": "fractions",
+      "question_en": "Convert 0.75 to a fraction",
+      "question_ru": "Преобразуйте 0,75 в дробь",
+      "question_kk": "0,75-ті бөлшекке айналдырыңыз",
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "3/4",
+        "D": "4/5",
+        "E": "7/10"
+      },
+      "correct": "C",
+      "explanation_en": "0.75 = 75/100 = 3/4 (simplified)",
+      "explanation_ru": "0,75 = 75/100 = 3/4 (упрощённо)",
+      "explanation_kk": "0,75 = 75/100 = 3/4 (жеңілдетілген)"
+    },
+    {
+      "id": 46,
+      "topic": "fractions",
+      "question_en": "What is 1/3 + 1/3?",
+      "question_ru": "Чему равно 1/3 + 1/3?",
+      "question_kk": "1/3 + 1/3 қанша?",
+      "options": {
+        "A": "1/6",
+        "B": "2/6",
+        "C": "1/3",
+        "D": "2/3",
+        "E": "1"
+      },
+      "correct": "D",
+      "explanation_en": "Add numerators with same denominator: 1/3 + 1/3 = 2/3",
+      "explanation_ru": "Сложите числители с одинаковым знаменателем: 1/3 + 1/3 = 2/3",
+      "explanation_kk": "Бірдей бөлімдегі алымдарды қосыңыз: 1/3 + 1/3 = 2/3"
+    },
+    {
+      "id": 47,
+      "topic": "fractions",
+      "question_en": "What is 1/2 ÷ 1/4?",
+      "question_ru": "Чему равно 1/2 ÷ 1/4?",
+      "question_kk": "1/2 ÷ 1/4 қанша?",
+      "options": {
+        "A": "1/8",
+        "B": "1/2",
+        "C": "1",
+        "D": "2",
+        "E": "4"
+      },
+      "correct": "D",
+      "explanation_en": "Dividing by fraction means multiply by its reciprocal: 1/2 × 4/1 = 4/2 = 2",
+      "explanation_ru": "Деление на дробь означает умножение на обратную: 1/2 × 4/1 = 4/2 = 2",
+      "explanation_kk": "Бөлшекке бөлу кері шамаға көбейтуді білдіреді: 1/2 × 4/1 = 4/2 = 2"
+    },
+    {
+      "id": 48,
+      "topic": "fractions",
+      "question_en": "Which fraction is largest: 1/2, 2/5, or 3/8?",
+      "question_ru": "Какая дробь самая большая: 1/2, 2/5 или 3/8?",
+      "question_kk": "Қай бөлшек ең үлкен: 1/2, 2/5 немесе 3/8?",
+      "options": {
+        "A": "1/2",
+        "B": "2/5",
+        "C": "3/8",
+        "D": "They are equal",
+        "E": "Cannot determine"
+      },
+      "correct": "A",
+      "explanation_en": "Convert to decimals: 1/2=0.5, 2/5=0.4, 3/8=0.375. So 1/2 is largest",
+      "explanation_ru": "Преобразуйте в десятичные: 1/2=0,5, 2/5=0,4, 3/8=0,375. Значит 1/2 самая большая",
+      "explanation_kk": "Ондық бөлшекке айналдырыңыз: 1/2=0,5, 2/5=0,4, 3/8=0,375. Демек 1/2 ең үлкен"
+    },
+    {
+      "id": 49,
+      "topic": "fractions",
+      "question_en": "Simplify: 10/15",
+      "question_ru": "Упростите: 10/15",
+      "question_kk": "Жеңілдетіңіз: 10/15",
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "3/4",
+        "D": "4/5",
+        "E": "5/6"
+      },
+      "correct": "B",
+      "explanation_en": "Divide both by 5: 10/15 = 2/3",
+      "explanation_ru": "Разделите оба на 5: 10/15 = 2/3",
+      "explanation_kk": "Екеуін де 5-ке бөліңіз: 10/15 = 2/3"
+    },
+    {
+      "id": 50,
+      "topic": "fractions",
+      "question_en": "What is 2/3 of 15?",
+      "question_ru": "Чему равны 2/3 от 15?",
+      "question_kk": "15-тің 2/3-і қанша?",
+      "options": {
+        "A": "5",
+        "B": "8",
+        "C": "10",
+        "D": "12",
+        "E": "13"
+      },
+      "correct": "C",
+      "explanation_en": "2/3 of 15 = (2/3) × 15 = 30/3 = 10",
+      "explanation_ru": "2/3 от 15 = (2/3) × 15 = 30/3 = 10",
+      "explanation_kk": "15-тің 2/3-і = (2/3) × 15 = 30/3 = 10"
     }
-  }
+  ]
 }

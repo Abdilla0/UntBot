@@ -200,8 +200,14 @@ async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     new_streak = update_streak(user_id)
     
+    # ✅ FIX: Don't send everything to AI - just ignore invalid input
     if user_answer not in ['A', 'B', 'C', 'D', 'E']:
-        return await handle_free_text(update, context)
+        await update.message.reply_text(
+            "Please select an answer: A, B, C, D, or E" if language == 'en' else
+            "Пожалуйста, выберите ответ: A, B, C, D или E" if language == 'ru' else
+            "Жауапты таңдаңыз: A, B, C, D немесе E"
+        )
+        return WAITING_ANSWER
     
     question = user_sessions.get(user_id, {}).get('current_question')
     
@@ -225,9 +231,10 @@ async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     emoji = "🎉" if is_correct else "❌"
     result_text = t('correct' if is_correct else 'incorrect', language)
     
-    response = f"{emoji} **{result_text}**\n\n"
+    # ✅ FIX: Remove ** from response (though AI helper should already do this)
+    response = f"{emoji} {result_text}\n\n"
     response += f"✅ {question['explanation']}\n\n"
-    response += f"📖 **AI:**\n{ai_explanation}"
+    response += f"📖 AI:\n{ai_explanation}"
     
     stats = get_user_stats(user_id)
     if stats:
@@ -267,6 +274,31 @@ async def handle_free_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     subject = user_sessions.get(user_id, {}).get('subject', 'general')
     language = user_sessions.get(user_id, {}).get('language', 'en')
     
+    # ✅ FIX: Check if it's a button press FIRST!
+    button_actions = {
+        'practice': [t('btn_practice', 'en'), t('btn_practice', 'ru'), t('btn_practice', 'kk')],
+        'topics': [t('btn_topics', 'en'), t('btn_topics', 'ru'), t('btn_topics', 'kk')],
+        'change': [t('btn_change_subject', 'en'), t('btn_change_subject', 'ru'), t('btn_change_subject', 'kk')],
+        'menu': [t('btn_menu', 'en'), t('btn_menu', 'ru'), t('btn_menu', 'kk')],
+        'progress': [t('btn_progress', 'en'), t('btn_progress', 'ru'), t('btn_progress', 'kk')],
+        'leaderboard': [t('btn_leaderboard', 'en'), t('btn_leaderboard', 'ru'), t('btn_leaderboard', 'kk')],
+    }
+    
+    # Check if user pressed a button instead of typing a question
+    if user_text in button_actions['practice']:
+        return await start_practice(update, context)
+    elif user_text in button_actions['topics']:
+        return await show_topics(update, context)
+    elif user_text in button_actions['change']:
+        return await change_subject(update, context)
+    elif user_text in button_actions['menu']:
+        return await show_main_menu(update, context)
+    elif user_text in button_actions['progress']:
+        return await show_progress(update, context)
+    elif user_text in button_actions['leaderboard']:
+        return await show_leaderboard(update, context)
+    
+    # ✅ Only send to AI if it's NOT a button
     await update.message.chat.send_action("typing")
     
     if len(user_text) > 100:

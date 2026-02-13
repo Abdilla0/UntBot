@@ -209,7 +209,7 @@ if __name__ == "__main__":
     # Validate structure before merging (optional)
     print("🔍 Validating question files...")
     subjects_to_check = {
-        'mathematics': './question_sources/mathematics_questions.json',
+        'mathematics': './question_sources/math_questions.json',
         'physics': './question_sources/physics_questions.json',
         'chemistry': './question_sources/chemistry_questions.json',
         'biology': './question_sources/biology_questions.json',

@@ -1,14 +1,14 @@
 {
+  "subject": "biology",
   "metadata": {
-    "total_questions": 10,
+    "total_questions": 50,
     "topics": {
       "cell_biology": "Cell Biology",
       "genetics": "Genetics",
       "ecology": "Ecology",
       "human_biology": "Human Biology",
       "evolution": "Evolution"
-    },
-    "last_updated": "2026-01-29"
+    }
   },
   "questions": [
     {
@@ -16,54 +16,54 @@
       "topic": "cell_biology",
       "question_en": "What is the powerhouse of the cell?",
       "question_ru": "Что является электростанцией клетки?",
-      "question_kk": "Жасушаның энергия көзі не?",
+      "question_kk": "Жасушаның электр станциясы не?",
       "options": {
         "A": "Nucleus",
         "B": "Ribosome",
         "C": "Mitochondria",
         "D": "Chloroplast",
-        "E": "Golgi"
+        "E": "ER"
       },
       "correct": "C",
-      "explanation_en": "Mitochondria produce ATP, the cell's energy currency.",
-      "explanation_ru": "Митохондрии производят АТФ, энергетическую валюту клетки.",
-      "explanation_kk": "Митохондрия жасушаның энергиялық валютасы АТФ өндіреді."
+      "explanation_en": "Mitochondria produce ATP (energy).",
+      "explanation_ru": "Митохондрии производят АТФ (энергию).",
+      "explanation_kk": "Митохондрия АТФ (энергия) өндіреді."
     },
     {
       "id": 2,
       "topic": "cell_biology",
-      "question_en": "What is the function of the cell membrane?",
-      "question_ru": "Какова функция клеточной мембраны?",
-      "question_kk": "Жасуша мембранасының қызметі қандай?",
+      "question_en": "What controls the cell?",
+      "question_ru": "Что контролирует клетку?",
+      "question_kk": "Жасушаны не басқарады?",
       "options": {
-        "A": "Energy production",
-        "B": "Controls entry/exit",
-        "C": "Protein synthesis",
-        "D": "DNA storage",
-        "E": "Photosynthesis"
+        "A": "Mitochondria",
+        "B": "Nucleus",
+        "C": "Cell wall",
+        "D": "Cytoplasm",
+        "E": "Membrane"
       },
       "correct": "B",
-      "explanation_en": "The cell membrane controls what enters and exits the cell.",
-      "explanation_ru": "Клеточная мембрана контролирует, что входит и выходит из клетки.",
-      "explanation_kk": "Жасуша мембранасы жасушаға не кіріп, не шығатынын бақылайды."
+      "explanation_en": "The nucleus contains DNA and controls cell activities.",
+      "explanation_ru": "Ядро содержит ДНК и контролирует деятельность клетки.",
+      "explanation_kk": "Ядро ДНҚ қамтиды және жасуша қызметін басқарады."
     },
     {
       "id": 3,
       "topic": "genetics",
-      "question_en": "What is DNA?",
-      "question_ru": "Что такое ДНК?",
-      "question_kk": "ДНҚ дегеніміз не?",
+      "question_en": "What are genes made of?",
+      "question_ru": "Из чего состоят гены?",
+      "question_kk": "Гендер неден тұрады?",
       "options": {
         "A": "Protein",
-        "B": "Lipid",
-        "C": "Genetic material",
-        "D": "Carbohydrate",
-        "E": "Enzyme"
+        "B": "DNA",
+        "C": "RNA",
+        "D": "Lipids",
+        "E": "Carbohydrates"
       },
-      "correct": "C",
-      "explanation_en": "DNA (deoxyribonucleic acid) carries genetic information.",
-      "explanation_ru": "ДНК (дезоксирибонуклеиновая кислота) несет генетическую информацию.",
-      "explanation_kk": "ДНҚ (дезоксирибонуклеин қышқылы) генетикалық ақпаратты тасымалдайды."
+      "correct": "B",
+      "explanation_en": "Genes are segments of DNA.",
+      "explanation_ru": "Гены - это сегменты ДНК.",
+      "explanation_kk": "Гендер - ДНҚ сегменттері."
     },
     {
       "id": 4,
@@ -76,12 +76,12 @@
         "B": "44",
         "C": "46",
         "D": "48",
-        "E": "52"
+        "E": "50"
       },
       "correct": "C",
       "explanation_en": "Humans have 46 chromosomes (23 pairs).",
       "explanation_ru": "У человека 46 хромосом (23 пары).",
-      "explanation_kk": "Адамда 46 хромосома бар (23 жұп)."
+      "explanation_kk": "Адамда 46 хромосома (23 жұп) бар."
     },
     {
       "id": 5,
@@ -90,88 +90,88 @@
       "question_ru": "Что такое фотосинтез?",
       "question_kk": "Фотосинтез дегеніміз не?",
       "options": {
-        "A": "Breaking down food",
-        "B": "Making food using light",
+        "A": "Making food from light",
+        "B": "Breathing",
         "C": "Cell division",
-        "D": "Breathing",
-        "E": "Water absorption"
+        "D": "Digestion",
+        "E": "Movement"
       },
-      "correct": "B",
-      "explanation_en": "Photosynthesis is the process plants use to make food using sunlight.",
-      "explanation_ru": "Фотосинтез - это процесс, которым растения производят пищу, используя солнечный свет.",
-      "explanation_kk": "Фотосинтез - өсімдіктердің күн сәулесін пайдаланып тамақ өндіру процесі."
+      "correct": "A",
+      "explanation_en": "Photosynthesis converts light energy into glucose.",
+      "explanation_ru": "Фотосинтез преобразует световую энергию в глюкозу.",
+      "explanation_kk": "Фотосинтез жарық энергиясын глюкозаға айналдырады."
     },
     {
       "id": 6,
       "topic": "ecology",
-      "question_en": "What is a food chain?",
-      "question_ru": "Что такое пищевая цепь?",
-      "question_kk": "Тамақ тізбегі дегеніміз не?",
+      "question_en": "What do decomposers do?",
+      "question_ru": "Что делают разлагатели?",
+      "question_kk": "Ыдыратушылар не істейді?",
       "options": {
-        "A": "Types of food",
-        "B": "Energy flow through organisms",
-        "C": "Animal groups",
-        "D": "Plant types",
-        "E": "Cooking methods"
+        "A": "Make food",
+        "B": "Eat plants",
+        "C": "Break down dead organisms",
+        "D": "Hunt prey",
+        "E": "Pollinate"
       },
-      "correct": "B",
-      "explanation_en": "A food chain shows how energy flows from one organism to another.",
-      "explanation_ru": "Пищевая цепь показывает, как энергия переходит от одного организма к другому.",
-      "explanation_kk": "Тамақ тізбегі энергияның бір организмнен екіншісіне қалай өтетінін көрсетеді."
+      "correct": "C",
+      "explanation_en": "Decomposers break down dead matter and recycle nutrients.",
+      "explanation_ru": "Разлагатели разлагают мёртвую материю и перерабатывают питательные вещества.",
+      "explanation_kk": "Ыдыратушылар өлі материяны ыдыратады және қоректік заттарды қайта өңдейді."
     },
     {
       "id": 7,
       "topic": "human_biology",
-      "question_en": "What is the function of red blood cells?",
-      "question_ru": "Какова функция эритроцитов?",
-      "question_kk": "Қызыл қан жасушаларының қызметі қандай?",
+      "question_en": "What is the largest organ?",
+      "question_ru": "Какой самый большой орган?",
+      "question_kk": "Ең үлкен орган қандай?",
       "options": {
-        "A": "Fight infection",
-        "B": "Carry oxygen",
-        "C": "Clot blood",
-        "D": "Digest food",
-        "E": "Store energy"
+        "A": "Heart",
+        "B": "Liver",
+        "C": "Skin",
+        "D": "Brain",
+        "E": "Lungs"
       },
-      "correct": "B",
-      "explanation_en": "Red blood cells carry oxygen from lungs to body tissues.",
-      "explanation_ru": "Эритроциты переносят кислород из легких к тканям тела.",
-      "explanation_kk": "Қызыл қан жасушалары оттегіні өкпеден дене тіндеріне тасымалдайды."
+      "correct": "C",
+      "explanation_en": "Skin is the largest organ of the human body.",
+      "explanation_ru": "Кожа - самый большой орган человеческого тела.",
+      "explanation_kk": "Тері - адам денесінің ең үлкен органы."
     },
     {
       "id": 8,
       "topic": "human_biology",
-      "question_en": "What organ pumps blood?",
-      "question_ru": "Какой орган перекачивает кровь?",
-      "question_kk": "Қандай орган қанды айдайды?",
+      "question_en": "What carries oxygen in blood?",
+      "question_ru": "Что переносит кислород в крови?",
+      "question_kk": "Қанда оттегіні не тасымалдайды?",
       "options": {
-        "A": "Lungs",
-        "B": "Liver",
-        "C": "Heart",
-        "D": "Kidneys",
-        "E": "Brain"
+        "A": "Plasma",
+        "B": "White blood cells",
+        "C": "Red blood cells",
+        "D": "Platelets",
+        "E": "Water"
       },
       "correct": "C",
-      "explanation_en": "The heart pumps blood throughout the body.",
-      "explanation_ru": "Сердце перекачивает кровь по всему телу.",
-      "explanation_kk": "Жүрек бүкіл дене бойынша қанды айдайды."
+      "explanation_en": "Red blood cells contain hemoglobin which carries oxygen.",
+      "explanation_ru": "Красные кровяные тельца содержат гемоглобин, который переносит кислород.",
+      "explanation_kk": "Қызыл қан жасушалары оттегі тасымалдайтын гемоглобин қамтиды."
     },
     {
       "id": 9,
       "topic": "evolution",
-      "question_en": "Who proposed the theory of natural selection?",
-      "question_ru": "Кто предложил теорию естественного отбора?",
-      "question_kk": "Табиғи сұрыптау теориясын кім ұсынды?",
+      "question_en": "Who proposed natural selection?",
+      "question_ru": "Кто предложил естественный отбор?",
+      "question_kk": "Табиғи сұрыпты кім ұсынды?",
       "options": {
         "A": "Einstein",
         "B": "Newton",
         "C": "Darwin",
         "D": "Mendel",
-        "E": "Pasteur"
+        "E": "Watson"
       },
       "correct": "C",
-      "explanation_en": "Charles Darwin proposed the theory of evolution by natural selection.",
-      "explanation_ru": "Чарльз Дарвин предложил теорию эволюции путем естественного отбора.",
-      "explanation_kk": "Чарльз Дарвин табиғи сұрыптау арқылы эволюция теориясын ұсынды."
+      "explanation_en": "Charles Darwin proposed the theory of natural selection.",
+      "explanation_ru": "Чарльз Дарвин предложил теорию естественного отбора.",
+      "explanation_kk": "Чарльз Дарвин табиғи сұрып теориясын ұсынды."
     },
     {
       "id": 10,
@@ -180,16 +180,16 @@
       "question_ru": "Что такое адаптация?",
       "question_kk": "Бейімделу дегеніміз не?",
       "options": {
-        "A": "Getting bigger",
-        "B": "Traits that help survival",
-        "C": "Moving to new places",
-        "D": "Learning new skills",
-        "E": "Changing color"
+        "A": "Random change",
+        "B": "Trait that helps survival",
+        "C": "Mutation",
+        "D": "Reproduction",
+        "E": "Migration"
       },
       "correct": "B",
-      "explanation_en": "Adaptation is a trait that helps an organism survive in its environment.",
-      "explanation_ru": "Адаптация - это черта, которая помогает организму выжить в своей среде.",
-      "explanation_kk": "Бейімделу - организмге өз ортасында өмір сүруге көмектесетін қасиет."
+      "explanation_en": "Adaptation is a trait that increases an organism's chance of survival.",
+      "explanation_ru": "Адаптация - черта, увеличивающая шансы организма на выживание.",
+      "explanation_kk": "Бейімделу - организмнің өмір сүру мүмкіндігін арттыратын қасиет."
     }
   ]
 }

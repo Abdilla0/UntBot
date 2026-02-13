@@ -4,13 +4,15 @@ import random
 from pathlib import Path
 
 # Map subject names to actual filenames
+# IMPORTANT: Both 'math' and 'mathematics' point to same file!
 SUBJECT_FILES = {
-    'mathematics': 'math_questions.json',          # Maps 'mathematics' -> 'math_questions.json'
+    'math': 'math_questions.json',                # ✅ Your actual file name
+    'mathematics': 'math_questions.json',         # ✅ Alternative name (both work!)
     'physics': 'physics_questions.json',
     'chemistry': 'chemistry_questions.json',
     'biology': 'biology_questions.json',
     'history': 'history_questions.json',
-    'geography': 'geography.json'                   # Your file is named 'geography.json'
+    'geography': 'geography_questions.json'                 # ✅ Your actual filename (no _questions)
 }
 
 # Cache for loaded questions
@@ -23,6 +25,7 @@ def load_questions_from_file(subject):
         filename = SUBJECT_FILES.get(subject)
         if not filename:
             print(f"❌ Unknown subject: {subject}")
+            print(f"   Available subjects: {list(SUBJECT_FILES.keys())}")
             return None
         
         # Try to load from question_sources folder first
@@ -34,12 +37,13 @@ def load_questions_from_file(subject):
         
         if not filepath.exists():
             print(f"❌ File not found: {filename}")
+            print(f"   Tried: question_sources/{filename} and {filename}")
             return None
         
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        print(f"✅ Loaded {filename}")
+        print(f"✅ Loaded {filename} ({len(data.get('questions', []))} questions)")
         return data
         
     except Exception as e:
@@ -65,7 +69,7 @@ def get_question(subject, language='en', topic=None):
     Get a random question for a subject
     
     Args:
-        subject: Subject name (mathematics, physics, etc.)
+        subject: Subject name (math, physics, etc.)
         language: Language code (en, ru, kk)
         topic: Optional topic filter
     
@@ -77,18 +81,21 @@ def get_question(subject, language='en', topic=None):
         QUESTIONS[subject] = load_questions_from_file(subject)
     
     if not QUESTIONS[subject]:
+        print(f"❌ No questions loaded for subject: {subject}")
         return None
     
     # Get questions array
     questions = QUESTIONS[subject].get('questions', [])
     
     if not questions:
+        print(f"❌ No questions found in file for subject: {subject}")
         return None
     
     # Filter by topic if specified
     if topic:
         questions = [q for q in questions if q.get('topic') == topic]
         if not questions:
+            print(f"❌ No questions found for topic: {topic}")
             return None
     
     # Pick random question
@@ -107,7 +114,7 @@ def get_question(subject, language='en', topic=None):
 
 def format_question(question):
     """Format question for display"""
-    text = f"❓ **Question**\n\n{question['text']}\n\n"
+    text = f"❓ **Question #{question['id']}**\n\n{question['text']}\n\n"
     
     # Add options
     for option, value in sorted(question['options'].items()):
@@ -116,60 +123,18 @@ def format_question(question):
     return text
 
 
-# For backward compatibility with old structure
-def get_question_old_structure(subject, language='en', topic=None):
-    """
-    OLD STRUCTURE SUPPORT: Get question from nested topics structure
-    Only needed if you have old format files
-    """
-    if subject not in QUESTIONS:
-        QUESTIONS[subject] = load_questions_from_file(subject)
-    
-    if not QUESTIONS[subject]:
-        return None
-    
-    # Check if old structure (nested topics)
-    if subject in QUESTIONS[subject]:
-        subject_data = QUESTIONS[subject][subject]
-        topics_data = subject_data.get('topics', {})
-        
-        # Get topic questions
-        if topic and topic in topics_data:
-            questions = topics_data[topic]
-        else:
-            # Get all questions from all topics
-            questions = []
-            for topic_questions in topics_data.values():
-                questions.extend(topic_questions)
-        
-        if not questions:
-            return None
-        
-        question = random.choice(questions)
-        
-        return {
-            'id': question['id'],
-            'topic': question['topic'],
-            'text': question.get(f'question_{language}', question.get('question_en', '')),
-            'options': question.get('options', {}),
-            'correct': question.get('correct', 'A'),
-            'explanation': question.get(f'explanation_{language}', question.get('explanation_en', ''))
-        }
-    
-    # Fall back to new structure
-    return get_question(subject, language, topic)
-
-
 if __name__ == "__main__":
     # Test loading
-    print("Testing question loading...\n")
+    print("="*60)
+    print("TESTING QUESTION LOADER")
+    print("="*60)
+    print()
     
-    subjects = ['mathematics', 'physics', 'chemistry', 'biology', 'history', 'geography']
+    subjects = ['math', 'physics', 'chemistry', 'biology', 'history', 'geography']
     
     for subject in subjects:
-        print(f"\n{'='*50}")
-        print(f"Testing: {subject}")
-        print('='*50)
+        print(f"\nTesting: {subject}")
+        print("-"*40)
         
         # Load questions
         data = load_questions_from_file(subject)
@@ -182,12 +147,15 @@ if __name__ == "__main__":
             # Test getting a question
             q = get_question(subject, 'en')
             if q:
-                print(f"✅ Sample question ID: {q['id']}")
-                print(f"✅ Topic: {q['topic']}")
+                print(f"✅ Sample question:")
+                print(f"   ID: {q['id']}")
+                print(f"   Topic: {q['topic']}")
+                print(f"   Text: {q['text'][:50]}...")
             else:
                 print("❌ Could not get sample question")
         else:
             print(f"❌ Failed to load")
     
-    print("\n" + "="*50)
+    print("\n" + "="*60)
     print("✅ Testing complete!")
+    print("="*60)
