@@ -132,6 +132,10 @@ async def handle_menu_choice(update: Update, context: ContextTypes.DEFAULT_TYPE)
     user_id = update.effective_user.id
     language = user_sessions.get(user_id, {}).get('language', 'en')
     
+    # ✅ Check if user is in AI mode (asking questions or explaining topics)
+    if user_sessions.get(user_id, {}).get('in_ai_mode'):
+        return await handle_free_text(update, context)
+    
     # Check if user is selecting a topic
     if user_sessions.get(user_id, {}).get('selecting_topic'):
         return await topic_chosen(update, context)
@@ -168,7 +172,12 @@ async def handle_menu_choice(update: Update, context: ContextTypes.DEFAULT_TYPE)
     elif text in button_actions['next']:
         return await start_practice(update, context)
     else:
-        return await check_answer(update, context)
+         # ✅ Only go to check_answer if user has an active question
+        if user_sessions.get(user_id, {}).get('current_question'):
+            return await check_answer(update, context)
+        else:
+            # No active question - just ignore
+            return WAITING_ANSWER
 
 async def start_practice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Start practice questions"""
@@ -195,24 +204,26 @@ async def start_practice(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Check user's answer"""
     user_id = update.effective_user.id
-    user_answer = update.message.text.upper().strip()
+    user_answer = update.message.text.upper().strip()  # ✅ Convert to uppercase here
     language = user_sessions.get(user_id, {}).get('language', 'en')
     
     new_streak = update_streak(user_id)
     
-    # ✅ FIX: Don't send everything to AI - just ignore invalid input
+    # ✅ FIXED: Only check if we're in practice mode
+    # Check if user has a current question first
+    question = user_sessions.get(user_id, {}).get('current_question')
+    
+    if not question:
+        # No active question - ignore this input
+        return WAITING_ANSWER
+    
+    # ✅ Now check if valid answer
     if user_answer not in ['A', 'B', 'C', 'D', 'E']:
         await update.message.reply_text(
             "Please select an answer: A, B, C, D, or E" if language == 'en' else
             "Пожалуйста, выберите ответ: A, B, C, D или E" if language == 'ru' else
             "Жауапты таңдаңыз: A, B, C, D немесе E"
         )
-        return WAITING_ANSWER
-    
-    question = user_sessions.get(user_id, {}).get('current_question')
-    
-    if not question:
-        await update.message.reply_text(t('start_practice_first', language))
         return WAITING_ANSWER
     
     correct_answer = question['correct']
@@ -256,13 +267,23 @@ async def check_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def ask_for_topic(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Ask user what topic to explain"""
-    language = user_sessions.get(update.effective_user.id, {}).get('language', 'en')
+    user_id = update.effective_user.id
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # ✅ Mark that user is in asking mode
+    user_sessions[user_id]['in_ai_mode'] = True
+    
     await update.message.reply_text(t('ask_topic', language))
     return ASKING_QUESTION
 
 async def ask_for_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Ask user their question"""
-    language = user_sessions.get(update.effective_user.id, {}).get('language', 'en')
+    user_id = update.effective_user.id
+    language = user_sessions.get(user_id, {}).get('language', 'en')
+    
+    # ✅ Mark that user is in asking mode
+    user_sessions[user_id]['in_ai_mode'] = True
+    
     await update.message.reply_text(t('ask_question', language))
     return ASKING_QUESTION
 
@@ -308,8 +329,11 @@ async def handle_free_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(response)
     
+    # ✅ Keep user in AI mode so they can ask more questions
+    # Don't clear 'in_ai_mode' flag - let them continue asking
+    
     return WAITING_ANSWER
-
+    
 async def show_progress(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Show user statistics"""
     user_id = update.effective_user.id
@@ -479,6 +503,9 @@ async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_sessions[user_id]['selecting_topic'] = False
     if 'topic' in user_sessions.get(user_id, {}):
         user_sessions[user_id]['topic'] = None
+    # ✅ Exit AI mode when returning to main menu
+    if 'in_ai_mode' in user_sessions.get(user_id, {}):
+        user_sessions[user_id]['in_ai_mode'] = False
     
     subject_key = f'subject_{subject}' if not subject.startswith('subject_') else subject
     subject_name = t(subject_key, language)
