@@ -8,7 +8,7 @@ load_dotenv()
 print("🔮 Using Gemini AI")
 
 # ✅ Your working Gemini API key
-GEMINI_API_KEY = "AIzaSyCTGCHAmt_LN7b0k3ivo5RT4nkMlbxLGn0"
+GEMINI_API_KEY = ""
 
 print(f"🔑 API Key: {GEMINI_API_KEY[:20]}...")
 
